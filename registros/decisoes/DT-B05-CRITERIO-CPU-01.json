@@ -1,0 +1,71 @@
+{
+  "id": "DT-B05-CRITERIO-CPU-01",
+  "item": "B05-02",
+  "classe": "proposta_tecnica_sem_liberacao",
+  "estado": "criterio candidato anterior a qualquer inferencia; revisao pendente",
+  "opcoes": [
+    "Uma rodada sintetica com criterio congelado",
+    "Executar antes do criterio ou ajustar limiar apos resultados: recusado"
+  ],
+  "criterios": [
+    {
+      "origem": "blocos/fichas/B05-02.json",
+      "criterio": "Tres tarefas inventadas, tres repeticoes, um limiar, sem alegacao estatistica."
+    }
+  ],
+  "decisao": "Propor taxa de acerto de 1.0 nas nove saidas; um erro reprova a rodada, sem retry automatico.",
+  "origin_commit": "97fcfe66677d2995ef287eab786dead6554d9294",
+  "evento": "2026-11-01T02:37:32.330247+00:00",
+  "criterio": {
+    "repeticoes_por_tarefa": 3,
+    "tarefas_fora_do_dominio_alvo": true,
+    "uma_rodada_sem_alegacao_estatistica": true,
+    "executor_dt": "docs/decisoes/DT-B05-EXECUTOR-01.json",
+    "artefato_sha256": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+    "tarefas": [
+      {
+        "id": "T1",
+        "enunciado": "Some 12 e 8. Responda somente com um objeto JSON exatamente neste formato, sem texto antes ou depois e sem cercas de codigo: {\"schema\":\"sc-modelo-saida/1\",\"tarefa\":\"T1\",\"resposta\":\"...\"}, com o valor de resposta como texto decimal sem espacos.",
+        "aceite": {
+          "resposta_exata": "20"
+        }
+      },
+      {
+        "id": "T2",
+        "enunciado": "Conte os elementos da lista [lima, pera, uva, figo]. Responda somente com um objeto JSON exatamente neste formato, sem texto antes ou depois e sem cercas de codigo: {\"schema\":\"sc-modelo-saida/1\",\"tarefa\":\"T2\",\"resposta\":\"...\"}, com o valor de resposta como texto decimal sem espacos.",
+        "aceite": {
+          "resposta_exata": "4"
+        }
+      },
+      {
+        "id": "T3",
+        "enunciado": "Ordene alfabeticamente as palavras gato, abelha, boi. Responda somente com um objeto JSON exatamente neste formato, sem texto antes ou depois e sem cercas de codigo: {\"schema\":\"sc-modelo-saida/1\",\"tarefa\":\"T3\",\"resposta\":\"...\"}, com o valor de resposta como palavras separadas apenas por virgula.",
+        "aceite": {
+          "resposta_exata": "abelha,boi,gato"
+        }
+      }
+    ],
+    "limiar": {
+      "metrica": "fracao_saidas_aceitas",
+      "valor": 1.0,
+      "regra": ">="
+    },
+    "teto_relogio_s": 900,
+    "parametros_geracao": {
+      "seed": 1,
+      "temperatura": 0.0,
+      "max_tokens": 128
+    }
+  },
+  "revisor": {
+    "sessao_distinta": null,
+    "veredito": "nao_revisada"
+  },
+  "precondicoes": [
+    "B05-01 qualificado por bytes reais e revisao",
+    "Capacidade CPU/RAM e isolamento qualificados sem afetar recurso externo",
+    "DT e criterio revisados e enviados antes do log/resultado"
+  ],
+  "execucao_realizada": false,
+  "limite": "Ainda nao ha resultado nem log real; exemplos de teste nao contam como saida de modelo."
+}

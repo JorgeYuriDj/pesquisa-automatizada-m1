@@ -1,0 +1,55 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="890" viewBox="0 0 1200 890" role="img" aria-labelledby="title desc"><title id="title">Primary and secondary runs: operational records</title><desc id="desc">Admitted and operationally completed counts are shown separately; this is not a scientific comparison.</desc>
+<rect x="0" y="0" width="1200" height="890" fill="#ffffff"/>
+<text x="40" y="25" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#006b64" text-anchor="start" dominant-baseline="text-before-edge">Fig. 3</text>
+<text x="40" y="55" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Primary and secondary runs: operational records</text>
+<text x="40" y="100" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">Contract counts; acceptance does not establish scientific correctness.</text>
+<rect x="40" y="145" width="1120" height="58" fill="#edf2f5"/>
+<text x="60" y="160" font-family="DejaVu Sans, sans-serif" font-size="21" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Measure</text>
+<text x="670" y="158" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">M1-06</text>
+<text x="985" y="158" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" fill="#006b64" text-anchor="middle" dominant-baseline="text-before-edge">M1-R</text>
+<line x1="40" y1="250" x2="1160" y2="250" stroke="#d7e0e7" stroke-width="2"/>
+<text x="60" y="214" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Admitted attempts</text>
+<text x="670" y="214" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">3</text>
+<text x="985" y="214" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#006b64" text-anchor="middle" dominant-baseline="text-before-edge">1</text>
+<line x1="40" y1="293" x2="1160" y2="293" stroke="#d7e0e7" stroke-width="2"/>
+<text x="60" y="257" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Contractual refusals</text>
+<text x="670" y="257" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">2</text>
+<text x="985" y="257" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#006b64" text-anchor="middle" dominant-baseline="text-before-edge">0</text>
+<line x1="40" y1="336" x2="1160" y2="336" stroke="#d7e0e7" stroke-width="2"/>
+<text x="60" y="300" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Tokenizations (admitted / completed)</text>
+<text x="670" y="300" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">6 / 6</text>
+<text x="985" y="300" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#006b64" text-anchor="middle" dominant-baseline="text-before-edge">2 / 2</text>
+<line x1="40" y1="379" x2="1160" y2="379" stroke="#d7e0e7" stroke-width="2"/>
+<text x="60" y="343" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Generations (admitted / completed)</text>
+<text x="670" y="343" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">6 / 5</text>
+<text x="985" y="343" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#006b64" text-anchor="middle" dominant-baseline="text-before-edge">2 / 2</text>
+<line x1="40" y1="422" x2="1160" y2="422" stroke="#d7e0e7" stroke-width="2"/>
+<text x="60" y="386" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Python (admitted / completed)</text>
+<text x="670" y="386" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">3 / 3</text>
+<text x="985" y="386" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#006b64" text-anchor="middle" dominant-baseline="text-before-edge">1 / 1</text>
+<line x1="40" y1="465" x2="1160" y2="465" stroke="#d7e0e7" stroke-width="2"/>
+<text x="60" y="429" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Python errors</text>
+<text x="670" y="429" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">0</text>
+<text x="985" y="429" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#006b64" text-anchor="middle" dominant-baseline="text-before-edge">0</text>
+<line x1="40" y1="508" x2="1160" y2="508" stroke="#d7e0e7" stroke-width="2"/>
+<text x="60" y="472" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Verification reached</text>
+<text x="670" y="472" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">2 × V1; A3: no V1</text>
+<text x="985" y="472" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#006b64" text-anchor="middle" dominant-baseline="text-before-edge">V1–V7</text>
+<line x1="40" y1="551" x2="1160" y2="551" stroke="#d7e0e7" stroke-width="2"/>
+<text x="60" y="515" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Outcome</text>
+<text x="670" y="515" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">Inconclusive</text>
+<text x="985" y="515" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#006b64" text-anchor="middle" dominant-baseline="text-before-edge">Contractual acceptance</text>
+<text x="40" y="590" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Native global elapsed time / authorized limit: 1800 s</text>
+<text x="40" y="639" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="#9b4b16" text-anchor="start" dominant-baseline="text-before-edge">M1-06</text>
+<rect x="170" y="639" width="780" height="25" fill="#e9eef2"/>
+<rect x="170" y="639" width="780" height="25" fill="#9b4b16"/>
+<line x1="950" y1="631" x2="950" y2="673" stroke="#142a3b" stroke-width="2"/>
+<text x="980" y="639" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#9b4b16" text-anchor="start" dominant-baseline="text-before-edge">1801.921 s</text>
+<text x="40" y="714" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="700" fill="#006b64" text-anchor="start" dominant-baseline="text-before-edge">M1-R</text>
+<rect x="170" y="714" width="780" height="25" fill="#e9eef2"/>
+<rect x="170" y="714" width="293.683588016" height="25" fill="#006b64"/>
+<line x1="950" y1="706" x2="950" y2="748" stroke="#142a3b" stroke-width="2"/>
+<text x="980" y="714" font-family="DejaVu Sans, sans-serif" font-size="20" font-weight="700" fill="#006b64" text-anchor="start" dominant-baseline="text-before-edge">677.731 s</text>
+<text x="40" y="800" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">M1-06: elapsed time includes shutdown after the cap; the budget was not extended.</text>
+<text x="40" y="832" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">A3 = attempt 3: capture failure during turn 2 generation, before verification.</text>
+</svg>

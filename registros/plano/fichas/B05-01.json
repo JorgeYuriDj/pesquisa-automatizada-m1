@@ -1,0 +1,349 @@
+{
+ "schema": "sc-ficha/1",
+ "item": "B05-01",
+ "criterio_sha256": "3b19d20ef2039b62050ea16a31db5fbf8658f213fff3a0d18c965ce5071b8c3e",
+ "tipo": "julgamento",
+ "verificacoes": [
+  {
+   "id": "V1",
+   "tipo": "json",
+   "path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-preparacao/dt-preparada.json",
+   "campos": {
+    "id": "DT-B05-EXECUTOR-01",
+    "item": "B05-01",
+    "executor.modulo": "controle/executor_modelo.py",
+    "saida.fora_do_esquema": "falha_fechada",
+    "saida.reparo_json": false,
+    "saida.reparo_textual": false
+   },
+   "existem": [
+    "classe",
+    "objetivo_afetado",
+    "opcoes.1",
+    "criterios.0.origem",
+    "consequencias.0.cegamento",
+    "evidencia.0.path",
+    "evidencia.0.sha256",
+    "decisao",
+    "gatilho_reavaliacao",
+    "origin_commit",
+    "evento",
+    "executor.nome",
+    "executor.versao",
+    "executor.sha256",
+    "executor.origem",
+    "artefato.repositorio",
+    "artefato.revisao",
+    "artefato.nome",
+    "artefato.sha256",
+    "artefato.bytes",
+    "artefato.formato",
+    "artefato.quantizacao_bits",
+    "artefato.licenca",
+    "saida.esquema"
+   ],
+   "tipos": {
+    "executor.versao": "str",
+    "executor.sha256": "str",
+    "artefato.sha256": "str",
+    "artefato.bytes": "int",
+    "artefato.quantizacao_bits": "int",
+    "opcoes": "list"
+   },
+   "minimos": {
+    "artefato.bytes": 1000000000,
+    "artefato.quantizacao_bits": 4
+   }
+  },
+  {
+   "id": "V2",
+   "tipo": "arquivo",
+   "path": "controle/executor_modelo.py",
+   "contem": [
+    "ARTEFATO_SHA256",
+    "EXECUTOR_VERSAO",
+    "SAIDA_FORA_DO_ESQUEMA",
+    "strict_json",
+    "conferir-saida"
+   ],
+   "nao_contem": [
+    "json_repair",
+    "repair_json",
+    "jsonrepair",
+    "fix_json",
+    "dirtyjson",
+    "demjson"
+   ]
+  },
+  {
+   "id": "V3",
+   "tipo": "arquivo",
+   "path": "docs/evidencias/bloco5-2026-10-31/executor-saida-reparavel.txt",
+   "contem": [
+    "```json"
+   ]
+  },
+  {
+   "id": "V4",
+   "tipo": "comando",
+   "argv": [
+    "python3",
+    "controle/executor_modelo.py",
+    "conferir-saida",
+    "docs/evidencias/bloco5-2026-10-31/executor-saida-valida.json"
+   ],
+   "codigo": 0,
+   "stdout_contem": [
+    "SAIDA_OK"
+   ],
+   "stdout_nao_contem": [
+    "SAIDA_FORA_DO_ESQUEMA"
+   ],
+   "timeout": 60,
+   "repeticoes": 2,
+   "saidas_identicas": true
+  },
+  {
+   "id": "V5",
+   "tipo": "comando",
+   "argv": [
+    "python3",
+    "controle/executor_modelo.py",
+    "conferir-saida",
+    "docs/evidencias/bloco5-2026-10-31/executor-saida-reparavel.txt"
+   ],
+   "codigo": 3,
+   "stdout_contem": [
+    "SAIDA_FORA_DO_ESQUEMA"
+   ],
+   "stdout_nao_contem": [
+    "SAIDA_OK"
+   ],
+   "timeout": 60
+  },
+  {
+   "id": "V6",
+   "tipo": "comando",
+   "argv": [
+    "python3",
+    "controle/executor_modelo.py",
+    "conferir-saida",
+    "docs/evidencias/bloco5-2026-10-31/executor-saida-fora-do-esquema.json"
+   ],
+   "codigo": 3,
+   "stdout_contem": [
+    "SAIDA_FORA_DO_ESQUEMA"
+   ],
+   "stdout_nao_contem": [
+    "SAIDA_OK"
+   ],
+   "timeout": 60
+  },
+  {
+   "id": "V7",
+   "tipo": "recibo_testes",
+   "suite": "controle/test_executor_modelo.py",
+   "min_executados": 7,
+   "testes": [
+    "controle.test_executor_modelo.Executor.test_recusa_artefato_com_sha256_diferente",
+    "controle.test_executor_modelo.Executor.test_recusa_executor_de_versao_diferente",
+    "controle.test_executor_modelo.Executor.test_saida_valida_aceita",
+    "controle.test_executor_modelo.Executor.test_saida_fora_do_esquema_e_falha_fechada",
+    "controle.test_executor_modelo.Executor.test_saida_reparavel_nao_e_reparada",
+    "controle.test_executor_modelo.Executor.test_chave_desconhecida_e_falha_fechada",
+    "controle.test_executor_modelo.Executor.test_dt_e_codigo_citam_o_mesmo_artefato_e_executor"
+   ]
+  },
+  {
+   "id": "V8",
+   "tipo": "comando",
+   "argv": [
+    "python3",
+    "controle/conferencia_b05.py",
+    "conferir-dt04"
+   ],
+   "codigo": 0,
+   "stdout_contem": [
+    "DT_COERENTE"
+   ],
+   "stdout_nao_contem": [
+    "DT_DIVERGE"
+   ],
+   "timeout": 60,
+   "repeticoes": 2,
+   "saidas_identicas": true
+  },
+  {
+   "id": "V9",
+   "tipo": "parecer_contem",
+   "revisores": [
+    "claude"
+   ],
+   "linha": "B05-FICHAS-01 B05-01: confirmei por sessao distinta a assinatura nativa do parecer 1df2600ce0c6fca37fc84cb0fa865f3207a88259 SHA256 56e2571970c88c8fe8ea26eb5f6f6dfad14980a05336d99b8a920fffd2c40bf9 e seu vinculo exato manifesto d87d110c78b538fdf1aeee5d1b069104047c0e4d660d237ab030af15a39f5a67, base f0e619dff820c5d61340a8131507cda9e8e022cc26f642bb245e59d603ec4441, criterio 280d14b305f831957c25075d772716792d1d895fe1cb593c56f8d233b052680b, DT preparada aa58641191ddccc1bdf5bff1ef64bbf77c7973f48f42186cb1b37807b5c62737, preparacao CPU 92099d45dee7c49cc74f5082628a0641b114c06dfdb78aa1fe3c2fd43c2410f8; confirmacao das DTs nos pareceres historicos 166418e, 9210619 e 2d4f43d conferida; criterios e resultado primario REPROVADO preservados: conforme."
+  }
+ ],
+ "negativos": [
+  {
+   "id": "N1",
+   "alvo": "V1",
+   "mutacao": {
+    "tipo": "apagar",
+    "path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-preparacao/dt-preparada.json"
+   }
+  },
+  {
+   "id": "N2",
+   "alvo": "V1",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-preparacao/dt-preparada.json",
+    "campo": "saida.reparo_json",
+    "valor": true
+   }
+  },
+  {
+   "id": "N3",
+   "alvo": "V1",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-preparacao/dt-preparada.json",
+    "campo": "artefato.quantizacao_bits",
+    "valor": 3
+   }
+  },
+  {
+   "id": "N4",
+   "alvo": "V2",
+   "mutacao": {
+    "tipo": "apagar",
+    "path": "controle/executor_modelo.py"
+   }
+  },
+  {
+   "id": "N5",
+   "alvo": "V2",
+   "mutacao": {
+    "tipo": "substituir",
+    "path": "controle/executor_modelo.py",
+    "de": "SAIDA_FORA_DO_ESQUEMA",
+    "para": "SAIDA_FORA_DO_ESQUEMA  # json_repair"
+   }
+  },
+  {
+   "id": "N6",
+   "alvo": "V3",
+   "mutacao": {
+    "tipo": "truncar",
+    "path": "docs/evidencias/bloco5-2026-10-31/executor-saida-reparavel.txt"
+   }
+  },
+  {
+   "id": "N7",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "apagar",
+    "path": "docs/evidencias/bloco5-2026-10-31/executor-saida-valida.json"
+   }
+  },
+  {
+   "id": "N8",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/executor-saida-valida.json",
+    "campo": "campo_fora_do_esquema",
+    "valor": 1
+   }
+  },
+  {
+   "id": "N9",
+   "alvo": "V5",
+   "mutacao": {
+    "tipo": "apagar",
+    "path": "docs/evidencias/bloco5-2026-10-31/executor-saida-reparavel.txt"
+   }
+  },
+  {
+   "id": "N10",
+   "alvo": "V6",
+   "mutacao": {
+    "tipo": "apagar",
+    "path": "docs/evidencias/bloco5-2026-10-31/executor-saida-fora-do-esquema.json"
+   }
+  },
+  {
+   "id": "N11",
+   "alvo": "V7",
+   "mutacao": {
+    "tipo": "alterar_byte",
+    "path": "controle/test_executor_modelo.py"
+   }
+  },
+  {
+   "id": "N12",
+   "alvo": "V7",
+   "mutacao": {
+    "tipo": "alterar_byte",
+    "path": "controle/executor_modelo.py"
+   }
+  },
+  {
+   "id": "N13",
+   "alvo": "V8",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-preparacao/dt-preparada.json",
+    "campo": "artefato.sha256",
+    "valor": "0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "id": "N14",
+   "alvo": "V8",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-preparacao/dt-preparada.json",
+    "campo": "executor.versao",
+    "valor": "0.0.0-falso"
+   }
+  },
+  {
+   "id": "N15",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "substituir",
+    "path": "docs/evidencias/bloco5-2026-10-31/executor-saida-valida.json",
+    "de": "{",
+    "para": "Resposta do modelo: {"
+   }
+  },
+  {
+   "id": "N16",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "substituir",
+    "path": "docs/evidencias/bloco5-2026-10-31/executor-saida-valida.json",
+    "de": "\"",
+    "para": "'"
+   }
+  },
+  {
+   "id": "N17",
+   "alvo": "V9",
+   "mutacao": {
+    "tipo": "apagar",
+    "path": "blocos/B05/revisoes/claude.json"
+   }
+  },
+  {
+   "id": "N18",
+   "alvo": "V9",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "blocos/B05/revisoes/claude.json",
+    "campo": "parecer.sha256",
+    "valor": "0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  }
+ ]
+}

@@ -1,0 +1,564 @@
+{
+ "schema": "pesquisa-automatizada-proveniencia/1",
+ "criado_em_utc": "2026-11-02T17:40:00Z",
+ "descricao": "Copia publica organizada do estudo M1. Cada arquivo traz a impressao digital SHA-256 e, quando veio do repositorio de trabalho privado, o caminho e o commit de origem. Arquivos alterados para a publicacao listam a alteracao.",
+ "repositorio_de_trabalho": "privado; os commits citados existem nele",
+ "arquivos": [
+  {
+   "arquivo": "LICENSE",
+   "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+   "origem": "texto oficial da Apache License 2.0 (apache.org)"
+  },
+  {
+   "arquivo": "LICENSE-CC-BY-4.0.txt",
+   "sha256": "9ba9550ad48438d0836ddab3da480b3b69ffa0aac7b7878b5a0039e7ab429411",
+   "origem": "texto oficial da CC BY 4.0 (creativecommons.org)"
+  },
+  {
+   "arquivo": "README.md",
+   "sha256": "21908119eea52a9398a0357d50ac893906e8cd0d96c7b29a3c40cefcb9fa291b",
+   "origem": "escrito para esta copia publica"
+  },
+  {
+   "arquivo": "artigo/en/ARTIGO-M1-en.md",
+   "sha256": "e66aae8c0e79bf58b1a24790a080ea968f8a8f1b0d69ebbd23bdbae08c488d78",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/ARTIGO-M1-publicacao-en.md",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "1e11c9bb179ffddca094267666b4bd33c5e7a1c2217c9989c31f36d0bae5c8b2"
+   },
+   "alterado_para_publicacao": [
+    "'](figuras/m1/' -> '](../figuras/' (3x)"
+   ]
+  },
+  {
+   "arquivo": "artigo/en/ARTIGO-M1-en.pdf",
+   "sha256": "684dcc18cdd610ecef00620e8c0488adf7fc547d8ed3e2f05cfcf45f271d7a10",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/pdf/ARTIGO-M1-corpo-en.pdf",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "684dcc18cdd610ecef00620e8c0488adf7fc547d8ed3e2f05cfcf45f271d7a10"
+   }
+  },
+  {
+   "arquivo": "artigo/figuras/F0-arquitetura-en.svg",
+   "sha256": "d33732bf86d18d8a95626d1eccb21420e5b0f0ceb8449d112e2dc0bb47280574",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/figuras/m1/F0-arquitetura-en.svg",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "d33732bf86d18d8a95626d1eccb21420e5b0f0ceb8449d112e2dc0bb47280574"
+   }
+  },
+  {
+   "arquivo": "artigo/figuras/F0-arquitetura-pt.svg",
+   "sha256": "a6f0f0912b4a29e7c784098e9c99693225ac35581fe8140ef0b1650cab26fdfb",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/figuras/m1/F0-arquitetura-pt.svg",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "a6f0f0912b4a29e7c784098e9c99693225ac35581fe8140ef0b1650cab26fdfb"
+   }
+  },
+  {
+   "arquivo": "artigo/figuras/F1-procedimento-en.svg",
+   "sha256": "b62ffed7450ebadd868756ffd664761ffbbdc40af9641fbcfb5c07d68f1c93bc",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/figuras/m1/F1-procedimento-en.svg",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "b62ffed7450ebadd868756ffd664761ffbbdc40af9641fbcfb5c07d68f1c93bc"
+   }
+  },
+  {
+   "arquivo": "artigo/figuras/F1-procedimento-pt.svg",
+   "sha256": "523d70742a61f42dee023172eb40a3af12f0168124dff21450add4df3e446387",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/figuras/m1/F1-procedimento-pt.svg",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "523d70742a61f42dee023172eb40a3af12f0168124dff21450add4df3e446387"
+   }
+  },
+  {
+   "arquivo": "artigo/figuras/F2-operacoes-en.svg",
+   "sha256": "99b59bb0c0cf4cd8b9fab68eb280f3ec019393389be1a1173a2d7fdd2e3ac469",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/figuras/m1/F2-operacoes-en.svg",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "99b59bb0c0cf4cd8b9fab68eb280f3ec019393389be1a1173a2d7fdd2e3ac469"
+   }
+  },
+  {
+   "arquivo": "artigo/figuras/F2-operacoes-pt.svg",
+   "sha256": "52bbcb108ae0a1726d87d147ffdb392d16e539b1b4ff782c757c980dc3878664",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/figuras/m1/F2-operacoes-pt.svg",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "52bbcb108ae0a1726d87d147ffdb392d16e539b1b4ff782c757c980dc3878664"
+   }
+  },
+  {
+   "arquivo": "artigo/figuras/F3-tentativas-en.svg",
+   "sha256": "5921eb796cf76b7520777a7d5fba8f9bd9b1f0f8a2b8cca46081092b73374212",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/figuras/m1/F3-tentativas-en.svg",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "5921eb796cf76b7520777a7d5fba8f9bd9b1f0f8a2b8cca46081092b73374212"
+   }
+  },
+  {
+   "arquivo": "artigo/figuras/F3-tentativas-pt.svg",
+   "sha256": "6252fbbe69440fd73fc70689b2f3ecd40092b549e7c283ba87cdbad0a2b04968",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/figuras/m1/F3-tentativas-pt.svg",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "6252fbbe69440fd73fc70689b2f3ecd40092b549e7c283ba87cdbad0a2b04968"
+   }
+  },
+  {
+   "arquivo": "artigo/figuras/F4-cronologia-en.svg",
+   "sha256": "62f8c3334d0d685a44b1a2c04c0497e3db6f60506f37c0e3a40d25af127a4f00",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/figuras/m1/F4-cronologia-en.svg",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "62f8c3334d0d685a44b1a2c04c0497e3db6f60506f37c0e3a40d25af127a4f00"
+   }
+  },
+  {
+   "arquivo": "artigo/figuras/F4-cronologia-pt.svg",
+   "sha256": "1140fd1d106dede74ce7b200cd55542a9c795086028169eef3b88a4e2d7505b7",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/figuras/m1/F4-cronologia-pt.svg",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "1140fd1d106dede74ce7b200cd55542a9c795086028169eef3b88a4e2d7505b7"
+   }
+  },
+  {
+   "arquivo": "artigo/figuras/dados-permitidos.json",
+   "sha256": "5e1d068eb217d8726d34a56c06054079354aef759cda2aa2a00ea488851a5ec2",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/figuras/m1/dados-permitidos.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "5e1d068eb217d8726d34a56c06054079354aef759cda2aa2a00ea488851a5ec2"
+   }
+  },
+  {
+   "arquivo": "artigo/figuras/gerar_figuras.py",
+   "sha256": "dfbf30f683cbcf5d33859b1671090abecc19681305c74cbaed986510a0ce475c",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/figuras/m1/gerar_figuras.py",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "dfbf30f683cbcf5d33859b1671090abecc19681305c74cbaed986510a0ce475c"
+   }
+  },
+  {
+   "arquivo": "artigo/pt/ARTIGO-M1-pt.md",
+   "sha256": "20ebdf3dce9b13ce4cda429bfe0170ee33a636a35524b300b2414824e596b95c",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/ARTIGO-M1-publicacao-pt.md",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "7d4015e7ce7791c849805245b4ae378fe4d66d3863e872e120dc15c4e0d4a7ac"
+   },
+   "alterado_para_publicacao": [
+    "'](figuras/m1/' -> '](../figuras/' (3x)"
+   ]
+  },
+  {
+   "arquivo": "artigo/pt/ARTIGO-M1-pt.pdf",
+   "sha256": "e4e90d61cd0a625aee4ea808ad78a891dc656f011b63059d1f4fa239ee1c97c8",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/pdf/ARTIGO-M1-corpo-pt.pdf",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "e4e90d61cd0a625aee4ea808ad78a891dc656f011b63059d1f4fa239ee1c97c8"
+   }
+  },
+  {
+   "arquivo": "artigo/render/render-estilo.css",
+   "sha256": "176a03744a36bdefcb395220ba162102673ddec103699a5ed69d5b96c96dc2d7",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/pdf/render-estilo.css",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "176a03744a36bdefcb395220ba162102673ddec103699a5ed69d5b96c96dc2d7"
+   }
+  },
+  {
+   "arquivo": "artigo/render/render-html2pdf.js",
+   "sha256": "22b4355cbf17bdeca9fbda8e5a7799ea34a35b17e084c2ea51a1e8f6bf092753",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/pdf/render-html2pdf.js",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "22b4355cbf17bdeca9fbda8e5a7799ea34a35b17e084c2ea51a1e8f6bf092753"
+   }
+  },
+  {
+   "arquivo": "artigo/suplemento/MATERIAL-SUPLEMENTAR.md",
+   "sha256": "45fdceb0397642f15c32d6e5c20ddef55338eb9ea4b0c09d1e0be964b26e7ca3",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/ARTIGO-M1-material-suplementar.md",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "a1fa46586a8ddc31a48710aeb7fe9a4039fb6b344ee2b03a6550a26ccbd654f8"
+   },
+   "alterado_para_publicacao": [
+    "'](figuras/m1/' -> '](../figuras/' (2x)",
+    "'figuras/m1/' -> 'artigo/figuras/' (4x, mencoes de caminho no texto)"
+   ]
+  },
+  {
+   "arquivo": "codigo/conferencia_b05.py",
+   "sha256": "85300e1e68094999b9c42dd23204935940c5cf2ad00467646f972a6601fa69e7",
+   "origem": {
+    "caminho_privado": "controle/conferencia_b05.py",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "85300e1e68094999b9c42dd23204935940c5cf2ad00467646f972a6601fa69e7"
+   }
+  },
+  {
+   "arquivo": "codigo/cpu_exec.py",
+   "sha256": "204cb2c204473b5a1203e96ebd90c082a1a31b5f4e8109c465654afea5582f81",
+   "origem": {
+    "caminho_privado": "controle/cpu_exec.py",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "204cb2c204473b5a1203e96ebd90c082a1a31b5f4e8109c465654afea5582f81"
+   }
+  },
+  {
+   "arquivo": "codigo/cpu_launcher.py",
+   "sha256": "b746c1cda28985e3e57ad5c98a3a33b42cf3751c9ecc88f0f71c3b229b7f2b7c",
+   "origem": {
+    "caminho_privado": "controle/cpu_launcher.py",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "b746c1cda28985e3e57ad5c98a3a33b42cf3751c9ecc88f0f71c3b229b7f2b7c"
+   }
+  },
+  {
+   "arquivo": "codigo/executor_modelo.py",
+   "sha256": "425c0e0aa62a9bb7cf2e7b4533085330b531cfcd8298725d9e14cf0693f39553",
+   "origem": {
+    "caminho_privado": "controle/executor_modelo.py",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "425c0e0aa62a9bb7cf2e7b4533085330b531cfcd8298725d9e14cf0693f39553"
+   }
+  },
+  {
+   "arquivo": "codigo/frontend_cpu.py",
+   "sha256": "5b84ce2edaf7df43c262bb307ea4dd346d0bc1a8baf28935e7547105e15a8a5e",
+   "origem": {
+    "caminho_privado": "controle/frontend_cpu.py",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "5b84ce2edaf7df43c262bb307ea4dd346d0bc1a8baf28935e7547105e15a8a5e"
+   }
+  },
+  {
+   "arquivo": "codigo/harness.py",
+   "sha256": "c09b3ce136657976be6b72267c6b344220b0965f7f0aa464707e8f21a8cadd29",
+   "origem": {
+    "caminho_privado": "controle/harness.py",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "c09b3ce136657976be6b72267c6b344220b0965f7f0aa464707e8f21a8cadd29"
+   }
+  },
+  {
+   "arquivo": "codigo/juiz/blocos.py",
+   "sha256": "8319a6da0459d886053e0595f46efed538712e553758965e56ce459e7f09822a",
+   "origem": {
+    "caminho_privado": "controle/blocos.py",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "9af67f7e096a8ac2a8bb1b30701c65eb7c297d4fd82285b8337fbe80f7d6d4a6"
+   },
+   "alterado_para_publicacao": [
+    "CX-PUB-M1-01: identificador do executor trocado por marcador generico",
+    "CX-PUB-M1-03: nome de outra frente privada trocado por descricao generica"
+   ]
+  },
+  {
+   "arquivo": "codigo/juiz/fichas.py",
+   "sha256": "4f06f8c050e7deb66bddb839c8f285defb4d7e2abdf7f7c9a8ade0563ba0b16e",
+   "origem": {
+    "caminho_privado": "controle/fichas.py",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "4f06f8c050e7deb66bddb839c8f285defb4d7e2abdf7f7c9a8ade0563ba0b16e"
+   }
+  },
+  {
+   "arquivo": "codigo/juiz/juiz_base.py",
+   "sha256": "d62bdb5adae3343d089be525512b5acfc4d82d6e798eaff0fb3fa6bf7e8907da",
+   "origem": {
+    "caminho_privado": "controle/juiz_base.py",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "d62bdb5adae3343d089be525512b5acfc4d82d6e798eaff0fb3fa6bf7e8907da"
+   }
+  },
+  {
+   "arquivo": "codigo/m1.py",
+   "sha256": "371b399c05bab4262c921c8121d7ba3f73a07a5aaa477d47ac4efb1397dc48a0",
+   "origem": {
+    "caminho_privado": "controle/m1.py",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "371b399c05bab4262c921c8121d7ba3f73a07a5aaa477d47ac4efb1397dc48a0"
+   }
+  },
+  {
+   "arquivo": "codigo/m1_exec.py",
+   "sha256": "43528361957fa3698077fc83403fb04c7cfa0ea7362b51c074f7b3e6f7ff8cb3",
+   "origem": {
+    "caminho_privado": "controle/m1_exec.py",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "43528361957fa3698077fc83403fb04c7cfa0ea7362b51c074f7b3e6f7ff8cb3"
+   }
+  },
+  {
+   "arquivo": "etapa-m1/conferencia-constantes.json",
+   "sha256": "98fde7c3c82ccfd4dd7c3010474a4dd24067162b75d7c0917a0cd6565b6fb24d",
+   "origem": {
+    "caminho_privado": "docs/evidencias/bloco5-2026-10-31/m1/conferencia-constantes.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "98fde7c3c82ccfd4dd7c3010474a4dd24067162b75d7c0917a0cd6565b6fb24d"
+   }
+  },
+  {
+   "arquivo": "etapa-m1/congelamento.json",
+   "sha256": "0abf77a2d59e1aa56c6d2853b82d5a7c37044a9f5d742b349870d542f42dc5bb",
+   "origem": {
+    "caminho_privado": "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "0abf77a2d59e1aa56c6d2853b82d5a7c37044a9f5d742b349870d542f42dc5bb"
+   }
+  },
+  {
+   "arquivo": "etapa-m1/constantes.json",
+   "sha256": "67a1ce31a762dcd358c6aee809c845f8496be9b4698389b2e085f80ec05c6864",
+   "origem": {
+    "caminho_privado": "docs/evidencias/bloco5-2026-10-31/m1/constantes.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "67a1ce31a762dcd358c6aee809c845f8496be9b4698389b2e085f80ec05c6864"
+   }
+  },
+  {
+   "arquivo": "etapa-m1/contrato.md",
+   "sha256": "17929806202c7a4ceb2bb752996eeffac7af9e001943938d4422a01f5216af63",
+   "origem": {
+    "caminho_privado": "docs/evidencias/bloco5-2026-10-31/m1/contrato.md",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "17929806202c7a4ceb2bb752996eeffac7af9e001943938d4422a01f5216af63"
+   }
+  },
+  {
+   "arquivo": "etapa-m1/escopo.md",
+   "sha256": "abe6370ea2ba2292f6f36f6149455d2f825bc6759ce9aef6602da5ba091eddc7",
+   "origem": {
+    "caminho_privado": "docs/evidencias/bloco5-2026-10-31/m1/escopo.md",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "abe6370ea2ba2292f6f36f6149455d2f825bc6759ce9aef6602da5ba091eddc7"
+   }
+  },
+  {
+   "arquivo": "etapa-m1/exemplo_a_recusar.md",
+   "sha256": "8f0cd91de0fa764695d119d297bb74094403806827eb76a5d8512e547f10562a",
+   "origem": {
+    "caminho_privado": "docs/evidencias/bloco5-2026-10-31/m1/exemplo_a_recusar.md",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "8f0cd91de0fa764695d119d297bb74094403806827eb76a5d8512e547f10562a"
+   }
+  },
+  {
+   "arquivo": "etapa-m1/exemplo_certo.md",
+   "sha256": "3dcdccfa272b2993607939c66c673fda95beb029e69ed66f1d1cf61dcd5e366f",
+   "origem": {
+    "caminho_privado": "docs/evidencias/bloco5-2026-10-31/m1/exemplo_certo.md",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "3dcdccfa272b2993607939c66c673fda95beb029e69ed66f1d1cf61dcd5e366f"
+   }
+  },
+  {
+   "arquivo": "registros/atos/B05-03.md",
+   "sha256": "bb94957b5798aad30e095335e253ed3f4a7d1a2840716d37e6629a7dc20aaa05",
+   "origem": {
+    "caminho_privado": "docs/decisoes/confirmacoes/B05-03.md",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "bb94957b5798aad30e095335e253ed3f4a7d1a2840716d37e6629a7dc20aaa05"
+   }
+  },
+  {
+   "arquivo": "registros/atos/B05-CPU-M1-06.md",
+   "sha256": "733eb6fd02d9cb6870e8740f6c9464a9c47a4b1fec6e8858edd1f68768fc26f4",
+   "origem": {
+    "caminho_privado": "docs/decisoes/confirmacoes/B05-CPU-M1-06.md",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "2dd6d26f5c256cf8b34449ed4e9a1f8c7c6943637f961694cd388ef1f602e7fa"
+   },
+   "alterado_para_publicacao": [
+    "CX-PUB-M1-01: raiz absoluta da instalacao privada trocada por marcador (2x)",
+    "CX-PUB-M1-01: identificador do executor retirado",
+    "CX-PUB-M1-03: nome de outra frente privada trocado por descricao generica",
+    "Copia derivada e redigida para publicacao; nao sao os bytes assinados. O ato assinado original fica no repositorio privado com o sha256_privado acima."
+   ]
+  },
+  {
+   "arquivo": "registros/atos/B05-CPU-M1-07.md",
+   "sha256": "a1d86b74dabfed6050a068c2dff1a9012e5e4c1436697d6593008f6b19cff5a1",
+   "origem": {
+    "caminho_privado": "docs/decisoes/confirmacoes/B05-CPU-M1-07.md",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "445113dfb783100722747f457b0d540d9e39738f91e4ac8a383fe9308e4b8461"
+   },
+   "alterado_para_publicacao": [
+    "CX-PUB-M1-01: raiz absoluta da instalacao privada trocada por marcador (2x)",
+    "CX-PUB-M1-01: identificador do executor retirado",
+    "CX-PUB-M1-03: nome de outra frente privada trocado por descricao generica",
+    "Copia derivada e redigida para publicacao; nao sao os bytes assinados. O ato assinado original fica no repositorio privado com o sha256_privado acima."
+   ]
+  },
+  {
+   "arquivo": "registros/atos/B05-FICHAS-01.md",
+   "sha256": "f5eeab9710a40b8af52856e4206af7a9920775c9ac2b03364a01be9895d349a3",
+   "origem": {
+    "caminho_privado": "docs/decisoes/confirmacoes/B05-FICHAS-01.md",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "943553ff16561343d0f6f7d4505231115abe328a8c4b3b71c0a668fa4e87f872"
+   },
+   "alterado_para_publicacao": [
+    "CX-PUB-M1-03: nome de outra frente privada trocado por descricao generica",
+    "Copia derivada e redigida para publicacao; nao sao os bytes assinados. O ato assinado original fica no repositorio privado com o sha256_privado acima."
+   ]
+  },
+  {
+   "arquivo": "registros/corridas/m1-06/recibo.json",
+   "sha256": "0a8fec492b42e059e257c2fc97d59a00f01686f35bdab4360dd949a9b3108b89",
+   "origem": {
+    "caminho_privado": "docs/evidencias/bloco5-2026-10-31/cpu-m1-06-m1/recibo.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "14a749df2647ff3e96a59edf4b0f886b9ec5703efe8a6b248317900809b3ab77"
+   },
+   "alterado_para_publicacao": [
+    "CX-PUB-M1-01: caminho do arquivo privado de evidencias trocado por marcador"
+   ]
+  },
+  {
+   "arquivo": "registros/corridas/m1-r/recibo.json",
+   "sha256": "2a842bef59e7082f41fa0b70f7970d0daf03fcf1e3e266fe6ea275b07c02071c",
+   "origem": {
+    "caminho_privado": "docs/evidencias/bloco5-2026-10-31/cpu-m1-07-m1/recibo.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "3d05ab94e26dead936cdd4d654fe5f8f1122b9fcd99c11e16ac2fe91e9d5daf8"
+   },
+   "alterado_para_publicacao": [
+    "CX-PUB-M1-01: caminho do arquivo privado de evidencias trocado por marcador"
+   ]
+  },
+  {
+   "arquivo": "registros/corridas/qualificacao1/resultado.json",
+   "sha256": "574d221bfa7a1b71ac66b501178530b670c45bddd9a0f19dbed16afe5c6139ff",
+   "origem": {
+    "caminho_privado": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "574d221bfa7a1b71ac66b501178530b670c45bddd9a0f19dbed16afe5c6139ff"
+   }
+  },
+  {
+   "arquivo": "registros/corridas/qualificacao2/recibo.json",
+   "sha256": "93dcac3faf55d08d159dfde1f1be884d3933c690fca85e17f01caa12776d0f21",
+   "origem": {
+    "caminho_privado": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-qualificacao2/recibo.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "93dcac3faf55d08d159dfde1f1be884d3933c690fca85e17f01caa12776d0f21"
+   }
+  },
+  {
+   "arquivo": "registros/decisoes/B05-CPU-M1-07-manifesto.json",
+   "sha256": "7e8df498e698afb1dc3a5911541119c6faca09086c9048a3211f4f204022a478",
+   "origem": {
+    "caminho_privado": "docs/decisoes/B05-CPU-M1-07-manifesto.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "7e8df498e698afb1dc3a5911541119c6faca09086c9048a3211f4f204022a478"
+   }
+  },
+  {
+   "arquivo": "registros/decisoes/DT-B05-CRITERIO-CPU-01.json",
+   "sha256": "46dc430b0db089b7a5f5068ce24d2cc40a7dcc4688cf6fd937e6471f984cb182",
+   "origem": {
+    "caminho_privado": "docs/decisoes/DT-B05-CRITERIO-CPU-01.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "5d53ae937e4e7ca197fecd0fc756ff5bbd64e17fa3db8373086abaaf2791a9d1"
+   },
+   "alterado_para_publicacao": [
+    "CX-PUB-M1-03: nome de outra frente privada trocado por descricao generica"
+   ]
+  },
+  {
+   "arquivo": "registros/decisoes/DT-B05-CRITERIO-CPU-02.json",
+   "sha256": "280d14b305f831957c25075d772716792d1d895fe1cb593c56f8d233b052680b",
+   "origem": {
+    "caminho_privado": "docs/decisoes/DT-B05-CRITERIO-CPU-02.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "280d14b305f831957c25075d772716792d1d895fe1cb593c56f8d233b052680b"
+   }
+  },
+  {
+   "arquivo": "registros/decisoes/DT-B05-EXECUTOR-01.json",
+   "sha256": "0b7b354375a4bae70da7238948fffa7012dcc59bbaaf882a12b7cf998a5fd6e2",
+   "origem": {
+    "caminho_privado": "docs/decisoes/DT-B05-EXECUTOR-01.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "f0e619dff820c5d61340a8131507cda9e8e022cc26f642bb245e59d603ec4441"
+   },
+   "alterado_para_publicacao": [
+    "CX-PUB-M1-03: nome de outra frente privada trocado por descricao generica"
+   ]
+  },
+  {
+   "arquivo": "registros/plano/PLANO.json",
+   "sha256": "d1d18bdb8f2c62113ebf6c19a2e2ef0ee7b5bcbc17b136d4285197b77a04b782",
+   "origem": {
+    "caminho_privado": "blocos/PLANO.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "ef2379229c4900d8479ac85e5ebc28c17313a3000fce5bb809b6d410c16aaff8"
+   },
+   "alterado_para_publicacao": [
+    "CX-PUB-M1-03: detalhes e nome de outra frente privada trocados por descricao generica"
+   ]
+  },
+  {
+   "arquivo": "registros/plano/fichas/B05-01.json",
+   "sha256": "38260f95743583026987a5725714792d3354876282a237b83babc5351eab6cea",
+   "origem": {
+    "caminho_privado": "blocos/fichas/B05-01.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "38260f95743583026987a5725714792d3354876282a237b83babc5351eab6cea"
+   }
+  },
+  {
+   "arquivo": "registros/plano/fichas/B05-02.json",
+   "sha256": "1b11950a81dc37c311ee53e3e10d1abde23a80a7af9067c27a0c59834bb8b0a7",
+   "origem": {
+    "caminho_privado": "blocos/fichas/B05-02.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "1b11950a81dc37c311ee53e3e10d1abde23a80a7af9067c27a0c59834bb8b0a7"
+   }
+  },
+  {
+   "arquivo": "registros/plano/fichas/B05-03.json",
+   "sha256": "ff5fb3237b98c38290a4481f033930b7c2f36d4ec8fb58a424ed811d2bd6e97a",
+   "origem": {
+    "caminho_privado": "blocos/fichas/B05-03.json",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "ff5fb3237b98c38290a4481f033930b7c2f36d4ec8fb58a424ed811d2bd6e97a"
+   }
+  },
+  {
+   "arquivo": "registros/revisoes/claude-fechamento-B05.md",
+   "sha256": "33d10a31e3e93bddc556f95ac9dbbd8e2893d217d8b4c86c853c18fdb84fd058",
+   "origem": {
+    "caminho_privado": "blocos/B05/revisoes/claude-parecer.md",
+    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
+    "sha256_privado": "73b7a9eff8409d5fff30790ce500b11e7aea4c56b78374a8f114b15d4068806d"
+   },
+   "alterado_para_publicacao": [
+    "linha da sessao: o link interno da sessao do Claude foi trocado por texto generico (1x)"
+   ]
+  }
+ ],
+ "excluidos_da_copia_publica": [
+  {
+   "arquivo": "registros/corridas/qualificacao1/log.jsonl",
+   "motivo": "CX-PUB-M1-02: log bruto da qualificacao 1 (saidas e stdout/stderr codificados) excluido da copia publica; fica no repositorio privado; o hash continua em registros/corridas/qualificacao1/resultado.json"
+  }
+ ],
+ "revisao": "v2: correcoes da varredura independente CX-PUB-M1-01, -02 e -03 (identificador do executor, caminhos da instalacao privada, log bruto e mencao a outra frente privada)."
+}

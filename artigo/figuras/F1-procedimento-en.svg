@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="510" viewBox="0 0 1200 510" role="img" aria-labelledby="title desc"><title id="title">Procedure within one attempt</title><desc id="desc">Two model turns, one admitted Python execution, and contractual verification.</desc>
+<rect x="0" y="0" width="1200" height="510" fill="#ffffff"/>
+<text x="40" y="25" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#006b64" text-anchor="start" dominant-baseline="text-before-edge">Fig. 2</text>
+<text x="40" y="55" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Procedure within one attempt</text>
+<text x="40" y="100" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">Contractual workflow; no model response or scientific value.</text>
+<rect x="40" y="165" width="250" height="150" fill="#f1f5f8" stroke="#d7e0e7"/>
+<text x="58" y="184" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Turn 1</text>
+<text x="58" y="235" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Code generation</text>
+<text x="58" y="262" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Up to 512 tokens</text>
+<line x1="295" y1="238" x2="322" y2="238" stroke="#42586a" stroke-width="3"/>
+<line x1="313" y1="229" x2="322" y2="238" stroke="#42586a" stroke-width="3"/>
+<line x1="313" y1="247" x2="322" y2="238" stroke="#42586a" stroke-width="3"/>
+<rect x="330" y="165" width="250" height="150" fill="#f1f5f8" stroke="#d7e0e7"/>
+<text x="348" y="184" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Python</text>
+<text x="348" y="235" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">One admitted execution</text>
+<text x="348" y="262" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Up to 10 seconds</text>
+<line x1="585" y1="238" x2="612" y2="238" stroke="#42586a" stroke-width="3"/>
+<line x1="603" y1="229" x2="612" y2="238" stroke="#42586a" stroke-width="3"/>
+<line x1="603" y1="247" x2="612" y2="238" stroke="#42586a" stroke-width="3"/>
+<rect x="620" y="165" width="250" height="150" fill="#f1f5f8" stroke="#d7e0e7"/>
+<text x="638" y="184" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Turn 2</text>
+<text x="638" y="235" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Final JSON object</text>
+<text x="638" y="262" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Up to 2048 tokens</text>
+<line x1="875" y1="238" x2="902" y2="238" stroke="#42586a" stroke-width="3"/>
+<line x1="893" y1="229" x2="902" y2="238" stroke="#42586a" stroke-width="3"/>
+<line x1="893" y1="247" x2="902" y2="238" stroke="#42586a" stroke-width="3"/>
+<rect x="910" y="165" width="250" height="150" fill="#f1f5f8" stroke="#d7e0e7"/>
+<text x="928" y="184" font-family="DejaVu Sans, sans-serif" font-size="23" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">V1–V7</text>
+<text x="928" y="235" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Contractual verification</text>
+<text x="928" y="262" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Accept or refuse</text>
+<text x="40" y="350" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Real tokenization gate before each generation; context 8192 tokens.</text>
+<text x="40" y="386" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Global time limit: 30 minutes. Seal only after contractual acceptance.</text>
+<text x="40" y="422" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">M1-R changes the turn 2 instruction; it is not an independent replication.</text>
+</svg>

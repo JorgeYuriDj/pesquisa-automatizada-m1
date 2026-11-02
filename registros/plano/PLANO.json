@@ -1,0 +1,168 @@
+{
+ "schema": "sc-plano/1",
+ "blocos": [
+  {
+   "id": "B02",
+   "titulo": "Pendências do bloco 1, disco da VPS e encadeador",
+   "itens": [
+    {
+     "id": "B02-01",
+     "titulo": "Revisar e incorporar as correções B1-R01 a B1-R04 e a regra de blocos",
+     "aceite": "Revisão em sessão distinta registrada; run_tests.py APROVADO com 8 suítes e nenhum skip; hooks e continuação seguem inativos até decisão própria"
+    },
+    {
+     "id": "B02-02",
+     "titulo": "Medir quem ocupa o disco da VPS, só leitura",
+     "aceite": "Diagnóstico versionado existente com du/docker/journal reutilizado e seus limites; comparar medições equivalentes separadas por mais de 1 h e fazer leitura leve atual; delta líquido sem atribuição causal ou taxa constante; nenhuma remoção pela Pesquisa."
+    },
+    {
+     "id": "B02-03",
+     "titulo": "Registrar a decisão já tomada pelo dono e o limite de capacidade",
+     "aceite": "DT registra a ordem mais recente sobre recurso externo, evidência atual de capacidade e bloqueio de download abaixo de 15.000.000.000 bytes; sem repetir pergunta, limpar ou contratar capacidade."
+    },
+    {
+     "id": "B02-04",
+     "titulo": "Roteiro de cliques e carta única da conta da custódia",
+     "aceite": "Roteiro e carta versionados, sem segredo, entregues ao dono; teste 404 descrito para depois da criação"
+    },
+    {
+     "id": "B02-05",
+     "titulo": "Instalar o encadeador de blocos na VPS",
+     "aceite": "Rota nativa pelo notebook demonstrada com abertura e resposta do dono; celular nao demonstrado, bloqueado_dono pela ordem 8, sem impedir fechamento. Timer real ativo somente apos identidade sem privilegios, autenticacao, isolamento, observador e cessao qualificados; ensaio sem modelo, PARE local e remoto fresco antes do passo/efeito, AVISO, locks, limites e recibos Git idempotentes aprovados. Ratificacao unica assinada pelo dono no GitHub."
+    }
+   ]
+  },
+  {
+   "id": "B03",
+   "titulo": "Gate reforçado e transporte das revisões",
+   "itens": [
+    {
+     "id": "B03-01",
+     "titulo": "Gate numa reinicialização: dependências no catálogo, aceite em lote, desvio assinado, openssl absoluto, HTML",
+     "aceite": "Testes do Gate e openssl absoluto preservados; reinicio operacional nao executado por external_anchor_unconfigured; substituicao por contingencia somente mediante decisao assinada do dono, sem alegar auditoria ancorada"
+    },
+    {
+     "id": "B03-02",
+     "titulo": "Âncora das assinaturas fora da VPS",
+     "aceite": "DT A4 registrada; chave do revisor fora da VPS e fora do cofre; teste de forja falha contra a âncora"
+    },
+    {
+     "id": "B03-03",
+     "titulo": "Transporte das revisões: limite de 1.500 s e parser informational com lista fechada",
+     "aceite": "Negativos do parser verdes; recibo grava esforço, limite, bytes e duração; nenhum consumo antigo repetido"
+    },
+    {
+     "id": "B03-04",
+     "titulo": "Registrar as regras de bloco e de revisão externa como ordem do dono e o desvio dos aceites do B02",
+     "aceite": "AGENTS.md, CONTEXTO_ATUAL e INICIAR_SESSAO trazem a regra literal apontando controle/blocos.py; DT de desvio cita, para cada aceite trocado no B02, a ordem do dono ou declara decisão do implementador"
+    },
+    {
+     "id": "B03-05",
+     "titulo": "Conferir o Codex e as rotas de revisão na VPS",
+     "aceite": "Saída versionada de command -v codex, codex --version e da rota do Antigravity; DT do lançador real escolhido pelo dono, ou bloqueio com a pergunta exata"
+    }
+   ],
+   "prazo_utc": "2026-10-31T00:00:00Z"
+  },
+  {
+   "id": "B04",
+   "titulo": "Núcleo do harness e porta única",
+   "itens": [
+    {
+     "id": "B04-01",
+     "titulo": "Especificação do harness com tetos por etapa, campos por chamada e abstenção",
+     "aceite": "Tetos numéricos, proposta repetida por hash, horário fora do hash, estado abstained, decisão de rede escrita antes do código"
+    },
+    {
+     "id": "B04-02",
+     "titulo": "Núcleo do harness com sandbox e registro antecipado",
+     "aceite": "Reproduzir o log sem modelo e sem rede gera a mesma cabeça; 1 byte alterado gera REPLAY_MISS sem executar ferramenta"
+    },
+    {
+     "id": "B04-03",
+     "titulo": "release_lot.py com testes de sentinela",
+     "aceite": "Sentinelas bloqueadas em .py, CSV escalado, JSON, prompt e enunciado; duas execuções idênticas byte a byte"
+    }
+   ],
+   "prazo_utc": "2026-10-31T12:00:00Z"
+  },
+  {
+   "id": "B05",
+   "titulo": "Modelo local em CPU e M1",
+   "itens": [
+    {
+     "id": "B05-01",
+     "titulo": "Executor do modelo fixado por versão e hash, saída restrita por esquema",
+     "aceite": "DT do executor; artefato por sha256; JSON fora do esquema é falha fechada, sem reparo"
+    },
+    {
+     "id": "B05-02",
+     "titulo": "Teste do modelo em CPU com critério registrado antes",
+     "aceite": "Critério com hash antes de rodar; 3 a 5 tarefas inventadas, 3 repetições, um limiar; resultado versionado"
+    },
+    {
+     "id": "B05-03",
+     "titulo": "M1: contrato da fatia congelado pela custódia",
+     "aceite": "Dono aprova o escopo em português com um exemplo certo e um a recusar; revisor distinto confere constantes contra CODATA e NIST"
+    }
+   ],
+   "prazo_utc": "2026-10-31T18:00:00Z"
+  },
+  {
+   "id": "B06",
+   "titulo": "Verificador, ensaio de ponta a ponta e decisão de GO",
+   "itens": [
+    {
+     "id": "B06-01",
+     "titulo": "Verificador com regras numeradas e par de testes por regra",
+     "aceite": "Cada regra acusa o caso e não acusa o vizinho; três relações metamórficas; teste-par para cada isenção da porta única"
+    },
+    {
+     "id": "B06-02",
+     "titulo": "Ensaio sintético de ponta a ponta na VPS",
+     "aceite": "Negativos por classe, matar e retomar entre etapas, clone limpo com testes e HEAD igual ao remoto; rótulo ensaio do plano de controle"
+    },
+    {
+     "id": "B06-03",
+     "titulo": "GO ou NO-GO às 12h de 1/11 e M2",
+     "aceite": "Condições mecânicas do parecer conferidas e registradas; qualquer falha é NO-GO"
+    }
+   ],
+   "prazo_utc": "2026-11-01T15:00:00Z"
+  },
+  {
+   "id": "B07",
+   "titulo": "Corrida cega ou ensaio rotulado",
+   "itens": [
+    {
+     "id": "B07-01",
+     "titulo": "Com GO: janela única de até 8 h e uma corrida; sem GO: pipeline sintético rotulado",
+     "aceite": "STOP, inventário zerado e selo por hash; nenhum comparador; gasto dentro do teto conferido pelo guard"
+    }
+   ],
+   "prazo_utc": "2026-11-02T01:00:00Z"
+  },
+  {
+   "id": "B08",
+   "titulo": "Matriz de alegações, M3 e salvamento",
+   "itens": [
+    {
+     "id": "B08-01",
+     "titulo": "Matriz de alegações com as quatro frases e M3",
+     "aceite": "n=1, taxa de base conferida, produto como reprodução cega verificável, autoria humana declarada; revisão M3 registrada"
+    },
+    {
+     "id": "B08-02",
+     "titulo": "Salvamento conferido com folga",
+     "aceite": "VPS e GitHub com HEAD igual pelo menos 6 h antes de 3/11 01h de Brasília"
+    },
+    {
+     "id": "B08-03",
+     "titulo": "Artigo cientifico do processo, dos resultados e das limitacoes",
+     "aceite": "Artigo cientifico em docs/ARTIGO.md no padrao academico internacional (IMRaD): titulo, resumo, introducao, metodos, resultados, discussao com o que deu certo e o que deu errado, limitacoes, historico do processo, declaracao de uso de IA e de autoria humana, referencias; numeros iguais aos da matriz de alegacoes; sem dado reservado nem comparacao com o resultado do artigo original, que fica no anexo do dono; aprovado pelos dois revisores externos."
+    }
+   ],
+   "prazo_utc": "2026-11-02T15:00:00Z"
+  }
+ ]
+}

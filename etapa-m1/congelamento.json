@@ -1,0 +1,39 @@
+{
+  "schema": "sc-m1-congelamento/1",
+  "item": "B05-03",
+  "marco": "M1",
+  "modalidade": "reprodução guiada de método conhecido",
+  "rotulo": "M1-QSCI-N230729",
+  "custodia": {
+    "decisao_id": "B05-03"
+  },
+  "escopo_sha256": "abe6370ea2ba2292f6f36f6149455d2f825bc6759ce9aef6602da5ba091eddc7",
+  "contrato_sha256": "17929806202c7a4ceb2bb752996eeffac7af9e001943938d4422a01f5216af63",
+  "exemplos": {
+    "certo_sha256": "3dcdccfa272b2993607939c66c673fda95beb029e69ed66f1d1cf61dcd5e366f",
+    "a_recusar_sha256": "8f0cd91de0fa764695d119d297bb74094403806827eb76a5d8512e547f10562a"
+  },
+  "aprovacao_dono": {
+    "path": "docs/decisoes/confirmacoes/B05-03.md",
+    "sha256": "bb94957b5798aad30e095335e253ed3f4a7d1a2840716d37e6629a7dc20aaa05"
+  },
+  "constantes": {
+    "sha256": "67a1ce31a762dcd358c6aee809c845f8496be9b4698389b2e085f80ec05c6864",
+    "autor": "custodia-dono",
+    "conferidas_por": "claude",
+    "conferencia_sha256": "98fde7c3c82ccfd4dd7c3010474a4dd24067162b75d7c0917a0cd6565b6fb24d",
+    "fontes": [
+      "CODATA",
+      "NIST"
+    ]
+  },
+  "congelado_em_utc": "2026-11-01T14:29:55.876806Z",
+  "arquivos": {
+    "escopo": "docs/evidencias/bloco5-2026-10-31/m1/escopo.md",
+    "contrato": "docs/evidencias/bloco5-2026-10-31/m1/contrato.md",
+    "exemplo_certo": "docs/evidencias/bloco5-2026-10-31/m1/exemplo_certo.md",
+    "exemplo_a_recusar": "docs/evidencias/bloco5-2026-10-31/m1/exemplo_a_recusar.md",
+    "constantes": "docs/evidencias/bloco5-2026-10-31/m1/constantes.json",
+    "conferencia_constantes": "docs/evidencias/bloco5-2026-10-31/m1/conferencia-constantes.json"
+  }
+}

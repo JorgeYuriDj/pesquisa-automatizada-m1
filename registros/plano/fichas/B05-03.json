@@ -1,0 +1,232 @@
+{
+ "schema": "sc-ficha/1",
+ "item": "B05-03",
+ "criterio_sha256": "507448642cbed73f9ce6afef0c3dd9be309bbc7912697e972104e4a09dab0bd0",
+ "tipo": "dono",
+ "verificacoes": [
+  {
+   "id": "V1",
+   "tipo": "confirmacao_dono",
+   "path": "docs/decisoes/confirmacoes/B05-03.md",
+   "contem": [
+    "B05-03",
+    "APROVO O ESCOPO",
+    "exemplo certo",
+    "exemplo a recusar",
+    "escopo_sha256"
+   ]
+  },
+  {
+   "id": "V2",
+   "tipo": "json",
+   "path": "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json",
+   "campos": {
+    "schema": "sc-m1-congelamento/1",
+    "item": "B05-03",
+    "marco": "M1",
+    "modalidade": "reprodução guiada de método conhecido",
+    "aprovacao_dono.path": "docs/decisoes/confirmacoes/B05-03.md",
+    "constantes.fontes": [
+     "CODATA",
+     "NIST"
+    ]
+   },
+   "existem": [
+    "rotulo",
+    "custodia.decisao_id",
+    "escopo_sha256",
+    "contrato_sha256",
+    "exemplos.certo_sha256",
+    "exemplos.a_recusar_sha256",
+    "aprovacao_dono.sha256",
+    "constantes.sha256",
+    "constantes.autor",
+    "constantes.conferidas_por",
+    "constantes.conferencia_sha256",
+    "congelado_em_utc"
+   ],
+   "tipos": {
+    "rotulo": "str",
+    "escopo_sha256": "str",
+    "contrato_sha256": "str",
+    "exemplos.certo_sha256": "str",
+    "exemplos.a_recusar_sha256": "str",
+    "aprovacao_dono.sha256": "str",
+    "constantes.sha256": "str",
+    "constantes.autor": "str",
+    "constantes.conferidas_por": "str",
+    "constantes.conferencia_sha256": "str",
+    "constantes.fontes": "list"
+   }
+  },
+  {
+   "id": "V3",
+   "tipo": "parecer_contem",
+   "linha": "M1 B05-03: constantes conferidas contra CODATA e NIST por revisor distinto do autor: conforme",
+   "revisores": [
+    "claude",
+    "antigravity"
+   ]
+  },
+  {
+   "id": "V4",
+   "tipo": "comando",
+   "argv": [
+    "python3",
+    "controle/release_lot.py",
+    "conferir-m1",
+    "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json"
+   ],
+   "codigo": 0,
+   "stdout_contem": [
+    "M1_CONFERIDO"
+   ],
+   "timeout": 60,
+   "repeticoes": 2,
+   "saidas_identicas": true
+  },
+  {
+   "id": "V5",
+   "tipo": "ordem_git",
+   "antes": "docs/decisoes/confirmacoes/B05-03.md",
+   "depois": "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json"
+  },
+  {
+   "id": "V6",
+   "tipo": "comando",
+   "argv": [
+    "git",
+    "log",
+    "--diff-filter=DM",
+    "--format=tformat:CONGELAMENTO_ALTERADO_APOS_CRIACAO",
+    "--",
+    "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json"
+   ],
+   "codigo": 0,
+   "stdout_nao_contem": [
+    "CONGELAMENTO_ALTERADO_APOS_CRIACAO"
+   ],
+   "timeout": 60
+  }
+ ],
+ "negativos": [
+  {
+   "id": "N1",
+   "alvo": "V1",
+   "mutacao": {
+    "tipo": "recommitar",
+    "path": "docs/decisoes/confirmacoes/B05-03.md"
+   }
+  },
+  {
+   "id": "N2",
+   "alvo": "V1",
+   "mutacao": {
+    "tipo": "alterar_byte",
+    "path": "docs/decisoes/confirmacoes/B05-03.md"
+   }
+  },
+  {
+   "id": "N3",
+   "alvo": "V2",
+   "mutacao": {
+    "tipo": "apagar",
+    "path": "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json"
+   }
+  },
+  {
+   "id": "N4",
+   "alvo": "V2",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json",
+    "campo": "constantes.fontes",
+    "valor": [
+     "CODATA"
+    ]
+   }
+  },
+  {
+   "id": "N5",
+   "alvo": "V3",
+   "mutacao": {
+    "tipo": "apagar",
+    "path": "blocos/B05/revisoes/claude.json"
+   }
+  },
+  {
+   "id": "N6",
+   "alvo": "V3",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "blocos/B05/revisoes/antigravity.json",
+    "campo": "parecer.sha256",
+    "valor": "0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "id": "N7",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json",
+    "campo": "escopo_sha256",
+    "valor": "0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "id": "N8",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json",
+    "campo": "aprovacao_dono.sha256",
+    "valor": "0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "id": "N9",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json",
+    "campo": "contrato_sha256",
+    "valor": "abc"
+   }
+  },
+  {
+   "id": "N10",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "alterar_byte",
+    "path": "docs/decisoes/confirmacoes/B05-03.md"
+   }
+  },
+  {
+   "id": "N11",
+   "alvo": "V5",
+   "mutacao": {
+    "tipo": "recommitar",
+    "path": "docs/decisoes/confirmacoes/B05-03.md"
+   }
+  },
+  {
+   "id": "N12",
+   "alvo": "V6",
+   "mutacao": {
+    "tipo": "recommitar",
+    "path": "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json"
+   }
+  },
+  {
+   "id": "N13",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json",
+    "campo": "constantes.conferidas_por",
+    "valor": ""
+   }
+  }
+ ]
+}

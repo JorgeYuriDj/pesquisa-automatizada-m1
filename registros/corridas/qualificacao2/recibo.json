@@ -1,0 +1,129 @@
+{
+  "schema": "sc-qualificacao2-arquivamento/1",
+  "utc": "2026-11-02T05:45:50.867582Z",
+  "act_commit": "cecc49a409417f3d89a2070173ddccde1b221591",
+  "source_head": "89d605fd2de7dbf5b44f1c7eced20c93a3f2484f",
+  "preparacao_parecer": "1df2600ce0c6fca37fc84cb0fa865f3207a88259",
+  "preparacao_vinculo": {
+    "schema": "sc-preparacao-vinculo-medido/1",
+    "utc": "2026-11-02T05:32:35.959662Z",
+    "manifesto_path": "docs/decisoes/B05-CPU-M1-04-manifesto.json",
+    "prepared_dt_path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-preparacao/dt-preparada.json",
+    "vinculo_medido": {
+      "manifesto_sha256": "d87d110c78b538fdf1aeee5d1b069104047c0e4d660d237ab030af15a39f5a67",
+      "base_dt_sha256": "f0e619dff820c5d61340a8131507cda9e8e022cc26f642bb245e59d603ec4441",
+      "criterio_sha256": "280d14b305f831957c25075d772716792d1d895fe1cb593c56f8d233b052680b",
+      "prepared_dt_sha256": "aa58641191ddccc1bdf5bff1ef64bbf77c7973f48f42186cb1b37807b5c62737",
+      "preparacao_cpu_sha256": "92099d45dee7c49cc74f5082628a0641b114c06dfdb78aa1fe3c2fd43c2410f8"
+    },
+    "delta_dt_permitido_conferido": true,
+    "tarefas": [
+      {
+        "task": "T1",
+        "P": 105,
+        "render_hashes": {
+          "efetivo": "efdfe32e4ff27646e3b6686fb320a0df4de7eb771eb1e397c8170500d4cebd89",
+          "arquivo": "fd31415fb06af99b27995599773eca9733ae48d5c120b8d207f3c67add592b7a"
+        },
+        "capture_path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-preparacao/tokenize_T1",
+        "unit": "sc-cpu-prep-a6ac981716684e6c9fd21854759a94d0.service",
+        "duration_seconds": 8.523311938974075,
+        "stdout_sha256": "88e2eb59ca37a650c0e3be05cb2b4a7dff79e79458c220e7e0ca54264bec949c",
+        "tokenization_result": {
+          "P": 105,
+          "first_id": 248045,
+          "last_id": 271,
+          "last_piece": {
+            "base64": "Cgo=",
+            "bytes": 2,
+            "sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+          },
+          "prompt_sha256": "efdfe32e4ff27646e3b6686fb320a0df4de7eb771eb1e397c8170500d4cebd89",
+          "scope": "provided_ids_byte_consistency_only",
+          "operational_go": false
+        },
+        "terminated": {
+          "MainPID": 0,
+          "ActiveState": "inactive",
+          "SubState": "dead"
+        }
+      },
+      {
+        "task": "T2",
+        "P": 123,
+        "render_hashes": {
+          "efetivo": "4ea53c97a0e7e8b668c0220aeedf5db1040eeb557b96de370b17302f79ac42bc",
+          "arquivo": "58c58238bc1f07d22a8ca50bc2c276c69c4f1106b3d9206597a72b162ab96a6c"
+        },
+        "capture_path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-preparacao/tokenize_T2",
+        "unit": "sc-cpu-prep-b5726cee2d534a91b5c6f8c887edd83a.service",
+        "duration_seconds": 8.180168814957142,
+        "stdout_sha256": "afc28b6a971ebcf17fc0bfb7b7df294c505fda2a231e047ee0a5a3666809b612",
+        "tokenization_result": {
+          "P": 123,
+          "first_id": 248045,
+          "last_id": 271,
+          "last_piece": {
+            "base64": "Cgo=",
+            "bytes": 2,
+            "sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+          },
+          "prompt_sha256": "4ea53c97a0e7e8b668c0220aeedf5db1040eeb557b96de370b17302f79ac42bc",
+          "scope": "provided_ids_byte_consistency_only",
+          "operational_go": false
+        },
+        "terminated": {
+          "MainPID": 0,
+          "ActiveState": "inactive",
+          "SubState": "dead"
+        }
+      },
+      {
+        "task": "T3",
+        "P": 169,
+        "render_hashes": {
+          "efetivo": "840204a864e77377245a55b8107be6db8a81756443fde2142fac21ae90422f06",
+          "arquivo": "09d864a212cd2ddc2e5618cece0d18784b9bf590b771634eb690a86889aa6c89"
+        },
+        "capture_path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-preparacao/tokenize_T3",
+        "unit": "sc-cpu-prep-fe339297843d4385a151dc3bbd584625.service",
+        "duration_seconds": 8.053626696113497,
+        "stdout_sha256": "120e73e7f59208eded48d855b265f4d1359989d96c0b63df1d509c2242296faa",
+        "tokenization_result": {
+          "P": 169,
+          "first_id": 248045,
+          "last_id": 271,
+          "last_piece": {
+            "base64": "Cgo=",
+            "bytes": 2,
+            "sha256": "75a11da44c802486bc6f65640aa48a730f0f684c5c07a42ba3cd1735eb3fb070"
+          },
+          "prompt_sha256": "840204a864e77377245a55b8107be6db8a81756443fde2142fac21ae90422f06",
+          "scope": "provided_ids_byte_consistency_only",
+          "operational_go": false
+        },
+        "terminated": {
+          "MainPID": 0,
+          "ActiveState": "inactive",
+          "SubState": "dead"
+        }
+      }
+    ]
+  },
+  "qualification": 2,
+  "veredito": "APROVADO",
+  "accepted": 9,
+  "total": 9,
+  "by_task": {
+    "T1": 3,
+    "T2": 3,
+    "T3": 3
+  },
+  "native_state_finished": true,
+  "canonical_result_sha256": "fc11dfdb7c708868bb057024434be10bb33f0d2fa7608dbf2dd21a20c0771eec",
+  "canonical_log_sha256": "a986921a00e33a2f326939d28c541098e45e97cf5724abb8c3935fa12fc785eb",
+  "primary_result": "REPROVADO6/9 preservado",
+  "retry": 0,
+  "M1_started": false,
+  "closure_reviews_complete": false
+}

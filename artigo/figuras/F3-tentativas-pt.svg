@@ -1,0 +1,64 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="750" viewBox="0 0 1200 750" role="img" aria-labelledby="title desc"><title id="title">M1-06: eventos registrados nas três tentativas</title><desc id="desc">UTC times are receipt events, not complete attempt boundaries; refusal timestamps are unavailable.</desc>
+<rect x="0" y="0" width="1200" height="750" fill="#ffffff"/>
+<text x="40" y="25" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#006b64" text-anchor="start" dominant-baseline="text-before-edge">Fig. S1</text>
+<text x="40" y="55" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">M1-06: eventos registrados nas três tentativas</text>
+<text x="40" y="100" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">2 nov. 2026, UTC. Horários dos recibos; não são os limites completos das tentativas.</text>
+<line x1="145.0" y1="180" x2="145.0" y2="590" stroke="#d7e0e7" stroke-width="2"/>
+<text x="145.0" y="605" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#42586a" text-anchor="middle" dominant-baseline="text-before-edge">07:45</text>
+<line x1="299.8387096774194" y1="180" x2="299.8387096774194" y2="590" stroke="#d7e0e7" stroke-width="2"/>
+<text x="299.8387096774194" y="605" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#42586a" text-anchor="middle" dominant-baseline="text-before-edge">07:50</text>
+<line x1="454.6774193548387" y1="180" x2="454.6774193548387" y2="590" stroke="#d7e0e7" stroke-width="2"/>
+<text x="454.6774193548387" y="605" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#42586a" text-anchor="middle" dominant-baseline="text-before-edge">07:55</text>
+<line x1="609.516129032258" y1="180" x2="609.516129032258" y2="590" stroke="#d7e0e7" stroke-width="2"/>
+<text x="609.516129032258" y="605" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#42586a" text-anchor="middle" dominant-baseline="text-before-edge">08:00</text>
+<line x1="764.3548387096774" y1="180" x2="764.3548387096774" y2="590" stroke="#d7e0e7" stroke-width="2"/>
+<text x="764.3548387096774" y="605" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#42586a" text-anchor="middle" dominant-baseline="text-before-edge">08:05</text>
+<line x1="919.1935483870968" y1="180" x2="919.1935483870968" y2="590" stroke="#d7e0e7" stroke-width="2"/>
+<text x="919.1935483870968" y="605" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#42586a" text-anchor="middle" dominant-baseline="text-before-edge">08:10</text>
+<line x1="1074.032258064516" y1="180" x2="1074.032258064516" y2="590" stroke="#d7e0e7" stroke-width="2"/>
+<text x="1074.032258064516" y="605" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#42586a" text-anchor="middle" dominant-baseline="text-before-edge">08:15</text>
+<text x="40" y="156" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#9b4b16" text-anchor="start" dominant-baseline="text-before-edge">Tentativa 1 — V1_chaves: recusa</text>
+<line x1="162.10675303225807" y1="235" x2="472.9864381935484" y2="235" stroke="#9b4b16" stroke-width="3"/>
+<circle cx="162.10675303225807" cy="235" r="6" fill="#9b4b16"/>
+<text x="162.10675303225807" y="186" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">Tok T1</text>
+<text x="162.10675303225807" y="208" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="middle" dominant-baseline="text-before-edge">07:45:33</text>
+<circle cx="273.4670260645161" cy="235" r="6" fill="#9b4b16"/>
+<text x="273.4670260645161" y="252" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">Gen T1</text>
+<text x="273.4670260645161" y="274" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="middle" dominant-baseline="text-before-edge">07:49:08</text>
+<circle cx="321.96888825806457" cy="235" r="6" fill="#9b4b16"/>
+<text x="321.96888825806457" y="186" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">Tok T2</text>
+<text x="321.96888825806457" y="208" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="middle" dominant-baseline="text-before-edge">07:50:42</text>
+<circle cx="472.9864381935484" cy="235" r="6" fill="#9b4b16"/>
+<text x="472.9864381935484" y="252" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">Gen T2</text>
+<text x="472.9864381935484" y="274" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="middle" dominant-baseline="text-before-edge">07:55:35</text>
+<text x="40" y="296" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#9b4b16" text-anchor="start" dominant-baseline="text-before-edge">Tentativa 2 — V1_chaves: recusa</text>
+<line x1="503.27497754838714" y1="375" x2="812.6284299354838" y2="375" stroke="#9b4b16" stroke-width="3"/>
+<circle cx="503.27497754838714" cy="375" r="6" fill="#9b4b16"/>
+<text x="503.27497754838714" y="326" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">Tok T1</text>
+<text x="503.27497754838714" y="348" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="middle" dominant-baseline="text-before-edge">07:56:34</text>
+<circle cx="616.873310451613" cy="375" r="6" fill="#9b4b16"/>
+<text x="616.873310451613" y="392" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">Gen T1</text>
+<text x="616.873310451613" y="414" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="middle" dominant-baseline="text-before-edge">08:00:14</text>
+<circle cx="664.5145667096774" cy="375" r="6" fill="#9b4b16"/>
+<text x="664.5145667096774" y="326" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">Tok T2</text>
+<text x="664.5145667096774" y="348" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="middle" dominant-baseline="text-before-edge">08:01:46</text>
+<circle cx="812.6284299354838" cy="375" r="6" fill="#9b4b16"/>
+<text x="812.6284299354838" y="392" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">Gen T2</text>
+<text x="812.6284299354838" y="414" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="middle" dominant-baseline="text-before-edge">08:06:33</text>
+<text x="40" y="436" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#9b4b16" text-anchor="start" dominant-baseline="text-before-edge">Tentativa 3 — Falha de captura, antes de V1</text>
+<line x1="842.1418374193548" y1="515" x2="1075.9691060645162" y2="515" stroke="#9b4b16" stroke-width="3"/>
+<circle cx="842.1418374193548" cy="515" r="6" fill="#9b4b16"/>
+<text x="842.1418374193548" y="466" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">Tok T1</text>
+<text x="842.1418374193548" y="488" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="middle" dominant-baseline="text-before-edge">08:07:30</text>
+<circle cx="949.0434301935483" cy="515" r="6" fill="#9b4b16"/>
+<text x="949.0434301935483" y="532" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">Gen T1</text>
+<text x="949.0434301935483" y="554" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="middle" dominant-baseline="text-before-edge">08:10:57</text>
+<circle cx="994.9646425806452" cy="515" r="6" fill="#9b4b16"/>
+<text x="994.9646425806452" y="466" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#9b4b16" text-anchor="middle" dominant-baseline="text-before-edge">Tok T2</text>
+<text x="994.9646425806452" y="488" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="middle" dominant-baseline="text-before-edge">08:12:26</text>
+<rect x="1068.9691060645162" y="508" width="14" height="14" fill="#a32530"/>
+<text x="1075.9691060645162" y="532" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="700" fill="#a32530" text-anchor="middle" dominant-baseline="text-before-edge">Gen T2</text>
+<text x="1075.9691060645162" y="554" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="middle" dominant-baseline="text-before-edge">08:15:03</text>
+<text x="40" y="665" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Tok = tokenização; Gen = geração. Segundos completos exibidos; microssegundos no ledger.</text>
+<text x="40" y="695" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">O instante das recusas não foi registrado. Terceira geração T2: timeout do supervisor.</text>
+</svg>

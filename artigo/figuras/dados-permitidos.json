@@ -1,0 +1,195 @@
+{
+  "schema": "sc-artigo-m1-figuras/1",
+  "owner_request": "953f71e61fd62a50ee953b26c6802e1004a5ee0f",
+  "source_receipts": {
+    "06": {
+      "path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-06-m1/recibo.json",
+      "sha256": "14a749df2647ff3e96a59edf4b0f886b9ec5703efe8a6b248317900809b3ab77"
+    },
+    "07": {
+      "path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-07-m1/recibo.json",
+      "sha256": "3d05ab94e26dead936cdd4d654fe5f8f1122b9fcd99c11e16ac2fe91e9d5daf8"
+    }
+  },
+  "runs": {
+    "06": {
+      "attempts": 3,
+      "used": [
+        "abdd62cd6a5e472ab55518c0c44d450d",
+        "577ad9e188aa4e13a89768779f5ec219",
+        "2ca1d932f643471fb1c230fc71ad96a0"
+      ],
+      "refusals": 2,
+      "tokenizations_released": 6,
+      "tokenizations_successful": 6,
+      "generations_released": 6,
+      "generations_successful": 5,
+      "python_executions_released": 3,
+      "execution_error_counter": 0,
+      "model_operation_failures": 1,
+      "state_native_elapsed_seconds": 1801.921115972,
+      "terminal": "incidente",
+      "seal_exists": false,
+      "operations": [
+        {
+          "attempt_id": "abdd62cd6a5e472ab55518c0c44d450d",
+          "utc": "2026-11-02T07:45:33.144334Z",
+          "operation": "tokenize_m1_t1",
+          "success": true
+        },
+        {
+          "attempt_id": "abdd62cd6a5e472ab55518c0c44d450d",
+          "utc": "2026-11-02T07:49:08.904863Z",
+          "operation": "completion_m1_t1",
+          "success": true
+        },
+        {
+          "attempt_id": "abdd62cd6a5e472ab55518c0c44d450d",
+          "utc": "2026-11-02T07:50:42.877221Z",
+          "operation": "tokenize_m1_t2",
+          "success": true
+        },
+        {
+          "attempt_id": "abdd62cd6a5e472ab55518c0c44d450d",
+          "utc": "2026-11-02T07:55:35.473724Z",
+          "operation": "completion_m1_t2",
+          "success": true
+        },
+        {
+          "attempt_id": "577ad9e188aa4e13a89768779f5ec219",
+          "utc": "2026-11-02T07:56:34.157769Z",
+          "operation": "tokenize_m1_t1",
+          "success": true
+        },
+        {
+          "attempt_id": "577ad9e188aa4e13a89768779f5ec219",
+          "utc": "2026-11-02T08:00:14.254539Z",
+          "operation": "completion_m1_t1",
+          "success": true
+        },
+        {
+          "attempt_id": "577ad9e188aa4e13a89768779f5ec219",
+          "utc": "2026-11-02T08:01:46.559473Z",
+          "operation": "tokenize_m1_t2",
+          "success": true
+        },
+        {
+          "attempt_id": "577ad9e188aa4e13a89768779f5ec219",
+          "utc": "2026-11-02T08:06:33.530083Z",
+          "operation": "completion_m1_t2",
+          "success": true
+        },
+        {
+          "attempt_id": "2ca1d932f643471fb1c230fc71ad96a0",
+          "utc": "2026-11-02T08:07:30.712310Z",
+          "operation": "tokenize_m1_t1",
+          "success": true
+        },
+        {
+          "attempt_id": "2ca1d932f643471fb1c230fc71ad96a0",
+          "utc": "2026-11-02T08:10:57.834146Z",
+          "operation": "completion_m1_t1",
+          "success": true
+        },
+        {
+          "attempt_id": "2ca1d932f643471fb1c230fc71ad96a0",
+          "utc": "2026-11-02T08:12:26.806495Z",
+          "operation": "tokenize_m1_t2",
+          "success": true
+        },
+        {
+          "attempt_id": "2ca1d932f643471fb1c230fc71ad96a0",
+          "utc": "2026-11-02T08:15:03.752643Z",
+          "operation": "completion_m1_t2",
+          "success": false
+        }
+      ],
+      "python_completed": 3
+    },
+    "07": {
+      "attempts": 1,
+      "used": [
+        "6c80aced20014b288d7cdb18e2b6e19e"
+      ],
+      "refusals": 0,
+      "tokenizations_released": 2,
+      "tokenizations_successful": 2,
+      "generations_released": 2,
+      "generations_successful": 2,
+      "python_executions_released": 1,
+      "execution_error_counter": 0,
+      "model_operation_failures": 0,
+      "state_native_elapsed_seconds": 677.73135696,
+      "terminal": "aceita",
+      "seal_exists": true,
+      "operations": [
+        {
+          "attempt_id": "6c80aced20014b288d7cdb18e2b6e19e",
+          "utc": "2026-11-02T09:41:51.177037Z",
+          "operation": "tokenize_m1_t1",
+          "success": true
+        },
+        {
+          "attempt_id": "6c80aced20014b288d7cdb18e2b6e19e",
+          "utc": "2026-11-02T09:45:24.207093Z",
+          "operation": "completion_m1_t1",
+          "success": true
+        },
+        {
+          "attempt_id": "6c80aced20014b288d7cdb18e2b6e19e",
+          "utc": "2026-11-02T09:46:54.843879Z",
+          "operation": "tokenize_m1_t2",
+          "success": true
+        },
+        {
+          "attempt_id": "6c80aced20014b288d7cdb18e2b6e19e",
+          "utc": "2026-11-02T09:52:10.184660Z",
+          "operation": "completion_m1_t2",
+          "success": true
+        }
+      ],
+      "python_completed": 1
+    }
+  },
+  "limits": {
+    "global_seconds": 1800,
+    "context_tokens": 8192,
+    "generation_t1": 512,
+    "generation_t2": 2048,
+    "python_seconds": 10
+  },
+  "classification_source": {
+    "article_commit": "706014504d72f27d8d2a4879aabb351312bd0fe3",
+    "path": "docs/rascunhos/ARTIGO-M1-publicacao-pt.md",
+    "primary_refusals": "V1_chaves; V2-V7 nao alcancados nas tentativas1e2; terceira interrompida na geracao T2",
+    "secondary": "V1-V7 registrados; aceite contratual"
+  },
+  "timeline_caveat": "operations[].utc sao horarios dos recibos; nao definem inicio/fim completo de tentativa. Sem instante inventado das recusas.",
+  "duration_caveat": "1801,921s inclui encerramento e registro depois do limite; nao aumenta o teto autorizado.",
+  "chronology": [
+    {
+      "event": "contract_freeze",
+      "utc": "2026-11-01T14:29:55.876806Z"
+    },
+    {
+      "event": "primary_run",
+      "observed_utc": "2026-11-02T08:18:27.548871Z"
+    },
+    {
+      "event": "secondary_run",
+      "observed_utc": "2026-11-02T09:53:31.935599Z"
+    },
+    {
+      "event": "blind_v2_freeze",
+      "utc": "2026-11-02T09:57:52.085659Z"
+    },
+    {
+      "event": "guardian_comparison_reported_complete",
+      "utc": null,
+      "ordering": "depois_do_congelamento_v2",
+      "content_or_outcome_received": false
+    }
+  ],
+  "scientific_package_opened": false,
+  "reference_opened": false
+}

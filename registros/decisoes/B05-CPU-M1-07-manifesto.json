@@ -1,0 +1,155 @@
+{
+  "schema": "sc-cpu-m1-execution-manifest/5",
+  "sources": {
+    "controle/cpu_exec.py": "204cb2c204473b5a1203e96ebd90c082a1a31b5f4e8109c465654afea5582f81",
+    "controle/cpu_launcher.py": "b746c1cda28985e3e57ad5c98a3a33b42cf3751c9ecc88f0f71c3b229b7f2b7c",
+    "controle/m1_exec.py": "43528361957fa3698077fc83403fb04c7cfa0ea7362b51c074f7b3e6f7ff8cb3",
+    "controle/m1.py": "371b399c05bab4262c921c8121d7ba3f73a07a5aaa477d47ac4efb1397dc48a0",
+    "controle/frontend_cpu.py": "5b84ce2edaf7df43c262bb307ea4dd346d0bc1a8baf28935e7547105e15a8a5e",
+    "controle/executor_modelo.py": "425c0e0aa62a9bb7cf2e7b4533085330b531cfcd8298725d9e14cf0693f39553",
+    "controle/harness.py": "c09b3ce136657976be6b72267c6b344220b0965f7f0aa464707e8f21a8cadd29"
+  },
+  "base_dt": {
+    "path": "docs/decisoes/DT-B05-EXECUTOR-01.json",
+    "sha256": "f0e619dff820c5d61340a8131507cda9e8e022cc26f642bb245e59d603ec4441"
+  },
+  "criterion": {
+    "path": "docs/decisoes/DT-B05-CRITERIO-CPU-02.json",
+    "sha256": "280d14b305f831957c25075d772716792d1d895fe1cb593c56f8d233b052680b"
+  },
+  "profile_sha256": "29e629104005cbb06e721fcec65fe34673458f6d7780bb67021b27502e18bd69",
+  "freeze_sha256": "0abf77a2d59e1aa56c6d2853b82d5a7c37044a9f5d742b349870d542f42dc5bb",
+  "contract_sha256": "17929806202c7a4ceb2bb752996eeffac7af9e001943938d4422a01f5216af63",
+  "qualification": {
+    "path": "docs/evidencias/bloco5-2026-10-31/cpu-download-03-preparacao/qualificacao/resultado.json",
+    "sha256": "c2fdca47fefa706f74283358ee43b131f076fb80730bc622fed438e5ef64cd3c"
+  },
+  "identities": {
+    "model_sha256": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+    "template_sha256": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+    "tokenizer_sha256": "712076edf65a35a84188df933912d9e735758fa7bdffb9796287adfadf4263a3",
+    "executor": {
+      "nome": "llama-completion",
+      "versao": "b11960",
+      "sha256": "7119bef261611b26f326f7c4da4dc3fdeb7bb28e2faf1ec392bda7b21215ef52"
+    },
+    "runtime_files": {
+      "LICENSE": "94f29bbed6a22c35b992c5c6ebf0e7c92f13b836b90f36f461c9cf2f0f1d010d",
+      "ggml-rpc-server": "14c986a62dd4d37672bc5789b01717db590a0dbe6c58219a67c722624621128d",
+      "libggml-base.so.0.28.0": "50d78f64f3242d5f5618686f3239ceea0bb5e49310cd7eef8789830d3cb853de",
+      "libggml-cpu-alderlake.so": "322d5d3a295e259dcd25bc7cce07e0e6eb52e8c65882ecc097ee1ca53e7269ba",
+      "libggml-cpu-cannonlake.so": "00dc5daaea3a75211d65bc25c3ab5b990d31227a23aa4ddedbe4ed23fbd79952",
+      "libggml-cpu-cascadelake.so": "b056d58c92acab00e8f925c7b1e8a6c0ed1c2ce6f410d15467fa2303522c5a07",
+      "libggml-cpu-cooperlake.so": "61d466ec6f46c0f3c11a15b10825bb0cd3571c9b7d20fcd00bb7ef95ab0a472f",
+      "libggml-cpu-haswell.so": "5bd145bd299d66c80a766252659b20d25b5300090089aa542862388a3c219aa6",
+      "libggml-cpu-icelake.so": "0cc65ea3db0ec6f3e49c5ff2715d7bfe962b276a1d1296ea9e65cab88f113ab3",
+      "libggml-cpu-ivybridge.so": "d117b3b1f88a3ba443c944e80693e24a88bc22437b33d0e8fe122c78d1f8b3be",
+      "libggml-cpu-piledriver.so": "730f462003fc45d090897843384eb5c3c1005c0714bac6fbc3b2a5472185b149",
+      "libggml-cpu-sandybridge.so": "0b3082bdecaa69de547a2f74f80eeccd47a68808e4838edc55eaee3df71d7e95",
+      "libggml-cpu-sapphirerapids.so": "c1749be8eee6bd1e472e37a6b0d2ec150e32599219e822af6ad4f5311a4fdb4f",
+      "libggml-cpu-skylakex.so": "86bb3c113b59f2a7eb03961172c31812d58b9fe00545469734df01fd97da7cc1",
+      "libggml-cpu-sse42.so": "ec4f4fd7498698a5d7aadcecc847e3b51333e75115a2d0462c0d3f8909aec106",
+      "libggml-cpu-x64.so": "855030d578b9c5a3ed44e5638b5e7c2215d9cc29f95b483648019f2089f39876",
+      "libggml-cpu-zen4.so": "7d917cf14a8203308a9f6c768c1f30fdd5d9d44a7e1f0d43e20abba98b028a82",
+      "libggml-rpc.so": "7e26494b63a389f019da35748822dbc8eb63348cd0ee7cc205641e5513d2da54",
+      "libggml.so.0.28.0": "8643a58bb37af6fb153e2ea98b48efa227855725ee51c05f4ca76b9867956463",
+      "libllama-batched-bench-impl.so": "5d46f2b7f9c63e6e23c47ee606dcbffb25a851cef9b785f9d35337a2fcf5cc8b",
+      "libllama-bench-impl.so": "3c6febc24d2987ebb99a3b2e5adbbbdb45f0ca2b510e0f4e5acfad7b38161494",
+      "libllama-cli-impl.so": "3edb1ebbbfb38c77bb30c2bfeee3af879ff95961fa28a02742156c6927b9cc71",
+      "libllama-common.so.0.8.0": "f3b71066461fda584f09bb6591f3e2b110cae12f8b44190784a345b8d9083386",
+      "libllama-completion-impl.so": "117ad8cb0be526532f545c7c12623b49c4c38d6365188dbdcdb4989ec3fd9173",
+      "libllama-fit-params-impl.so": "60ff3c3a7c6e98eada0a78495a6ee2f06c953e018ac3b3bee22b681ba70511fd",
+      "libllama-perplexity-impl.so": "87ac1151e1e459916de71c8a8f02c7824ed42b67b8be29094ddf83558ae5d6d3",
+      "libllama-quantize-impl.so": "8dd43c1fb15f2e6096237a5cc3aa52694b04978c176f10db28c27d15d6c1adcc",
+      "libllama-server-impl.so": "35c2ab8edf842afa010c0e6433cff5666e79cfa010028f30703fd2f46d950935",
+      "libllama.so.0.8.0": "c463a568b57eb46d73f32eac911ac2562a3f15a59e09603ccc442e52c9690b2a",
+      "libmtmd.so.0.8.0": "0bbf8f803ad7b72da0eef2f188443ca73a5fae709a3629e4849f7a27d38311a8",
+      "llama": "e6b491dda0ea7d85a93a1102c58b4a70b860afcab172a46ff050d5c62ed76aaf",
+      "llama-batched-bench": "3b70e62c5c5cf43c8c436622a845ad4b80c01837d6ba3a10c90e39b219bbd2ab",
+      "llama-bench": "0b54ea2b0f34d6ccdc1cc60b240529143a792962e934c34a8d2427c52e49502b",
+      "llama-cli": "fc4930ab9cefe2efef9a488a54b8d1558094e54187f36248301644bb407ee785",
+      "llama-completion": "7119bef261611b26f326f7c4da4dc3fdeb7bb28e2faf1ec392bda7b21215ef52",
+      "llama-connect": "0f57652dee1df5a5d69dfb11a8775f864345cfb881b2bd34c6ca6c409ce73d25",
+      "llama-fit-params": "b2ad073a0c093706e5dfdfe2c9864d199ed921e49ea0383a7d0013e2ad8a81c8",
+      "llama-gemma3-cli": "053ff1b820407b8a1836b0b05d1ffcc91e56b6531f08d9b00b8dfb97a41de294",
+      "llama-gguf-split": "ccdee1d8de5c04274d3802b27502f518904b93a3579a2dfa8a3d178c63389839",
+      "llama-imatrix": "a7b79f50ffb67e44d5785eb7b5989b4d078ccb385f04e96bf41c6ed7a507d2e6",
+      "llama-llava-cli": "053ff1b820407b8a1836b0b05d1ffcc91e56b6531f08d9b00b8dfb97a41de294",
+      "llama-minicpmv-cli": "053ff1b820407b8a1836b0b05d1ffcc91e56b6531f08d9b00b8dfb97a41de294",
+      "llama-mtmd-cli": "d838e90c56b3acfc4a14d9615010546eaba61394aca3e8a861cffc0971274502",
+      "llama-mtmd-debug": "35408d2c6cafdddfe61d48cb85a4a7f411cb8ceb29119d38e34854513c815c9d",
+      "llama-perplexity": "1c06240ed8594fd377d655aef2dab0865431e3e779c06638474c96b38e6d74a0",
+      "llama-quantize": "270670a319d73485a0b260be3bed71b4e4e4a045a8fddb7b8982c3d7e714c3b4",
+      "llama-qwen2vl-cli": "053ff1b820407b8a1836b0b05d1ffcc91e56b6531f08d9b00b8dfb97a41de294",
+      "llama-results": "1e9a44fe50533d0b8cbf634dc77a73b1996eaa68b4246d5a52f3e83e0671cade",
+      "llama-server": "005c789a278eff50500a864ee4736e7f4a7edf657acfba13e7a5cf19992927fa",
+      "llama-tokenize": "712076edf65a35a84188df933912d9e735758fa7bdffb9796287adfadf4263a3",
+      "llama-tts": "106ccf8da2a83deb1de31162e73ea148a2c576014f43497030b8eba9afaab85f"
+    },
+    "runtime_links": {
+      "libllama.so.0": "libllama.so.0.8.0",
+      "libllama.so": "libllama.so.0",
+      "libllama-common.so.0": "libllama-common.so.0.8.0",
+      "libllama-common.so": "libllama-common.so.0",
+      "libggml.so.0": "libggml.so.0.28.0",
+      "libggml.so": "libggml.so.0",
+      "libggml-base.so.0": "libggml-base.so.0.28.0",
+      "libggml-base.so": "libggml-base.so.0",
+      "libmtmd.so.0": "libmtmd.so.0.8.0",
+      "libmtmd.so": "libmtmd.so.0"
+    }
+  },
+  "future_bindings": {
+    "prepared_dt": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-preparacao/dt-preparada.json",
+    "preparation_review": "coord/outbox/claude/sc-b05-cpu-m1-04-preparacao-revisao.json",
+    "code_review": "coord/outbox/claude/sc-b05-cpu-m1-07-consolidado-revisao.json",
+    "cpu_result": "docs/evidencias/bloco5-2026-10-31/qualificacao2-cpu-resultado.json",
+    "cpu_log": "docs/evidencias/bloco5-2026-10-31/qualificacao2-cpu-log.jsonl"
+  },
+  "primary_result": {
+    "archive_index_sha256": "79adb5f8e5c5017b7d85267d078e49ba8b15a03c3d4b25143e8e7f66991f4c70",
+    "documents": {
+      "docs/evidencias/bloco5-2026-10-31/teste-cpu-log.jsonl": "0255b176c59a70197a8cbab3950f594da0ef700310a3d7efdd9e73f6eb4efa6f",
+      "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json": "574d221bfa7a1b71ac66b501178530b670c45bddd9a0f19dbed16afe5c6139ff",
+      "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-candidata/finalizacao03.json": "f58e17535a41da6cc25ffcabe236c1b0d81baae545ef44a5d6f48e6738937cb3"
+    }
+  },
+  "previous_execution": {
+    "manifest04": {
+      "path": "docs/decisoes/B05-CPU-M1-04-manifesto.json",
+      "sha256": "d87d110c78b538fdf1aeee5d1b069104047c0e4d660d237ab030af15a39f5a67"
+    },
+    "qualification2": {
+      "review_commit": "fd852f1f83fa4a996af0e7fed38b9aee90bfc0e1",
+      "review_path": "coord/outbox/claude/sc-b05-cpu-m1-04-qualificacao2-revisao.json",
+      "result_sha256": "fc11dfdb7c708868bb057024434be10bb33f0d2fa7608dbf2dd21a20c0771eec",
+      "log_sha256": "a986921a00e33a2f326939d28c541098e45e97cf5724abb8c3935fa12fc785eb"
+    },
+    "incident04": {
+      "receipt_path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-04-m1/recibo.json",
+      "receipt_sha256": "e31692633a150fabc3caed5dfa10b439cbae812295b3ea00ff80631a48dfeb14",
+      "state_path": "/var/lib/sc-pesquisa/runtime-cpu/m1/estado-corrida/estado.json",
+      "state_sha256": "db6dcaa777e4050fb46c14da998f96b0b03ef2f1b66150bf987b2589e93ccafb",
+      "attempt": "46040176a62a464385d07fd8767990cb",
+      "first_response_sha256": "8fbac2a4463519997be79dd373bbc3e421b1f804d4c8409beb049aae7d4df638"
+    },
+    "incident05": {
+      "receipt_path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-05-m1/recibo.json",
+      "receipt_sha256": "33d3beec4029509c79e652fbd830f873089c3aa0173b79e5f8301bdc5f83d20f",
+      "state_path": "/var/lib/sc-pesquisa/runtime-cpu/m1-05/estado-corrida/estado.json",
+      "state_sha256": "650da858ae14867eb33def48b77687ad97302c3f0121149f67b5920f8f04f112",
+      "attempt": "2cdd67f6dc7f465d82e2cdb795eb6029"
+    },
+    "incident06": {
+      "receipt_path": "docs/evidencias/bloco5-2026-10-31/cpu-m1-06-m1/recibo.json",
+      "receipt_sha256": "14a749df2647ff3e96a59edf4b0f886b9ec5703efe8a6b248317900809b3ab77",
+      "state_path": "/var/lib/sc-pesquisa/runtime-cpu/m1-06/estado-corrida/estado.json",
+      "state_sha256": "5b9eb4982aeb9fc3aacd6b6ad466c51f1bc259d2876a904de104bf8649d395c4",
+      "used": [
+        "abdd62cd6a5e472ab55518c0c44d450d",
+        "577ad9e188aa4e13a89768779f5ec219",
+        "2ca1d932f643471fb1c230fc71ad96a0"
+      ]
+    }
+  }
+}

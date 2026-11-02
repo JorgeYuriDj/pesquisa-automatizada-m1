@@ -1,0 +1,553 @@
+{
+  "schema": "sc-m1-desfecho/1",
+  "utc": "2026-11-02T08:18:43.279016Z",
+  "act_commit": "62d29453a0eb29a85dd7b6eff966a6570a852d1e",
+  "code_review_commit": "a1ba3fe1ed7a4a5d94cb186a76df9ecf22e79429",
+  "candidate": "729307b54d61d2789d157c84e33d2e107e04ebc4",
+  "promotion_commit": "91b6970a2e03b4742db2afdded54ffe7f5ec1b9c",
+  "manifesto_sha256": "7f858a7282a93eee9ad4d4abe014a6767b8c95a04e267037511cf1e36035b5a8",
+  "command_sha256": "b9a168850631d83163b5cf3e51c2d2f8b13e265ef204db64d7e8694b4c322b42",
+  "launch_mode": "comando_literal_direto_ssh_sem_wrapper_sem_lock_externo",
+  "invocation": {
+    "schema": "sc-m1-invocacao-direta/1",
+    "pre_launch_utc": "2026-11-02T07:44:44.335589+00:00",
+    "act_commit": "62d29453a0eb29a85dd7b6eff966a6570a852d1e",
+    "code_review_commit": "a1ba3fe1ed7a4a5d94cb186a76df9ecf22e79429",
+    "promotion_commit": "91b6970a2e03b4742db2afdded54ffe7f5ec1b9c",
+    "command_path": "docs/decisoes/propostas/B05-CPU-M1-06-comando.txt",
+    "command_sha256": "b9a168850631d83163b5cf3e51c2d2f8b13e265ef204db64d7e8694b4c322b42",
+    "command_bytes": 189,
+    "mode": "comando_literal_como_argumento_remoto_ssh_sem_wrapper_e_sem_lock_externo",
+    "root": "/var/lib/sc-pesquisa/runtime-cpu/m1-06",
+    "root_absent_before_launch": true,
+    "launch_intended_once": true,
+    "retry_allowed": false,
+    "limite": "Recibo previo nao comprova que o comando ja executou; conferir estado e registros nativos."
+  },
+  "completion_observed": {
+    "command_completed": true,
+    "observed_exit_code": 1,
+    "session_id": 66439,
+    "command_invocations": 1,
+    "external_relaunches": 0,
+    "stdout_chunks_complete": false,
+    "limitation": "Captura parcial do canal combinado da invocacao; primeiro recibo de tokenize1 foi observado antes e nao consta neste buffer. Recibos nativos preservados separadamente.",
+    "utc": "2026-11-02T08:18:27.548871Z",
+    "invocation_channel_partial_sha256": "4a64897e5a80afc55e799c9394d420bdaa99e4bbb6c4f65573e8c8d9a3886003",
+    "invocation_channel_partial_bytes": 3872
+  },
+  "terminal": "incidente",
+  "attempts": 3,
+  "used": [
+    "abdd62cd6a5e472ab55518c0c44d450d",
+    "577ad9e188aa4e13a89768779f5ec219",
+    "2ca1d932f643471fb1c230fc71ad96a0"
+  ],
+  "active": null,
+  "refusals": 2,
+  "execution_error_counter": 0,
+  "state_sha256": "5b9eb4982aeb9fc3aacd6b6ad466c51f1bc259d2876a904de104bf8649d395c4",
+  "state_native_elapsed_seconds": 1801.921115972,
+  "seal_exists": false,
+  "seal_check": null,
+  "tokenizations_released": 6,
+  "generations_released": 6,
+  "python_executions_released": 3,
+  "operations": [
+    {
+      "path": "estado-corrida/tentativa-2ca1d932f643471fb1c230fc71ad96a0/turno-1/completion_m1_t1/resultado.json",
+      "receipt_sha256": "b298fea4497331c94fa7e038e0930c2a85cfc0f420d85456bfdb5e1d44ab29d7",
+      "utc": "2026-11-02T08:10:57.834146Z",
+      "operation": "completion_m1_t1",
+      "unit": "sc-cpu-prep-9249af25387b463490e1013c2831c211.service",
+      "success": true,
+      "released_R": true,
+      "exit_code": 0,
+      "duration_seconds": 173.66266237897798,
+      "runtime_operational_go": false,
+      "repeat_allowed": false,
+      "error_present": false,
+      "error_sha256": null,
+      "unit_after": {
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "Result": "success",
+        "ExecMainCode": "0",
+        "ExecMainStatus": "0",
+        "MainPID": "0"
+      },
+      "unit_after_sha256": "0ddf03cbed55c0b47063b865cc5b86812be3a840fb2c4bef265090cd6f2f3a67",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-2ca1d932f643471fb1c230fc71ad96a0/turno-1/tokenize_m1_t1/resultado.json",
+      "receipt_sha256": "e00632b0239424b1c7cc42b0837e4422a1153d2131a091bf94e272e74d244b77",
+      "utc": "2026-11-02T08:07:30.712310Z",
+      "operation": "tokenize_m1_t1",
+      "unit": "sc-cpu-prep-16c7a97fa173404687e8f3649a93e789.service",
+      "success": true,
+      "released_R": true,
+      "exit_code": 0,
+      "duration_seconds": 8.157035136944614,
+      "runtime_operational_go": false,
+      "repeat_allowed": false,
+      "error_present": false,
+      "error_sha256": null,
+      "unit_after": {
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "Result": "success",
+        "ExecMainCode": "0",
+        "ExecMainStatus": "0",
+        "MainPID": "0"
+      },
+      "unit_after_sha256": "0ddf03cbed55c0b47063b865cc5b86812be3a840fb2c4bef265090cd6f2f3a67",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-2ca1d932f643471fb1c230fc71ad96a0/turno-2/completion_m1_t2/resultado.json",
+      "receipt_sha256": "5ff796e8b70e4f35a88a7b65440a08cc80392c5e00636195ea6547be9a0cdb92",
+      "utc": "2026-11-02T08:15:03.752643Z",
+      "operation": "completion_m1_t2",
+      "unit": "sc-cpu-prep-b41512cd9413412b81ae7622e3634197.service",
+      "success": false,
+      "released_R": true,
+      "exit_code": 0,
+      "duration_seconds": 97.62918170797639,
+      "runtime_operational_go": false,
+      "repeat_allowed": false,
+      "error_present": true,
+      "error_sha256": "8a25723173a7c9ed62601121c3ab2975bdc66f1aab947aee26f62334d451fef9",
+      "unit_after": {
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "Result": "success",
+        "ExecMainCode": "0",
+        "ExecMainStatus": "0",
+        "MainPID": "0"
+      },
+      "unit_after_sha256": "0ddf03cbed55c0b47063b865cc5b86812be3a840fb2c4bef265090cd6f2f3a67",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-2ca1d932f643471fb1c230fc71ad96a0/turno-2/tokenize_m1_t2/resultado.json",
+      "receipt_sha256": "fe99283d88a27aa24da6d9038e0f401a99ff3f0893c4fa28f42eaf9282400dfd",
+      "utc": "2026-11-02T08:12:26.806495Z",
+      "operation": "tokenize_m1_t2",
+      "unit": "sc-cpu-prep-2aae1e17c913466fb109e1a4eaec625c.service",
+      "success": true,
+      "released_R": true,
+      "exit_code": 0,
+      "duration_seconds": 8.17147188493982,
+      "runtime_operational_go": false,
+      "repeat_allowed": false,
+      "error_present": false,
+      "error_sha256": null,
+      "unit_after": {
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "Result": "success",
+        "ExecMainCode": "0",
+        "ExecMainStatus": "0",
+        "MainPID": "0"
+      },
+      "unit_after_sha256": "0ddf03cbed55c0b47063b865cc5b86812be3a840fb2c4bef265090cd6f2f3a67",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-577ad9e188aa4e13a89768779f5ec219/turno-1/completion_m1_t1/resultado.json",
+      "receipt_sha256": "58cfdb5374c564cfa24520429a83caf3daffbba6198130c1e7064a91ca1b896b",
+      "utc": "2026-11-02T08:00:14.254539Z",
+      "operation": "completion_m1_t1",
+      "unit": "sc-cpu-prep-12b09c597eea47e993759e8a16bc3464.service",
+      "success": true,
+      "released_R": true,
+      "exit_code": 0,
+      "duration_seconds": 185.71771532902494,
+      "runtime_operational_go": false,
+      "repeat_allowed": false,
+      "error_present": false,
+      "error_sha256": null,
+      "unit_after": {
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "Result": "success",
+        "ExecMainCode": "0",
+        "ExecMainStatus": "0",
+        "MainPID": "0"
+      },
+      "unit_after_sha256": "0ddf03cbed55c0b47063b865cc5b86812be3a840fb2c4bef265090cd6f2f3a67",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-577ad9e188aa4e13a89768779f5ec219/turno-1/tokenize_m1_t1/resultado.json",
+      "receipt_sha256": "d1e99259372659eb0851c15768480df7b1cf431fc3607f8a8b5ca3f9f30e86a2",
+      "utc": "2026-11-02T07:56:34.157769Z",
+      "operation": "tokenize_m1_t1",
+      "unit": "sc-cpu-prep-aeb193cec85e4816b8d0b0f6205d4cc2.service",
+      "success": true,
+      "released_R": true,
+      "exit_code": 0,
+      "duration_seconds": 8.17617666895967,
+      "runtime_operational_go": false,
+      "repeat_allowed": false,
+      "error_present": false,
+      "error_sha256": null,
+      "unit_after": {
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "Result": "success",
+        "ExecMainCode": "0",
+        "ExecMainStatus": "0",
+        "MainPID": "0"
+      },
+      "unit_after_sha256": "0ddf03cbed55c0b47063b865cc5b86812be3a840fb2c4bef265090cd6f2f3a67",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-577ad9e188aa4e13a89768779f5ec219/turno-2/completion_m1_t2/resultado.json",
+      "receipt_sha256": "8c9577548d10a2ad8cb7d5dd08a136c63d235c1b95a174272b68ce832d8d4fcf",
+      "utc": "2026-11-02T08:06:33.530083Z",
+      "operation": "completion_m1_t2",
+      "unit": "sc-cpu-prep-8a7ecc903bd84da985c3cd3cf12e1ee1.service",
+      "success": true,
+      "released_R": true,
+      "exit_code": 0,
+      "duration_seconds": 226.80519446195103,
+      "runtime_operational_go": false,
+      "repeat_allowed": false,
+      "error_present": false,
+      "error_sha256": null,
+      "unit_after": {
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "Result": "success",
+        "ExecMainCode": "0",
+        "ExecMainStatus": "0",
+        "MainPID": "0"
+      },
+      "unit_after_sha256": "0ddf03cbed55c0b47063b865cc5b86812be3a840fb2c4bef265090cd6f2f3a67",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-577ad9e188aa4e13a89768779f5ec219/turno-2/tokenize_m1_t2/resultado.json",
+      "receipt_sha256": "eb3907bbacdf42e86fc4a9286c1647d0bd772d807fc755709cbe535433de5149",
+      "utc": "2026-11-02T08:01:46.559473Z",
+      "operation": "tokenize_m1_t2",
+      "unit": "sc-cpu-prep-42efdb325b7949e5ac741a8ce6779fd4.service",
+      "success": true,
+      "released_R": true,
+      "exit_code": 0,
+      "duration_seconds": 8.206940134987235,
+      "runtime_operational_go": false,
+      "repeat_allowed": false,
+      "error_present": false,
+      "error_sha256": null,
+      "unit_after": {
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "Result": "success",
+        "ExecMainCode": "0",
+        "ExecMainStatus": "0",
+        "MainPID": "0"
+      },
+      "unit_after_sha256": "0ddf03cbed55c0b47063b865cc5b86812be3a840fb2c4bef265090cd6f2f3a67",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-abdd62cd6a5e472ab55518c0c44d450d/turno-1/completion_m1_t1/resultado.json",
+      "receipt_sha256": "1cd967de41e9029d59dc7f9c9763c61af7021bf72b605a1ea5b685eeabe67216",
+      "utc": "2026-11-02T07:49:08.904863Z",
+      "operation": "completion_m1_t1",
+      "unit": "sc-cpu-prep-10e4cf27513b42b3a7b8d7a2ce1f06d1.service",
+      "success": true,
+      "released_R": true,
+      "exit_code": 0,
+      "duration_seconds": 181.3131139499601,
+      "runtime_operational_go": false,
+      "repeat_allowed": false,
+      "error_present": false,
+      "error_sha256": null,
+      "unit_after": {
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "Result": "success",
+        "ExecMainCode": "0",
+        "ExecMainStatus": "0",
+        "MainPID": "0"
+      },
+      "unit_after_sha256": "0ddf03cbed55c0b47063b865cc5b86812be3a840fb2c4bef265090cd6f2f3a67",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-abdd62cd6a5e472ab55518c0c44d450d/turno-1/tokenize_m1_t1/resultado.json",
+      "receipt_sha256": "64c2d3dfab38f10f1586d8edec7ae4b5ddcbe3a1102c558821a52aefc22f3a3b",
+      "utc": "2026-11-02T07:45:33.144334Z",
+      "operation": "tokenize_m1_t1",
+      "unit": "sc-cpu-prep-b208723456624de88c2cd40dd4e56bfb.service",
+      "success": true,
+      "released_R": true,
+      "exit_code": 0,
+      "duration_seconds": 8.164683732902631,
+      "runtime_operational_go": false,
+      "repeat_allowed": false,
+      "error_present": false,
+      "error_sha256": null,
+      "unit_after": {
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "Result": "success",
+        "ExecMainCode": "0",
+        "ExecMainStatus": "0",
+        "MainPID": "0"
+      },
+      "unit_after_sha256": "0ddf03cbed55c0b47063b865cc5b86812be3a840fb2c4bef265090cd6f2f3a67",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-abdd62cd6a5e472ab55518c0c44d450d/turno-2/completion_m1_t2/resultado.json",
+      "receipt_sha256": "d373bcebdb1652743b6e61f85f406d0c5c54c58b18e9bf2a6a5342eaa6deef49",
+      "utc": "2026-11-02T07:55:35.473724Z",
+      "operation": "completion_m1_t2",
+      "unit": "sc-cpu-prep-4428df90abdd4b51a09ab1e7f5ed4118.service",
+      "success": true,
+      "released_R": true,
+      "exit_code": 0,
+      "duration_seconds": 231.3542909109965,
+      "runtime_operational_go": false,
+      "repeat_allowed": false,
+      "error_present": false,
+      "error_sha256": null,
+      "unit_after": {
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "Result": "success",
+        "ExecMainCode": "0",
+        "ExecMainStatus": "0",
+        "MainPID": "0"
+      },
+      "unit_after_sha256": "0ddf03cbed55c0b47063b865cc5b86812be3a840fb2c4bef265090cd6f2f3a67",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-abdd62cd6a5e472ab55518c0c44d450d/turno-2/tokenize_m1_t2/resultado.json",
+      "receipt_sha256": "a0e97e558cc0d00ba11be7aa1c44190a204ae987a0c12f30431611432b1602bc",
+      "utc": "2026-11-02T07:50:42.877221Z",
+      "operation": "tokenize_m1_t2",
+      "unit": "sc-cpu-prep-311419eddd5c474d9d693b4bce3b3072.service",
+      "success": true,
+      "released_R": true,
+      "exit_code": 0,
+      "duration_seconds": 8.379015036975034,
+      "runtime_operational_go": false,
+      "repeat_allowed": false,
+      "error_present": false,
+      "error_sha256": null,
+      "unit_after": {
+        "ActiveState": "inactive",
+        "SubState": "dead",
+        "Result": "success",
+        "ExecMainCode": "0",
+        "ExecMainStatus": "0",
+        "MainPID": "0"
+      },
+      "unit_after_sha256": "0ddf03cbed55c0b47063b865cc5b86812be3a840fb2c4bef265090cd6f2f3a67",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    }
+  ],
+  "python_captures": [
+    {
+      "path": "estado-corrida/tentativa-2ca1d932f643471fb1c230fc71ad96a0/execucao/recibo.json",
+      "receipt_sha256": "ac80b37db9ae8003458f6de2f5682d644948c65c6998fd51e8bef43cac952b40",
+      "schema": "sc-m1-exec-capture/1",
+      "attempt": "2ca1d932f643471fb1c230fc71ad96a0",
+      "code_sha256": "7ec0f9c159c7816be2304fa99b9b8eb24d2ed83b605edd39de4a5a22b2ff1d15",
+      "stdout_sha256": "ad9cbaf7aac6e8266593f2ee4dd46b41c199ad8917350b56947df8b475f351b6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "returncode": 0,
+      "timeout": false,
+      "complete": true,
+      "duration_ns": 2006259877,
+      "unit": "sc-m1-python-2ca1d932f643471fb1c230fc71ad96a0.service",
+      "released": true,
+      "failure_present": false,
+      "collector_sha256": "1989c9a277db121235ecf5b2755725ca2a758fa74ea2eeb0180112df7c612d1c",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-577ad9e188aa4e13a89768779f5ec219/execucao/recibo.json",
+      "receipt_sha256": "cae97d352642698b5d675b12ab1b8358492fa04a68834e99f16feceb63177bbc",
+      "schema": "sc-m1-exec-capture/1",
+      "attempt": "577ad9e188aa4e13a89768779f5ec219",
+      "code_sha256": "7ec0f9c159c7816be2304fa99b9b8eb24d2ed83b605edd39de4a5a22b2ff1d15",
+      "stdout_sha256": "ad9cbaf7aac6e8266593f2ee4dd46b41c199ad8917350b56947df8b475f351b6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "returncode": 0,
+      "timeout": false,
+      "complete": true,
+      "duration_ns": 2041072567,
+      "unit": "sc-m1-python-577ad9e188aa4e13a89768779f5ec219.service",
+      "released": true,
+      "failure_present": false,
+      "collector_sha256": "d56a319ae1383597ec423806bcddabe425d896b4c2dc7fdc29d724270bfd8fec",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    },
+    {
+      "path": "estado-corrida/tentativa-abdd62cd6a5e472ab55518c0c44d450d/execucao/recibo.json",
+      "receipt_sha256": "98f6df52e9468310e11a5998c1c2b046040f4d33b4bb30cfd358afd916b18b67",
+      "schema": "sc-m1-exec-capture/1",
+      "attempt": "abdd62cd6a5e472ab55518c0c44d450d",
+      "code_sha256": "7ec0f9c159c7816be2304fa99b9b8eb24d2ed83b605edd39de4a5a22b2ff1d15",
+      "stdout_sha256": "ad9cbaf7aac6e8266593f2ee4dd46b41c199ad8917350b56947df8b475f351b6",
+      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "returncode": 0,
+      "timeout": false,
+      "complete": true,
+      "duration_ns": 2111814926,
+      "unit": "sc-m1-python-abdd62cd6a5e472ab55518c0c44d450d.service",
+      "released": true,
+      "failure_present": false,
+      "collector_sha256": "7e9b93c5bd019d10be31a350e5b900185c77f04e788baa1a8e8c74b146b21349",
+      "unit_current": {
+        "MainPID": "0",
+        "ActiveState": "inactive",
+        "SubState": "dead"
+      }
+    }
+  ],
+  "informational_turn1_comparison": [
+    {
+      "path": "estado-corrida/tentativa-2ca1d932f643471fb1c230fc71ad96a0/comparacao-hash-turno1.json",
+      "sha256": "3ac75f3755fc3c976a8f2c5d36f8a7bc8b00813dbe8fc9953b7ac3b6a7fa44f8",
+      "representation": "decoded_json_bytes_without_eog_suffix",
+      "previous_sha256": "8fbac2a4463519997be79dd373bbc3e421b1f804d4c8409beb049aae7d4df638",
+      "current_sha256": "8fbac2a4463519997be79dd373bbc3e421b1f804d4c8409beb049aae7d4df638",
+      "equal": true,
+      "blocks_acceptance": false
+    },
+    {
+      "path": "estado-corrida/tentativa-577ad9e188aa4e13a89768779f5ec219/comparacao-hash-turno1.json",
+      "sha256": "3ac75f3755fc3c976a8f2c5d36f8a7bc8b00813dbe8fc9953b7ac3b6a7fa44f8",
+      "representation": "decoded_json_bytes_without_eog_suffix",
+      "previous_sha256": "8fbac2a4463519997be79dd373bbc3e421b1f804d4c8409beb049aae7d4df638",
+      "current_sha256": "8fbac2a4463519997be79dd373bbc3e421b1f804d4c8409beb049aae7d4df638",
+      "equal": true,
+      "blocks_acceptance": false
+    },
+    {
+      "path": "estado-corrida/tentativa-abdd62cd6a5e472ab55518c0c44d450d/comparacao-hash-turno1.json",
+      "sha256": "3ac75f3755fc3c976a8f2c5d36f8a7bc8b00813dbe8fc9953b7ac3b6a7fa44f8",
+      "representation": "decoded_json_bytes_without_eog_suffix",
+      "previous_sha256": "8fbac2a4463519997be79dd373bbc3e421b1f804d4c8409beb049aae7d4df638",
+      "current_sha256": "8fbac2a4463519997be79dd373bbc3e421b1f804d4c8409beb049aae7d4df638",
+      "equal": true,
+      "blocks_acceptance": false
+    }
+  ],
+  "opaque_index_sha256": "14d8c0116c2e60ae35d53ad1e083851e53f8d9ca4c5d02def8d8641a9f06a88a",
+  "opaque_archive": "<arquivo-privado-de-evidencias>",
+  "opaque_files": 278,
+  "opaque_bytes": 1025695,
+  "raw_saved_verified": true,
+  "operational_go": false,
+  "retry_allowed": false,
+  "closing_reviews_required": [
+    "Claude",
+    "Antigravity"
+  ],
+  "status": "incidente_sem_aceite_pendente_revisao",
+  "tokenizations_successful": 6,
+  "generations_successful": 5,
+  "model_operation_failures": 1,
+  "acceptance_not_inferred_from_exit_code": true,
+  "incidente": {
+    "path": "estado-corrida/tentativa-2ca1d932f643471fb1c230fc71ad96a0/incidente.json",
+    "sha256": "381f54d8be0677b9bb2cb5a4d80c02ca6ba0eb1ab25a9bea70c301ce56d83311",
+    "utc": "2026-11-02T08:15:03.777684Z",
+    "error": "ValueError:native_capture_failed",
+    "retry_allowed": false
+  },
+  "last_operation_failure": {
+    "path": "estado-corrida/tentativa-2ca1d932f643471fb1c230fc71ad96a0/turno-2/completion_m1_t2/resultado.json",
+    "receipt_sha256": "5ff796e8b70e4f35a88a7b65440a08cc80392c5e00636195ea6547be9a0cdb92",
+    "utc": "2026-11-02T08:15:03.752643Z",
+    "operation": "completion_m1_t2",
+    "unit": "sc-cpu-prep-b41512cd9413412b81ae7622e3634197.service",
+    "released_R": true,
+    "success": false,
+    "exit_code": 0,
+    "unit_after": {
+      "ActiveState": "inactive",
+      "SubState": "dead",
+      "Result": "success",
+      "ExecMainCode": "0",
+      "ExecMainStatus": "0",
+      "MainPID": "0"
+    },
+    "unit_current": {
+      "MainPID": "0",
+      "ActiveState": "inactive",
+      "SubState": "dead"
+    },
+    "error": "supervisor_timeout; deadline_exceeded"
+  },
+  "execution_error_counter_scope": "Erros de execucao Python; zero nao significa ausencia de incidente operacional.",
+  "refusal_reasons_not_examined": true,
+  "timing_note": "Intervalo monotonic nativo de 1801,921 segundos inclui encerramento e registro apos o limite, sem extensao autorizada dos 30 minutos."
+}

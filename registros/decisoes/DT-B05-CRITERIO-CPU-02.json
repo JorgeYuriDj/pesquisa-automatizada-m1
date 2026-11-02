@@ -1,0 +1,72 @@
+{
+  "id": "DT-B05-CRITERIO-CPU-02",
+  "item": "B05-02",
+  "classe": "qualificacao_2_pos_reprovacao_pre_registrada_antes_da_execucao",
+  "estado": "candidata para revisao; nenhuma inferencia Q2 realizada",
+  "opcoes": [
+    "Uma rodada sintetica com criterio congelado",
+    "Executar antes do criterio ou ajustar limiar apos resultados: recusado"
+  ],
+  "criterios": [
+    {
+      "origem": "blocos/fichas/B05-02.json",
+      "criterio": "Tres tarefas inventadas, tres repeticoes, um limiar, sem alegacao estatistica."
+    }
+  ],
+  "decisao": "Qualificacao 2: aderencia a regras e codigo simples ditado. Tres tarefas vezes tres repeticoes; igualdade exata do campo resposta; limiar1,0. Desenhada apos primeira qualificacao REPROVADA, que permanece resultado primario. Sem retry.",
+  "origin_commit": "003d35f1aac59096066c42226f954c57cbb737b1",
+  "evento": "2026-11-02T02:16:06.528714Z",
+  "criterio": {
+    "repeticoes_por_tarefa": 3,
+    "tarefas_fora_do_dominio_alvo": true,
+    "uma_rodada_sem_alegacao_estatistica": true,
+    "executor_dt": "docs/decisoes/DT-B05-EXECUTOR-01.json",
+    "artefato_sha256": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+    "tarefas": [
+      {
+        "id": "T1",
+        "enunciado": "A palavra fornecida e lima. Converta suas quatro letras para maiusculas ASCII e coloque o resultado entre um colchete de abertura e um colchete de fechamento, sem espacos. Responda somente com um objeto JSON no formato {\"schema\":\"sc-modelo-saida/1\",\"tarefa\":\"T1\",\"resposta\":\"...\"}. O valor de resposta deve ser texto. Nao inclua explicacao nem cerca Markdown.",
+        "aceite": {
+          "resposta_exata": "[LIMA]"
+        }
+      },
+      {
+        "id": "T2",
+        "enunciado": "Copie literalmente esta linha de codigo Python para o campo resposta:\nprint(\"azul\")\nPreserve aspas duplas, parenteses e letras. Nao execute o codigo, nao substitua o codigo por sua saida e nao inclua quebra de linha ou espacos adicionais. Responda somente com um objeto JSON no formato {\"schema\":\"sc-modelo-saida/1\",\"tarefa\":\"T2\",\"resposta\":\"...\"}. O valor de resposta deve ser texto. Nao inclua explicacao nem cerca Markdown.",
+        "aceite": {
+          "resposta_exata": "print(\"azul\")"
+        }
+      },
+      {
+        "id": "T3",
+        "enunciado": "Copie literalmente estas cinco linhas de codigo Python para o campo resposta, na ordem apresentada:\npino = 17\nfita = 23\ncaixa = 41\nprint(pino)\nprint(fita, caixa)\nSepare as linhas com exatamente um LF e nao acrescente LF depois da quinta. Preserve nomes, numeros, espacos e pontuacao. Nao execute o codigo nem substitua linhas por resultados. Represente as quebras dentro da string JSON com \\n. Responda somente com um objeto JSON no formato {\"schema\":\"sc-modelo-saida/1\",\"tarefa\":\"T3\",\"resposta\":\"...\"}. O valor de resposta deve ser texto. Nao inclua explicacao nem cerca Markdown.",
+        "aceite": {
+          "resposta_exata": "pino = 17\nfita = 23\ncaixa = 41\nprint(pino)\nprint(fita, caixa)"
+        }
+      }
+    ],
+    "limiar": {
+      "metrica": "fracao_saidas_aceitas",
+      "valor": 1.0,
+      "regra": ">="
+    },
+    "teto_relogio_s": 900,
+    "parametros_geracao": {
+      "seed": 1,
+      "temperatura": 0.0,
+      "max_tokens": 128
+    }
+  },
+  "revisor": {
+    "sessao_distinta": null,
+    "veredito": "nao_revisada"
+  },
+  "precondicoes": [
+    "Ato04 assinado e manifesto/fontes conferidos",
+    "Preparacao04 revisada com cinco hashes exatos",
+    "Uma unica rodada Q2, nove chamadas, max_tokens128 e limite900segundos",
+    "M1 somente com Q2 9/9 e demais gates; resultado primario01 permanece REPROVADO"
+  ],
+  "execucao_realizada": false,
+  "limite": "Criterio02 criado antes de qualquer Q2. Sem derivacao de M1/referencia; valores17,23,41 inventados. max_tokens128 preservado; tokens das respostas nao medidos nesta preparacao documental e nenhum aumento autorizado."
+}

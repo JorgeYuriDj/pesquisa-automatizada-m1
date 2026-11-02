@@ -1,0 +1,266 @@
+{
+  "id": "DT-B05-EXECUTOR-01",
+  "item": "B05-01",
+  "classe": "proposta_tecnica_sem_liberacao",
+  "estado": "candidata CL15/16 implementada; fontes e testes sinteticos nao qualificam runtime/GGUF/prompts reais",
+  "objetivo_afetado": "Verificar saida sintetica do modelo antes de qualquer uso pelo condutor.",
+  "opcoes": [
+    "Validador local estrito com falha fechada",
+    "Aceitar saida flexivel com correcao posterior: recusada pelo requisito B05-01"
+  ],
+  "criterios": [
+    {
+      "origem": "blocos/fichas/B05-01.json",
+      "criterio": "Identidade fixada e JSON fora do esquema recusado sem reparo."
+    }
+  ],
+  "consequencias": [
+    {
+      "cegamento": "Tarefas inventadas fora do dominio cientifico; nenhum acesso a gabarito."
+    }
+  ],
+  "evidencia": [
+    {
+      "path": "docs/evidencias/bloco1-2026-10-29/model-lmstudio-community.json",
+      "sha256": "f62873d179fa264519c6e4cd29bb6ec7bf42a3e06b58baf04c1618779990d068"
+    }
+  ],
+  "decisao": "Implementar somente o validador candidato; manter conferencia de identidade bloqueada enquanto o runtime e os bytes reais nao forem qualificados.",
+  "gatilho_reavaliacao": "Runtime versionado/hash verificado, capacidade e isolamento aceitos e revisao externa aplicavel.",
+  "origin_commit": "97fcfe66677d2995ef287eab786dead6554d9294",
+  "evento": "2026-11-01T02:37:32.330247+00:00",
+  "executor": {
+    "modulo": "controle/executor_modelo.py",
+    "nome": null,
+    "versao": null,
+    "sha256": null,
+    "origem": null,
+    "runtime_proposto": {
+      "repo": "ggml-org/llama.cpp",
+      "semantic_tag": "v0.8.0",
+      "semantic_tag_object": "6ebec9ad2a90f270f0db4a8669c18511d2e82995",
+      "semantic_tag_signature_verified": false,
+      "semantic_tag_verification_reason": "unsigned",
+      "nightly_tag_text": "b11960\n",
+      "tag": "b11960",
+      "commit": "8642541b255bfb5dc39cd351a178be09013a55d6",
+      "published_at": "2026-10-28T12:45:39Z",
+      "asset": {
+        "id": 684979901,
+        "name": "llama-b11960-bin-ubuntu-x64.tar.gz",
+        "bytes": 22686210,
+        "sha256_publicado": "31cc3a6bc638ac6c48dc4b1b74888f1eaadf3d14227c1e5f67daf9a49541d97a",
+        "sha256_medido": null,
+        "url": "https://github.com/ggml-org/llama.cpp/releases/download/b11960/llama-b11960-bin-ubuntu-x64.tar.gz"
+      },
+      "binary_sha256": null,
+      "archive_downloaded": false,
+      "binary_executed": false
+    },
+    "perfil_proposto": {
+      "schema": "sc-perfil-cpu-candidato/1",
+      "estado": "candidato_prompt_prerenderizado_eog_condicionado_a_contagem_pinada",
+      "backend": "cpu",
+      "runtime_tag": "b11960",
+      "binary_name_proposto": "llama-completion",
+      "model_sha256": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+      "chat_template": {
+        "fonte": "tokenizer.chat_template do GGUF local apos download autorizado e hash integral conferido",
+        "sha256_esperado_por_metadata_api": "a4aee8afcf2e0711942cf848899be66016f8d14a889ff9ede07bca099c28f715",
+        "bytes_metadata": 7756,
+        "conferido_no_arquivo_local": false,
+        "jinja": false,
+        "reasoning": "off",
+        "kwargs_efetivos_exigidos": {
+          "enable_thinking": false
+        },
+        "reasoning_format": "none",
+        "skip_chat_parsing": true,
+        "template_externo": false,
+        "renderizacao": "Jinja2 3.0.3, ImmutableSandboxedEnvironment/StrictUndefined; globais padrao preservados, loopcontrols, trim/lstrip true, keep_trailing_newline false, autoescape false; sem equivalencia geral HF/minja alegada",
+        "frontend_no_jinja": true,
+        "frontend_no_escape": true,
+        "frontend_no_conversation": true,
+        "prompt_arquivo": "bytes renderizados mais um LF de transporte; --file remove exatamente esse LF",
+        "tokenizacao": "Tokenize sem override recebe bytes efetivos exatos; IDs coletados devem reconstruir o prompt pelo vocabulario GGUF e nao acrescentar BOS/EOS. Completion usa override BOS/EOS=false e arquivo com LF de transporte. Toda chamada exige uma linha prompt eval com contagem igual ao P pinado, sem ajuste."
+      },
+      "geracao": {
+        "seed": 1,
+        "temperatura": 0,
+        "max_tokens": 128,
+        "top_k": 1,
+        "top_p": 1.0,
+        "min_p": 0.0,
+        "typical_p": 1.0,
+        "repeat_penalty": 1.0,
+        "repeat_last_n": 64,
+        "presence_penalty": 0.0,
+        "frequency_penalty": 0.0,
+        "mirostat": 0,
+        "dry_multiplier": 0.0,
+        "xtc_probability": 0.0,
+        "samplers": "temperature",
+        "n_ctx": 4096,
+        "threads": 3,
+        "threads_batch": 3,
+        "batch_size": 512,
+        "ubatch_size": 512,
+        "gpu_layers": 0,
+        "flash_attn": "off"
+      },
+      "saida": {
+        "gramatica": null,
+        "json_schema_na_geracao": null,
+        "reparo_json": false,
+        "remover_think_ou_cercas": false,
+        "captura": "stdout/stderr integrais. Uma linha prompt eval time de common_perf_print estrita e contagem igual a P>1 em toda chamada. Ausencia/duplicacao/divergencia reprova e preserva bytes. EOG ainda exige sufixo unico,exit0,samplers T,0<T-P<max_tokens e margem P+max_tokens<=n_ctx-4. Sem reparo.",
+        "output_boundary_verified": false
+      },
+      "protocolo": {
+        "processo_por_chamada": true,
+        "single_turn": true,
+        "warmup": false,
+        "servidor": false,
+        "rede_na_inferencia": false,
+        "memoria_entre_chamadas": false,
+        "context_shift": false,
+        "prompt_cache": false
+      },
+      "recursos_propostos": {
+        "uid": 991,
+        "gid": 991,
+        "CPUQuota": "300%",
+        "MemoryHigh": "7G",
+        "MemoryMax": "8G",
+        "MemorySwapMax": 0,
+        "Nice": 10,
+        "threads_max": 3,
+        "cgroup_efetivo_conferido": false,
+        "isolamento_efetivo_conferido": false
+      },
+      "qualificacao": {
+        "tarefas": 3,
+        "repeticoes": 3,
+        "chamadas": 9,
+        "retry": false,
+        "limiar": 1.0,
+        "tempo_total_max_s": 900,
+        "carregamento_incluido_no_tempo": true,
+        "chamada_extra_de_fumaca": false
+      },
+      "limites": [
+        "Conferidor e invocador vinculam perfil/preparacao/prompts/argv/captura; identidade e preparacao reais continuam sem pins independentes e bloqueadas.",
+        "Qualificacao B05-02 cobre respostas finais sinteticas, nao prova ciclo codigo-execucao-JSON de M1.",
+        "Nao alegar equivalencia CPU/CUDA ou cobertura B07.",
+        "Preservar128tokens e900s; nao elevar limites nem adaptar apos observar respostas.",
+        "EOS ausente no GGUF somente sob politica fechada de IDs sem especiais, reconstrução integral e contagem por chamada; BOS explicito falso e EOG continuam obrigatorios. Nao ha default presumido.",
+        "prompt eval mede avaliacoes em lotes>1 e tem minimo1: P=1 bloqueado; divergencia por batching/cache nao ajusta P. Processo novo,sem cache,warmup,interacao ou context shift. Igualdade de contagem e gate adicional, nao prova isolada da identidade dos IDs.",
+        "Capturas nativas e preparacao por pin independente/revisao Claude permanecem obrigatorias. Helper de vinculo nao cria o pin operacional."
+      ],
+      "bos_eos": {
+        "completion_override_kv": "tokenizer.ggml.add_bos_token=bool:false,tokenizer.ggml.add_eos_token=bool:false",
+        "tokenizer_override_kv": null,
+        "tokenizer_proof": "ids_sem_bos_eos_reconstroem_bytes",
+        "completion_prompt_count": "prompt_eval_unico_igual_P"
+      }
+    },
+    "perfil_sha256": "29e629104005cbb06e721fcec65fe34673458f6d7780bb67021b27502e18bd69",
+    "perfil_vinculado_pelo_verificador": true,
+    "origem_metadados": {
+      "path": "docs/evidencias/bloco5-2026-10-31/cpu-planejamento/fontes-runtime.json",
+      "sha256": "ce26daf496dfc63b7b31fa2a8a842a63916642d2cfe0dd55d519f8e29dc2c41d"
+    },
+    "bloqueios_frontend": {
+      "path": "docs/evidencias/bloco5-2026-10-31/cpu-planejamento/fronteira-estatica.json",
+      "sha256": "35916d04c693c303ed14d318aa94d0c8ab28efdb38397ad0d65d7ec05ee41fec",
+      "ids": [
+        "CX-CPU-STDOUT-01",
+        "CX-CPU-TEMPLATE-01"
+      ],
+      "resolvidos": false,
+      "estado_atual": "Correcoes candidatas CL15/16; qualificacao real e parecer independente pendentes; registro anterior preservado."
+    },
+    "perfil_m1_proposto": {
+      "schema": "sc-perfil-m1-proposta/1",
+      "estado": "proposta_sem_autorizacao_sem_execucao",
+      "base_perfil_cpu_sha256": "29e629104005cbb06e721fcec65fe34673458f6d7780bb67021b27502e18bd69",
+      "diferencas_parametros_geracao": {
+        "codigo": {
+          "max_tokens": 512,
+          "n_ctx": 8192
+        },
+        "json_final": {
+          "max_tokens": 2048,
+          "n_ctx": 8192
+        }
+      },
+      "demais_parametros_geracao": "identicos ao perfil CPU referenciado; frontend bloqueado tambem se aplica a M1",
+      "entrada": {
+        "arquivos_permitidos": 5,
+        "bytes_utf8": 10937,
+        "contrato_bytes_utf8": 5451,
+        "congelamento_path": "docs/evidencias/bloco5-2026-10-31/m1-congelamento.json",
+        "congelamento_sha256": "0abf77a2d59e1aa56c6d2853b82d5a7c37044a9f5d742b349870d542f42dc5bb"
+      },
+      "justificativa": "Reserva candidata separada para codigo curto e objeto JSON completo com procedencias, codigo e stdout; nao e contagem real de tokens nem prova de capacidade. B05-02 inalterado.",
+      "precondicoes": [
+        "Tokenizar deterministicamente prompt efetivo com template e todo historico permitido antes de inferir; entrada+reserva_saida<=n_ctx",
+        "Se nao couber, bloquear sem truncar, reajustar ou aumentar limites na corrida",
+        "Memoria dentro dos limites vigentes e nenhuma interferencia em recurso externo",
+        "V6 exige captura independente de codigo e stdout; processo novo por chamada nao dispensa encadear o historico permitido",
+        "Revisao e autorizacao aplicaveis antes de usar novos valores"
+      ],
+      "tokenizacao_medida": false,
+      "memoria_qualificada": false,
+      "execucao_autorizada": false
+    },
+    "perfil_m1_sha256": "805c432a9e97dadfc6d505c9f563dcbc8a125cf515e5b5ad2eb0f2043e932d62",
+    "preparacao_cpu": null,
+    "preparacao_cpu_sha256": null
+  },
+  "artefato": {
+    "repositorio": "lmstudio-community/Qwen3.5-9B-GGUF",
+    "revisao": "1379f25c6b505a3fc737bd7818cb09389cf807c1",
+    "nome": "Qwen3.5-9B-Q4_K_M.gguf",
+    "sha256": "cd76ec205963b3b33350093e6904d9de16c4e666fd104e1f632d25c7f15f2a13",
+    "bytes": 5627044256,
+    "formato": "GGUF",
+    "quantizacao_bits": 4,
+    "licenca": "apache-2.0",
+    "proveniencia": "Metadados historicos de 29/10; hash esperado, nao medido sobre pesos locais.",
+    "bytes_verificados": false,
+    "download_realizado_nesta_sessao": false
+  },
+  "saida": {
+    "fora_do_esquema": "falha_fechada",
+    "reparo_json": false,
+    "reparo_textual": false,
+    "esquema": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": [
+        "schema",
+        "tarefa",
+        "resposta"
+      ],
+      "properties": {
+        "schema": {
+          "const": "sc-modelo-saida/1"
+        },
+        "tarefa": {
+          "type": "string",
+          "pattern": "^[A-Za-z0-9][A-Za-z0-9_-]{0,63}$"
+        },
+        "resposta": {
+          "type": "string",
+          "maxLength": 4096
+        }
+      }
+    }
+  },
+  "revisor": {
+    "sessao_distinta": null,
+    "veredito": "b995ef8 aprovou V6 e arquivo exato do tokenizador; delta EOS itens1-5 aguarda revisao final."
+  },
+  "execucao_autorizada_por_esta_dt": false
+}

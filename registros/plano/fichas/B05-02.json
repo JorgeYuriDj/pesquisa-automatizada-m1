@@ -1,0 +1,383 @@
+{
+ "schema": "sc-ficha/1",
+ "item": "B05-02",
+ "criterio_sha256": "4e9e06e1eda5b7a82f9ed886a301da9fee2d57712ce30f5750ea566cb3084ae3",
+ "tipo": "julgamento",
+ "verificacoes": [
+  {
+   "id": "V1",
+   "tipo": "json",
+   "path": "docs/decisoes/DT-B05-CRITERIO-CPU-01.json",
+   "campos": {
+    "id": "DT-B05-CRITERIO-CPU-01",
+    "item": "B05-02",
+    "criterio.repeticoes_por_tarefa": 3,
+    "criterio.tarefas_fora_do_dominio_alvo": true,
+    "criterio.uma_rodada_sem_alegacao_estatistica": true,
+    "criterio.executor_dt": "docs/decisoes/DT-B05-EXECUTOR-01.json"
+   },
+   "existem": [
+    "classe",
+    "opcoes.1",
+    "criterios.0.origem",
+    "decisao",
+    "origin_commit",
+    "evento",
+    "criterio.artefato_sha256",
+    "criterio.tarefas.0.id",
+    "criterio.tarefas.0.enunciado",
+    "criterio.tarefas.0.aceite",
+    "criterio.tarefas.1.id",
+    "criterio.tarefas.1.enunciado",
+    "criterio.tarefas.1.aceite",
+    "criterio.tarefas.2.id",
+    "criterio.tarefas.2.enunciado",
+    "criterio.tarefas.2.aceite",
+    "criterio.limiar.metrica",
+    "criterio.limiar.valor",
+    "criterio.limiar.regra",
+    "criterio.teto_relogio_s",
+    "criterio.parametros_geracao.seed",
+    "criterio.parametros_geracao.temperatura",
+    "criterio.parametros_geracao.max_tokens"
+   ],
+   "tipos": {
+    "criterio.tarefas": "list",
+    "criterio.limiar": "dict",
+    "criterio.limiar.valor": "float",
+    "criterio.teto_relogio_s": "int",
+    "criterio.artefato_sha256": "str",
+    "criterio.parametros_geracao.max_tokens": "int"
+   },
+   "minimos": {
+    "criterio.teto_relogio_s": 1,
+    "criterio.parametros_geracao.max_tokens": 1
+   }
+  },
+  {
+   "id": "V2",
+   "tipo": "json",
+   "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json",
+   "campos": {
+    "schema": "sc-teste-cpu/2",
+    "item": "B05-02",
+    "criterio.path": "docs/decisoes/DT-B05-CRITERIO-CPU-01.json",
+    "log.path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-log.jsonl",
+    "repeticoes_por_tarefa": 3,
+    "uma_rodada_sem_alegacao_estatistica": true
+   },
+   "existem": [
+    "criterio.sha256",
+    "log.sha256",
+    "artefato_sha256",
+    "executor.nome",
+    "executor.versao",
+    "maquina.cpu",
+    "maquina.ram_total_bytes",
+    "iniciado_em_utc",
+    "terminado_em_utc",
+    "tarefas.0.id",
+    "tarefas.0.repeticoes.0.saida_sha256",
+    "tarefas.0.repeticoes.0.aceita",
+    "tarefas.0.repeticoes.0.duracao_s",
+    "tarefas.0.repeticoes.2.saida_sha256",
+    "tarefas.1.repeticoes.2.saida_sha256",
+    "tarefas.2.repeticoes.2.saida_sha256",
+    "limiar.metrica",
+    "limiar.valor",
+    "valor_observado",
+    "veredito"
+   ],
+   "tipos": {
+    "tarefas": "list",
+    "criterio.sha256": "str",
+    "log.sha256": "str",
+    "artefato_sha256": "str",
+    "limiar.valor": "float",
+    "valor_observado": "float",
+    "veredito": "str",
+    "tarefas.0.repeticoes.0.aceita": "bool",
+    "tarefas.0.repeticoes.0.duracao_s": "float",
+    "maquina.ram_total_bytes": "int"
+   }
+  },
+  {
+   "id": "V3",
+   "tipo": "arquivo",
+   "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-log.jsonl",
+   "min_bytes": 2000,
+   "contem": [
+    "\"saida_sha256\"",
+    "\"criterio_sha256\""
+   ]
+  },
+  {
+   "id": "V4",
+   "tipo": "comando",
+   "argv": [
+    "python3",
+    "controle/conferencia_b05.py",
+    "conferir-cpu01"
+   ],
+   "codigo": 0,
+   "stdout_contem": [
+    "TESTE_CPU_CONFERIDO"
+   ],
+   "timeout": 120,
+   "repeticoes": 2,
+   "saidas_identicas": true
+  },
+  {
+   "id": "V5",
+   "tipo": "ordem_git",
+   "antes": "docs/decisoes/DT-B05-CRITERIO-CPU-01.json",
+   "depois": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json"
+  },
+  {
+   "id": "V6",
+   "tipo": "ordem_git",
+   "antes": "docs/decisoes/DT-B05-EXECUTOR-01.json",
+   "depois": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json"
+  },
+  {
+   "id": "V7",
+   "tipo": "recibo_testes",
+   "suite": "controle/test_executor_modelo.py",
+   "min_executados": 12,
+   "testes": [
+    "controle.test_executor_modelo.TesteCpu.test_conferir_recusa_criterio_com_hash_diferente",
+    "controle.test_executor_modelo.TesteCpu.test_conferir_exige_3_a_5_tarefas_com_3_repeticoes_cada",
+    "controle.test_executor_modelo.TesteCpu.test_conferir_exige_um_unico_limiar_igual_ao_do_criterio",
+    "controle.test_executor_modelo.TesteCpu.test_veredito_segue_a_regra_do_limiar",
+    "controle.test_executor_modelo.TesteCpu.test_toda_saida_do_resultado_consta_no_log"
+   ]
+  },
+  {
+   "id": "V8",
+   "tipo": "comando",
+   "argv": [
+    "git",
+    "log",
+    "--diff-filter=DM",
+    "--format=tformat:RESULTADO_ALTERADO_APOS_CRIACAO",
+    "--",
+    "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json"
+   ],
+   "codigo": 0,
+   "stdout_nao_contem": [
+    "RESULTADO_ALTERADO_APOS_CRIACAO"
+   ],
+   "timeout": 60
+  },
+  {
+   "id": "V9",
+   "tipo": "parecer_contem",
+   "revisores": [
+    "claude"
+   ],
+   "linha": "B05-FICHAS-01 B05-02: confirmei por sessao distinta a assinatura nativa do parecer 515be0157f3c337dde36f44e623051a6f01540be SHA256 667acfd83a94f9c8f878ecfbb811a6c4cfd4e825e67f8a52125055bcca747dc4 e seu vinculo exato manifesto 1a991fb36e80eedb2d66c4b326c5b470a5210d6f2c55ea951fa6f04c443d3bbe, base f0e619dff820c5d61340a8131507cda9e8e022cc26f642bb245e59d603ec4441, criterio 5d53ae937e4e7ca197fecd0fc756ff5bbd64e17fa3db8373086abaaf2791a9d1, DT preparada d652bab4251dce76ae452ac9a70aec9fa180a182ea38468727dd1cb547f781a4, preparacao CPU cdcb1065030dda2c14ccc0223b6f0605c3a0271f53045190a1bba58eca986bee; confirmacao das DTs nos pareceres historicos 166418e, 9210619 e 2d4f43d conferida; criterios e resultado primario REPROVADO preservados: conforme."
+  }
+ ],
+ "negativos": [
+  {
+   "id": "N1",
+   "alvo": "V1",
+   "mutacao": {
+    "tipo": "apagar",
+    "path": "docs/decisoes/DT-B05-CRITERIO-CPU-01.json"
+   }
+  },
+  {
+   "id": "N2",
+   "alvo": "V1",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/decisoes/DT-B05-CRITERIO-CPU-01.json",
+    "campo": "criterio.repeticoes_por_tarefa",
+    "valor": 2
+   }
+  },
+  {
+   "id": "N3",
+   "alvo": "V2",
+   "mutacao": {
+    "tipo": "apagar",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json"
+   }
+  },
+  {
+   "id": "N4",
+   "alvo": "V2",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json",
+    "campo": "repeticoes_por_tarefa",
+    "valor": 2
+   }
+  },
+  {
+   "id": "N5",
+   "alvo": "V3",
+   "mutacao": {
+    "tipo": "truncar",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-log.jsonl"
+   }
+  },
+  {
+   "id": "N6",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json",
+    "campo": "criterio.sha256",
+    "valor": "0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "id": "N7",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "alterar_byte",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-log.jsonl"
+   }
+  },
+  {
+   "id": "N8",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "alterar_byte",
+    "path": "docs/decisoes/DT-B05-CRITERIO-CPU-01.json"
+   }
+  },
+  {
+   "id": "N9",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json",
+    "campo": "veredito",
+    "valor": "aprovadissimo"
+   }
+  },
+  {
+   "id": "N10",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json",
+    "campo": "tarefas",
+    "valor": []
+   }
+  },
+  {
+   "id": "N11",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json",
+    "campo": "artefato_sha256",
+    "valor": "0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "id": "N12",
+   "alvo": "V5",
+   "mutacao": {
+    "tipo": "recommitar",
+    "path": "docs/decisoes/DT-B05-CRITERIO-CPU-01.json"
+   }
+  },
+  {
+   "id": "N13",
+   "alvo": "V6",
+   "mutacao": {
+    "tipo": "recommitar",
+    "path": "docs/decisoes/DT-B05-EXECUTOR-01.json"
+   }
+  },
+  {
+   "id": "N14",
+   "alvo": "V7",
+   "mutacao": {
+    "tipo": "alterar_byte",
+    "path": "controle/test_executor_modelo.py"
+   }
+  },
+  {
+   "id": "N15",
+   "alvo": "V8",
+   "mutacao": {
+    "tipo": "recommitar",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json"
+   }
+  },
+  {
+   "id": "N16",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json",
+    "campo": "limiar.metrica",
+    "valor": "metrica_inventada"
+   }
+  },
+  {
+   "id": "N17",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json",
+    "campo": "tarefas.0.repeticoes.0.saida_sha256",
+    "valor": "0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  },
+  {
+   "id": "N18",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json",
+    "campo": "executor.versao",
+    "valor": "0.0.0-falso"
+   }
+  },
+  {
+   "id": "N19",
+   "alvo": "V4",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-resultado.json",
+    "campo": "tarefas.0.repeticoes",
+    "valor": []
+   }
+  },
+  {
+   "id": "N20",
+   "alvo": "V3",
+   "mutacao": {
+    "tipo": "substituir",
+    "path": "docs/evidencias/bloco5-2026-10-31/teste-cpu-log.jsonl",
+    "de": "\"criterio_sha256\"",
+    "para": "\"criterio\""
+   }
+  },
+  {
+   "id": "N21",
+   "alvo": "V9",
+   "mutacao": {
+    "tipo": "apagar",
+    "path": "blocos/B05/revisoes/claude.json"
+   }
+  },
+  {
+   "id": "N22",
+   "alvo": "V9",
+   "mutacao": {
+    "tipo": "json_definir",
+    "path": "blocos/B05/revisoes/claude.json",
+    "campo": "parecer.sha256",
+    "valor": "0000000000000000000000000000000000000000000000000000000000000000"
+   }
+  }
+ ]
+}

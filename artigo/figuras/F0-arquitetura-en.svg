@@ -1,0 +1,80 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="800" viewBox="0 0 1200 800" role="img" aria-labelledby="title desc"><title id="title">System architecture</title><desc id="desc">Roles, flows, controls and blinding boundary; no addresses, keys or code.</desc>
+<rect x="0" y="0" width="1200" height="800" fill="#ffffff"/>
+<text x="40" y="25" font-family="DejaVu Sans, sans-serif" font-size="17" font-weight="700" fill="#006b64" text-anchor="start" dominant-baseline="text-before-edge">Fig. 1</text>
+<text x="40" y="55" font-family="DejaVu Sans, sans-serif" font-size="28" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">System architecture and blinding boundary</text>
+<text x="40" y="100" font-family="DejaVu Sans, sans-serif" font-size="18" font-weight="400" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">Roles, flows, and controls; no addresses, keys, or code.</text>
+<text x="40" y="140" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">HUMAN</text>
+<text x="435" y="140" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">AI AGENTS</text>
+<text x="830" y="140" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="700" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">CONTROL, EXECUTION, AND RECORDS</text>
+<rect x="40" y="175" width="330" height="185" fill="#fdf3ea" stroke="#9b4b16"/>
+<text x="56" y="189" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Owner (human)</text>
+<text x="56" y="225" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Decides and signs acts</text>
+<text x="56" y="250" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Guardian: selected the step</text>
+<text x="56" y="275" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Separates permitted and</text>
+<text x="56" y="300" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">restricted material</text>
+<text x="56" y="325" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Relays messages</text>
+<rect x="40" y="470" width="330" height="170" fill="#fbeeee" stroke="#a32530" stroke-width="2" stroke-dasharray="8 6"/>
+<text x="56" y="484" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Custody (owner only)</text>
+<text x="56" y="520" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Published reference</text>
+<text x="56" y="545" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Comparison after the seal</text>
+<text x="56" y="570" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Appendix written by owner</text>
+<text x="56" y="595" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Nothing returns to agents</text>
+<line x1="205" y1="360" x2="205" y2="468" stroke="#42586a" stroke-width="3"/>
+<line x1="197" y1="459" x2="205" y2="468" stroke="#42586a" stroke-width="3"/>
+<line x1="213" y1="459" x2="205" y2="468" stroke="#42586a" stroke-width="3"/>
+<text x="216" y="402" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">keeps the reference</text>
+<line x1="402" y1="455" x2="402" y2="655" stroke="#a32530" stroke-width="3" stroke-dasharray="8 6"/>
+<text x="40" y="652" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="700" fill="#a32530" text-anchor="start" dominant-baseline="text-before-edge">blinding boundary</text>
+<rect x="435" y="225" width="330" height="120" fill="#f1f5f8" stroke="#d7e0e7"/>
+<text x="451" y="239" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Codex — building</text>
+<text x="451" y="275" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Code, tests, and drafts</text>
+<text x="451" y="300" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Launches the fixed command</text>
+<rect x="435" y="370" width="330" height="120" fill="#f1f5f8" stroke="#d7e0e7"/>
+<text x="451" y="384" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Claude — review</text>
+<text x="451" y="420" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Signed reviews (SSH)</text>
+<text x="451" y="445" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Coordinates the sequence</text>
+<rect x="435" y="515" width="330" height="120" fill="#f1f5f8" stroke="#d7e0e7"/>
+<text x="451" y="529" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Antigravity — review</text>
+<text x="451" y="565" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Independent closure review,</text>
+<text x="451" y="590" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">in packets</text>
+<rect x="830" y="175" width="330" height="190" fill="#eaf4f3" stroke="#006b64"/>
+<text x="846" y="189" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Automatic judge + CI</text>
+<text x="846" y="225" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Plan frozen by hash</text>
+<text x="846" y="250" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Executable acceptance cards</text>
+<text x="846" y="275" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Run: owner act, Claude review,</text>
+<text x="846" y="300" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">and pinned bytes</text>
+<text x="846" y="325" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Close block: + 2 reviews</text>
+<rect x="830" y="400" width="330" height="150" fill="#eaf4f3" stroke="#006b64"/>
+<text x="846" y="414" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Isolated run (VPS, CPU)</text>
+<text x="846" y="450" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Qwen3.5-9B Q4_K_M, llama.cpp</text>
+<text x="846" y="475" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Offline; unprivileged</text>
+<text x="846" y="500" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Python up to 10 s; V1–V7</text>
+<rect x="830" y="590" width="330" height="110" fill="#eaf4f3" stroke="#006b64"/>
+<text x="846" y="604" font-family="DejaVu Sans, sans-serif" font-size="19" font-weight="700" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Records (private Git)</text>
+<text x="846" y="640" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Signed commits and hashes</text>
+<text x="846" y="665" font-family="DejaVu Sans, sans-serif" font-size="16" font-weight="400" fill="#142a3b" text-anchor="start" dominant-baseline="text-before-edge">Receipts for each operation</text>
+<line x1="370" y1="195" x2="828" y2="195" stroke="#42586a" stroke-width="3"/>
+<line x1="819" y1="187" x2="828" y2="195" stroke="#42586a" stroke-width="3"/>
+<line x1="819" y1="203" x2="828" y2="195" stroke="#42586a" stroke-width="3"/>
+<text x="600" y="170" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#42586a" text-anchor="middle" dominant-baseline="text-before-edge">signed acts</text>
+<line x1="765" y1="285" x2="828" y2="285" stroke="#42586a" stroke-width="3"/>
+<line x1="819" y1="277" x2="828" y2="285" stroke="#42586a" stroke-width="3"/>
+<line x1="819" y1="293" x2="828" y2="285" stroke="#42586a" stroke-width="3"/>
+<line x1="765" y1="430" x2="797" y2="430" stroke="#42586a" stroke-width="3"/>
+<line x1="765" y1="575" x2="797" y2="575" stroke="#42586a" stroke-width="3"/>
+<line x1="797" y1="575" x2="797" y2="320" stroke="#42586a" stroke-width="3"/>
+<line x1="797" y1="320" x2="828" y2="320" stroke="#42586a" stroke-width="3"/>
+<line x1="819" y1="312" x2="828" y2="320" stroke="#42586a" stroke-width="3"/>
+<line x1="819" y1="328" x2="828" y2="320" stroke="#42586a" stroke-width="3"/>
+<line x1="995" y1="365" x2="995" y2="398" stroke="#42586a" stroke-width="3"/>
+<line x1="987" y1="389" x2="995" y2="398" stroke="#42586a" stroke-width="3"/>
+<line x1="1003" y1="389" x2="995" y2="398" stroke="#42586a" stroke-width="3"/>
+<text x="1006" y="371" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">releases</text>
+<line x1="995" y1="550" x2="995" y2="588" stroke="#42586a" stroke-width="3"/>
+<line x1="987" y1="579" x2="995" y2="588" stroke="#42586a" stroke-width="3"/>
+<line x1="1003" y1="579" x2="995" y2="588" stroke="#42586a" stroke-width="3"/>
+<text x="1006" y="558" font-family="DejaVu Sans, sans-serif" font-size="14" font-weight="400" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">receipts</text>
+<text x="40" y="722" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">Arrows: acts, candidates, and reviews enter the judge; the judge releases execution; execution produces receipts.</text>
+<text x="40" y="747" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">A run requires an owner act and a Claude review; the two external reviews close the block afterwards.</text>
+<text x="40" y="772" font-family="DejaVu Sans, sans-serif" font-size="15" font-weight="400" fill="#42586a" text-anchor="start" dominant-baseline="text-before-edge">Requests and reviews are kept in versioned files; the owner relays messages between the conversations.</text>
+</svg>
