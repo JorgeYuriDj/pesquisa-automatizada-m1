@@ -10,7 +10,7 @@
 
 Este repositório é a cópia pública e organizada de um estudo de caso de pesquisa automatizada. Agentes de IA construíram, executaram e revisaram uma reprodução de uma etapa computacional publicada: o ganho científico de energia (Q_sci) de um disparo do National Ignition Facility. Um juiz automático e atos assinados pelo dono controlaram cada passo. A resposta publicada ficou sob custódia humana, fora do alcance dos agentes. O modelo avaliado foi o Qwen3.5-9B, quantizado em 4 bits e executado em CPU, sem rede.
 
-**Situação:** preprint, versão 1, de 2 de novembro de 2026, lido e aprovado pelo autor. A versão de registro é a inglesa. O texto não foi revisado por pares nem submetido a revista. O depósito no Zenodo, com DOI, é feito pelo autor; o DOI será acrescentado aqui.
+**Situação:** preprint, versão 1, publicado pelo autor no Zenodo em 2 de novembro de 2026, DOI [10.5281/zenodo.23891979](https://doi.org/10.5281/zenodo.23891979). Lido e aprovado pelo autor. A versão de registro é a inglesa. O texto não foi revisado por pares nem submetido a revista.
 
 ### Resultado em uma frase
 
@@ -53,7 +53,7 @@ CITATION.cff        dados de citação em formato legível por máquina
 - **A resposta publicada e a comparação.** O valor de referência está no trabalho de origem (Wurzel e Hsu, 2025, referência [3] do artigo). A comparação feita pelo guardião e o anexo do guardião são publicados pelo autor, separadamente.
 - **A saída numérica do modelo.** Fica com a comparação, no anexo do guardião.
 - **Registros brutos, transcrições e mensagens internas de coordenação.** Ficam no repositório de trabalho privado.
-- **Credenciais, endereços de servidores e dados pessoais.** Esta cópia foi varrida antes da publicação em busca de chaves, tokens, senhas, e-mails pessoais, IPs, nomes de máquina e caminhos pessoais.
+- **Credenciais, endereços de servidores e dados pessoais.** Esta cópia foi varrida antes da publicação em busca de chaves, tokens, senhas, e-mails pessoais, IPs, nomes de máquina e caminhos pessoais. A única exceção são os dados de autoria (nome, ORCID, afiliação e e-mail de contato), publicados por decisão do autor.
 - **Pesos do modelo e binários.** São identificados por versão e hash no suplemento; não são redistribuídos.
 
 ### Cegamento
@@ -70,7 +70,9 @@ Nenhum gabarito, diferença, veredito ou dica volta aos agentes que executaram, 
 
 **Autor:** Jorge Yuri dos Santos Correa, pesquisador independente, Brasília, DF, Brasil. ORCID [0009-0006-7378-4098](https://orcid.org/0009-0006-7378-4098). Contato: crvenergia@gmail.com.
 
-**Como citar (enquanto o DOI não existir):** Correa, J. Y. S. (2026). *Blinded, contract-verified reproduction of a published computational step by a local 9B language model: architecture and case study* (Preprint, versão 1). https://github.com/JorgeYuriDj/pesquisa-automatizada-m1
+**Como citar:** Correa, J. Y. S. (2026). *Blinded, contract-verified reproduction of a published computational step by a local 9B language model: architecture and case study* (Preprint, versão 1). Zenodo. https://doi.org/10.5281/zenodo.23891979
+
+O DOI [10.5281/zenodo.23891978](https://doi.org/10.5281/zenodo.23891978) aponta sempre para a versão mais recente.
 
 O trabalho original reproduzido é de Wurzel e Hsu (2025), DOI [10.1063/5.0297357](https://doi.org/10.1063/5.0297357); o mérito científico dele é dos autores originais, que não participaram deste estudo nem o endossam.
 
@@ -80,7 +82,7 @@ O trabalho original reproduzido é de Wurzel e Hsu (2025), DOI [10.1063/5.029735
 
 This repository is the public, curated copy of an automated research case study. AI agents built, ran, and reviewed the reproduction of one published computational step: the scientific energy gain (Q_sci) of a National Ignition Facility shot. An automatic judge and acts signed by the owner controlled each step. The published answer stayed in human custody, out of the agents' reach. The evaluated model was Qwen3.5-9B, quantized to 4 bits and run on CPU without network access.
 
-**Status:** preprint, version 1, of 2 November 2026, read and approved by the author. English is the version of record. The text has not been peer reviewed or submitted to a journal. The Zenodo deposit, with a DOI, is made by the author; the DOI will be added here.
+**Status:** preprint, version 1, published by the author on Zenodo on 2 November 2026, DOI [10.5281/zenodo.23891979](https://doi.org/10.5281/zenodo.23891979). Read and approved by the author. English is the version of record. The text has not been peer reviewed or submitted to a journal.
 
 ### Result in one sentence
 
@@ -101,7 +103,7 @@ See the tree above: `artigo/` (article in PT and EN, supplement, figures, render
 - **The published answer and the comparison.** The reference value is in the source work (Wurzel and Hsu, 2025, reference [3] of the article). The guardian's comparison and appendix are published by the author separately.
 - **The model's numerical output.** It goes with the comparison, in the guardian's appendix.
 - **Raw logs, transcripts, and internal coordination messages.** They remain in the private working repository.
-- **Credentials, server addresses, and personal data.** This copy was scanned before publication for keys, tokens, passwords, personal e-mail addresses, IPs, machine names, and personal paths.
+- **Credentials, server addresses, and personal data.** This copy was scanned before publication for keys, tokens, passwords, personal e-mail addresses, IPs, machine names, and personal paths. The only exception is the authorship data (name, ORCID, affiliation, and contact e-mail), published at the author's decision.
 - **Model weights and binaries.** They are identified by version and hash in the supplement; they are not redistributed.
 
 ### Blinding
@@ -118,6 +120,8 @@ No reference answer, difference, verdict, or hint returns to the agents that exe
 
 **Author:** Jorge Yuri dos Santos Correa, independent researcher, Brasília, DF, Brazil. ORCID [0009-0006-7378-4098](https://orcid.org/0009-0006-7378-4098). Contact: crvenergia@gmail.com.
 
-**How to cite (until a DOI exists):** Correa, J. Y. S. (2026). *Blinded, contract-verified reproduction of a published computational step by a local 9B language model: architecture and case study* (Preprint, version 1). https://github.com/JorgeYuriDj/pesquisa-automatizada-m1
+**How to cite:** Correa, J. Y. S. (2026). *Blinded, contract-verified reproduction of a published computational step by a local 9B language model: architecture and case study* (Preprint, version 1). Zenodo. https://doi.org/10.5281/zenodo.23891979
+
+The DOI [10.5281/zenodo.23891978](https://doi.org/10.5281/zenodo.23891978) always resolves to the latest version.
 
 The reproduced original work is by Wurzel and Hsu (2025), DOI [10.1063/5.0297357](https://doi.org/10.1063/5.0297357); its scientific merit belongs to the original authors, who did not participate in or endorse this study.

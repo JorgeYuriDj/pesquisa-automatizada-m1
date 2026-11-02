@@ -10,6 +10,13 @@ authors:
 version: "1"
 date-released: "2026-11-02"
 repository-code: "https://github.com/JorgeYuriDj/pesquisa-automatizada-m1"
+identifiers:
+  - type: doi
+    value: "10.5281/zenodo.23891979"
+    description: "Zenodo record of the preprint, version 1"
+  - type: doi
+    value: "10.5281/zenodo.23891978"
+    description: "Zenodo concept DOI (always the latest version)"
 license:
   - CC-BY-4.0
   - Apache-2.0
@@ -34,7 +41,11 @@ preferred-citation:
   languages:
     - en
     - pt
-  url: "https://github.com/JorgeYuriDj/pesquisa-automatizada-m1"
+  doi: "10.5281/zenodo.23891979"
+  publisher:
+    name: "Zenodo"
+  url: "https://doi.org/10.5281/zenodo.23891979"
+  repository-code: "https://github.com/JorgeYuriDj/pesquisa-automatizada-m1"
 references:
   - type: article
     title: "Continuing progress toward fusion energy breakeven and gain as measured against the Lawson criteria"

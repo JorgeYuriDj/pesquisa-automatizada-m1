@@ -7,7 +7,7 @@
   {
    "arquivo": "CITATION.cff",
    "origem": "escrito para esta copia publica",
-   "sha256": "ee03b41b96ab716067ae10d8a11e53551279fa0fb22961d86babae5f2de7382a"
+   "sha256": "d3d24bf5b338633dfbc700c4cc0d77f2f04403262951f435cdb818e267e65021"
   },
   {
    "arquivo": "LICENSE",
@@ -21,7 +21,7 @@
   },
   {
    "arquivo": "README.md",
-   "sha256": "d074eb82cac527c3a93b680240e01ccea71626a1861451aa15720b72af27d56c",
+   "sha256": "8a6478b7ed9f9cf00d3f105463a8fd0c5fb474058f3838768735abd80fc057b9",
    "origem": "escrito para esta copia publica"
   },
   {
@@ -574,6 +574,6 @@
    "motivo": "CX-PUB-M1-02: log bruto da qualificacao 1 (saidas e stdout/stderr codificados) excluido da copia publica; fica no repositorio privado; o hash continua em registros/corridas/qualificacao1/resultado.json"
   }
  ],
- "revisao": "v2: correcoes da varredura independente CX-PUB-M1-01, -02 e -03 (identificador do executor, caminhos da instalacao privada, log bruto e mencao a outra frente privada). v3: preprint versao 1 (autor, declaracoes, aprovacao do autor, suplemento em PDF e CITATION.cff), a partir do commit privado f7bc9b1.",
- "atualizado_em_utc": "2026-11-02T17:50:00Z"
+ "revisao": "v2: correcoes da varredura independente CX-PUB-M1-01, -02 e -03 (identificador do executor, caminhos da instalacao privada, log bruto e mencao a outra frente privada). v3: preprint versao 1 (autor, declaracoes, aprovacao do autor, suplemento em PDF e CITATION.cff), a partir do commit privado f7bc9b1. v4: DOI do Zenodo no README e no CITATION.cff; README explicita a excecao dos dados de autoria (CX-PREPRINT-V1-OBS-01).",
+ "atualizado_em_utc": "2026-11-02T18:27:00Z"
 }
