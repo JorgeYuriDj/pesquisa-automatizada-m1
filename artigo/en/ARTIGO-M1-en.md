@@ -2,9 +2,9 @@
 
 **Título em português:** Reprodução cega e verificada por contrato de uma etapa computacional publicada por um modelo de linguagem local de 9B: arquitetura e estudo de caso
 
-**Review version — 2 November 2026.** Derived from blinded body version 2, frozen before any comparison with the reference. The architecture description, the task description, the glossary, and the related work were added later, without changing outcomes, numbers, or limits. This is not publication, block closure, or scientific validation.
+**Preprint, version 1 — 2 November 2026.** Derived from blinded body version 2, frozen before any comparison with the reference. The architecture description, the task description, the glossary, and the related work were added later, without changing outcomes, numbers, or limits. It has not been peer reviewed and does not constitute scientific validation.
 
-**Sole human author:** [OWNER TO COMPLETE: publication name]. **ORCID:** [OWNER TO COMPLETE: identifier or state none]. **Affiliation:** [OWNER TO COMPLETE: institution or independent researcher]. **Correspondence:** [OWNER TO COMPLETE: public contact address].
+**Sole human author:** Jorge Yuri dos Santos Correa. **ORCID:** [0009-0006-7378-4098](https://orcid.org/0009-0006-7378-4098). **Affiliation:** Independent researcher, Brasília, DF, Brazil. **Correspondence:** crvenergia@gmail.com.
 
 ## Abstract
 
@@ -233,25 +233,27 @@ The primary run ended inconclusively, without an accepted output in 30 min, afte
 
 ## Authorship, contributions, and AI assistance
 
-Authorship and responsibility for the submitted version will be exclusively human. AI systems are not authors [7,8]. This text, including its translation, was prepared with AI assistance; final human review and approval remain pending.
+Authorship and responsibility are exclusively human: the author takes full responsibility for the content. AI systems are not authors [7,8]. This text, including its translation, was prepared with AI assistance; the author read and approved the final version.
 
 Codex assisted with programming, evidence organization, drafting of the earlier versions, and translation; Claude assisted with review, coordination, and the editorial restructuring of this version. Antigravity is part of the review route, but its formal closure review of block 5 was not completed in this edition. These roles are neither specialist human review nor authorship attribution. Qwen3.5-9B was the experimental object, distinct from these assistants. Exact assistant model and version identification by session should accompany the tool record before submission; a product name does not establish a version.
 
-**CRediT [9] — proposed roles for human author confirmation:** conceptualization (scope decisions); methodology (design decisions and authorizations); project administration; supervision; data curation (restricted custody); writing — review and editing, only after actual final review. Programming, formal analysis, or human validation are not automatically attributed to the author. [OWNER TO COMPLETE: confirm actual contributions and approve responsibility for the final text]. CRediT describes contributions; it does not alone determine authorship eligibility.
+**CRediT [9], confirmed by the author:** conceptualization (scope decisions); methodology (design decisions and authorizations); project administration; supervision; data curation (restricted custody); writing — review and editing. Programming, formal analysis, or human validation are not attributed to the author. CRediT describes contributions; it does not alone determine authorship eligibility.
 
 ## Declarations
 
-**Funding:** [OWNER TO COMPLETE: identify funders, grants, and material support, or confirm no external funding].
+**Credit to the original work:** the reproduced step belongs to the public work of Samuel E. Wurzel and Scott C. Hsu [3]. The scientific merit of the original method, data, and results is theirs. The original authors did not participate in, review, or endorse this study.
 
-**Competing interests:** [OWNER TO COMPLETE: disclose relevant financial, institutional, or personal interests, or confirm none]. The combined owner and guardian roles are already disclosed in the methods.
+**Funding:** no external funding. All costs were paid by the author.
 
-**Ethics:** the described procedure involves no human participants or animals and collects no participant personal data. Human custody of the project is not an intervention on participants. No ethics committee approval that did not occur is claimed. [OWNER TO COMPLETE: confirm applicable institutional or editorial requirements and report any actual approval or exemption].
+**Competing interests:** the author declares no competing interests. The combined owner and guardian roles are already disclosed in the methods.
 
-**Data and code:** the architecture and records are preserved privately; Section 3 describes the architecture at a functional level, without addresses, keys, or code. The supplement identifies artifacts, versions, and hashes; identification does not imply public access or reproduction by third parties. [OWNER TO COMPLETE: define which permitted code and records will be published, which remain restricted, access conditions, and a permanent address]. The restricted reference, comparison, and appendix will not be provided to agents. The permitted sealed package delivered to the owner is distinct from the blinded body.
+**Ethics:** the described procedure involves no human participants or animals and collects no participant personal data. Human custody of the project is not an intervention on participants. Ethics committee approval is not applicable: no institution required it, and no approval or exemption that did not occur is claimed.
 
-**Licence:** CC BY 4.0 is suggested for original text whose release the owner authorizes [12]. [OWNER TO COMPLETE: confirm the licence and covered materials]. Software, weights, and third-party materials retain their own licences; this suggestion does not relicense REFORMS, whose article is CC BY-NC 4.0. The supplementary checklist contains short paraphrased descriptors and an original applicability assessment, without reproducing the entire source table.
+**Data and code:** the permitted material is published at <https://github.com/JorgeYuriDj/pesquisa-automatizada-m1>: reference code for the M1 run and the judge core, the permitted step package, the plan and acceptance cards, technical decisions, copies of the owner's acts (some redacted, without the standing of signed bytes), run receipts, figures, the supplement, and the PDFs, with SHA-256 fingerprints and a provenance record. Raw logs, transcripts, and internal coordination remain in a private repository and can be made available upon justified request to the author, provided that blinding, security, and third-party rights are preserved. Section 3 describes the architecture at a functional level, without addresses, keys, or code. The supplement identifies artifacts, versions, and hashes; model weights and binaries are not redistributed, and this identification does not amount to reproduction by third parties. The restricted reference, comparison, and appendix will not be provided to agents. The permitted sealed package delivered to the owner is distinct from the blinded body.
 
-**Versions and translation:** this English version and the Portuguese version contain the same scientific content. English is an assisted translation of the Portuguese draft, without additional scientific analysis. [OWNER TO COMPLETE: select the version-of-record language and destination]. Each version should identify and cite the other in the final record. A single DOI record containing both files, where accepted, or a preprint accepting both is suggested; no DOI, submission, or publication has been created. Secondary publication in another journal must follow relevant editorial policies and approvals; translation does not automatically authorize duplicate publication.
+**Licence:** the original text and figures of this article and its supplement are distributed under CC BY 4.0 [12]; the code published in the repository, under the Apache License 2.0. Software, weights, and third-party materials retain their own licences; this does not relicense REFORMS, whose article is CC BY-NC 4.0. The supplementary checklist contains short paraphrased descriptors and an original applicability assessment, without reproducing the entire source table.
+
+**Versions and translation:** this English version and the Portuguese version contain the same scientific content. English is an assisted translation of the Portuguese draft, without additional scientific analysis. The English version is the version of record. The destination is a single Zenodo record containing both files, each identifying the other; the DOI will be assigned on deposit. As of this version, no DOI, submission, or publication has been created. Secondary publication in another journal must follow relevant editorial policies and approvals; translation does not automatically authorize duplicate publication.
 
 ## References
 

@@ -2,9 +2,9 @@
 
 **English title:** Blinded, contract-verified reproduction of a published computational step by a local 9B language model: architecture and case study
 
-**Versão de conferência — 2 de novembro de 2026.** Derivada do corpo cego v2, congelado antes de qualquer comparação com a referência. A descrição da arquitetura, a descrição da tarefa, o glossário e os trabalhos relacionados foram acrescentados depois, sem mudar desfechos, números ou limites. Não é publicação, fechamento de bloco ou validação científica.
+**Preprint, versão 1 — 2 de novembro de 2026.** Derivada do corpo cego v2, congelado antes de qualquer comparação com a referência. A descrição da arquitetura, a descrição da tarefa, o glossário e os trabalhos relacionados foram acrescentados depois, sem mudar desfechos, números ou limites. Não foi revisado por pares e não constitui validação científica.
 
-**Autor humano único:** [PENDENTE DONO: nome para publicação]. **ORCID:** [PENDENTE DONO: identificador ou informar que não possui]. **Afiliação:** [PENDENTE DONO: instituição ou pesquisador independente]. **Correspondência:** [PENDENTE DONO: endereço público de contato].
+**Autor humano único:** Jorge Yuri dos Santos Correa. **ORCID:** [0009-0006-7378-4098](https://orcid.org/0009-0006-7378-4098). **Afiliação:** Pesquisador independente, Brasília, DF, Brasil. **Correspondência:** crvenergia@gmail.com.
 
 ## Resumo
 
@@ -233,25 +233,27 @@ A primária terminou inconclusiva, sem saída aceita em 30 min, após duas recus
 
 ## Autoria, contribuições e assistência de IA
 
-A autoria e a responsabilidade pela versão submetida serão exclusivamente humanas. IAs não são autoras [7,8]. Este texto, inclusive sua tradução, foi preparado com assistência de IA; a revisão e a aprovação humanas finais ainda estão pendentes.
+A autoria e a responsabilidade são exclusivamente humanas: o autor assume a responsabilidade integral pelo conteúdo. IAs não são autoras [7,8]. Este texto, inclusive sua tradução, foi preparado com assistência de IA; o autor leu e aprovou a versão final.
 
 O Codex auxiliou na programação, na organização de evidências, na redação das versões anteriores e na tradução; o Claude auxiliou na revisão, na coordenação e na reestruturação editorial desta versão. O Antigravity integra o caminho de revisão, mas sua revisão formal do fechamento do bloco 5 não foi concluída nesta edição. Esses papéis não são revisão humana especializada nem atribuição de autoria. O Qwen3.5-9B foi o objeto experimental, distinto desses assistentes. A identificação exata dos modelos e versões dos assistentes por sessão deve acompanhar o registro de ferramentas antes da submissão; não se deduz uma versão pelo nome do produto.
 
-**CRediT [9] — proposta a confirmar pelo autor humano:** conceituação (decisões de escopo); metodologia (decisões e autorizações do desenho); administração do projeto; supervisão; curadoria de dados (custódia reservada); escrita — revisão e edição, somente após efetiva revisão final. Não se atribuem automaticamente programação, análise formal ou validação humana ao autor. [PENDENTE DONO: confirmar quais contribuições realizou e aprovar a responsabilidade pelo texto final]. CRediT descreve contribuições e não determina sozinho a elegibilidade de autoria.
+**CRediT [9], confirmado pelo autor:** conceituação (decisões de escopo); metodologia (decisões e autorizações do desenho); administração do projeto; supervisão; curadoria de dados (custódia reservada); escrita — revisão e edição. Não se atribuem ao autor programação, análise formal ou validação humana. CRediT descreve contribuições e não determina sozinho a elegibilidade de autoria.
 
 ## Declarações
 
-**Financiamento:** [PENDENTE DONO: informar financiadores, bolsas e apoio material, ou confirmar ausência de financiamento externo].
+**Crédito ao trabalho original:** a etapa reproduzida pertence ao trabalho público de Samuel E. Wurzel e Scott C. Hsu [3]. O mérito científico do método, dos dados e dos resultados originais é deles. Os autores originais não participaram deste estudo, não o revisaram e não o endossam.
 
-**Conflitos de interesse:** [PENDENTE DONO: declarar interesses financeiros, institucionais ou pessoais pertinentes, ou confirmar ausência]. O acúmulo das funções de dono e guardião já foi explicitado nos métodos.
+**Financiamento:** sem financiamento externo. Todos os custos foram pagos pelo autor.
 
-**Ética:** o procedimento descrito não envolve participantes humanos ou animais nem coleta de dados pessoais de participantes. A custódia humana do projeto não é uma intervenção sobre participantes. Não se reivindica aprovação de comitê que não tenha ocorrido. [PENDENTE DONO: confirmar exigências institucionais ou editoriais aplicáveis e informar eventual aprovação ou dispensa real].
+**Conflitos de interesse:** o autor declara não ter conflitos de interesse. O acúmulo das funções de dono e guardião já foi explicitado nos métodos.
 
-**Dados e código:** a arquitetura e os registros estão preservados em ambiente privado; a Seção 3 descreve a arquitetura em nível funcional, sem endereços, chaves ou código. O suplemento identifica artefatos, versões e hashes; essa identificação não significa acesso público ou reprodução por terceiros. [PENDENTE DONO: definir quais códigos e registros permitidos serão publicados, quais permanecerão restritos, condições de acesso e endereço permanente]. Referência reservada, comparação e anexo não serão entregues aos agentes. O pacote selado permitido entregue ao dono é distinto do corpo cego.
+**Ética:** o procedimento descrito não envolve participantes humanos ou animais nem coleta de dados pessoais de participantes. A custódia humana do projeto não é uma intervenção sobre participantes. Não se aplica aprovação de comitê de ética: nenhuma instituição a exigiu, e não se reivindica aprovação ou dispensa que não tenha ocorrido.
 
-**Licença:** sugere-se CC BY 4.0 para o texto original cuja liberação o dono autorizar [12]. [PENDENTE DONO: confirmar licença e materiais abrangidos]. Licenças de software, pesos e materiais de terceiros permanecem próprias; a sugestão não relicencia REFORMS, cujo artigo é CC BY-NC 4.0. A checklist suplementar contém descritores curtos parafraseados e análise de aplicabilidade própria, sem reprodução integral da tabela original.
+**Dados e código:** o material permitido está publicado em <https://github.com/JorgeYuriDj/pesquisa-automatizada-m1>: código de referência da execução M1 e núcleo do juiz, pacote permitido da etapa, plano e fichas de aceite, decisões técnicas, cópias dos atos do dono (algumas redigidas, sem valor de bytes assinados), recibos das corridas, figuras, suplemento e PDFs, com impressões digitais SHA-256 e registro de proveniência. Registros brutos, transcrições e a coordenação interna ficam em repositório privado e podem ser disponibilizados mediante pedido justificado ao autor, desde que preservados o cegamento, a segurança e os direitos de terceiros. A Seção 3 descreve a arquitetura em nível funcional, sem endereços, chaves ou código. O suplemento identifica artefatos, versões e hashes; pesos do modelo e binários não são redistribuídos, e essa identificação não equivale a reprodução por terceiros. Referência reservada, comparação e anexo não serão entregues aos agentes. O pacote selado permitido entregue ao dono é distinto do corpo cego.
 
-**Versões e tradução:** esta versão portuguesa e a inglesa têm o mesmo conteúdo científico. A inglesa é tradução assistida da redação portuguesa, sem análise científica adicional. [PENDENTE DONO: escolher o idioma da versão de registro e o destino]. Cada versão deve identificar e citar a outra no registro final. Sugere-se um único registro DOI contendo os dois arquivos, quando o destino aceitar, ou um preprint que admita ambos; nenhum DOI, submissão ou publicação foi criado. Se houver publicação secundária em outro periódico, devem ser observadas as políticas e aprovações editoriais pertinentes; tradução não é autorização automática de duplicação.
+**Licença:** o texto e as figuras originais deste artigo e do suplemento são distribuídos sob CC BY 4.0 [12]; o código publicado no repositório, sob Apache License 2.0. Licenças de software, pesos e materiais de terceiros permanecem próprias; isso não relicencia REFORMS, cujo artigo é CC BY-NC 4.0. A checklist suplementar contém descritores curtos parafraseados e análise de aplicabilidade própria, sem reprodução integral da tabela original.
+
+**Versões e tradução:** esta versão portuguesa e a inglesa têm o mesmo conteúdo científico. A inglesa é tradução assistida da redação portuguesa, sem análise científica adicional. A versão de registro é a inglesa. O destino é um único registro no Zenodo com os dois arquivos, cada um identificando o outro; o DOI será atribuído no depósito. Até esta versão, nenhum DOI, submissão ou publicação foi criado. Se houver publicação secundária em outro periódico, devem ser observadas as políticas e aprovações editoriais pertinentes; tradução não é autorização automática de duplicação.
 
 ## Referências
 

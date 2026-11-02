@@ -5,6 +5,11 @@
  "repositorio_de_trabalho": "privado; os commits citados existem nele",
  "arquivos": [
   {
+   "arquivo": "CITATION.cff",
+   "origem": "escrito para esta copia publica",
+   "sha256": "ee03b41b96ab716067ae10d8a11e53551279fa0fb22961d86babae5f2de7382a"
+  },
+  {
    "arquivo": "LICENSE",
    "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
    "origem": "texto oficial da Apache License 2.0 (apache.org)"
@@ -16,16 +21,16 @@
   },
   {
    "arquivo": "README.md",
-   "sha256": "21908119eea52a9398a0357d50ac893906e8cd0d96c7b29a3c40cefcb9fa291b",
+   "sha256": "d074eb82cac527c3a93b680240e01ccea71626a1861451aa15720b72af27d56c",
    "origem": "escrito para esta copia publica"
   },
   {
    "arquivo": "artigo/en/ARTIGO-M1-en.md",
-   "sha256": "e66aae8c0e79bf58b1a24790a080ea968f8a8f1b0d69ebbd23bdbae08c488d78",
+   "sha256": "9a9888697f72f7a82e53af915cb39bf3797db2f83eb267e055f5f0e9114efe8c",
    "origem": {
     "caminho_privado": "docs/rascunhos/ARTIGO-M1-publicacao-en.md",
-    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
-    "sha256_privado": "1e11c9bb179ffddca094267666b4bd33c5e7a1c2217c9989c31f36d0bae5c8b2"
+    "commit_privado": "f7bc9b10975d1f62fc69c06ec8e11474896e750e",
+    "sha256_privado": "92112ad0b834dabed2c3f723858b1daf9b3e77d57d9e38bf4e0fe9ed9ab87770"
    },
    "alterado_para_publicacao": [
     "'](figuras/m1/' -> '](../figuras/' (3x)"
@@ -33,11 +38,11 @@
   },
   {
    "arquivo": "artigo/en/ARTIGO-M1-en.pdf",
-   "sha256": "684dcc18cdd610ecef00620e8c0488adf7fc547d8ed3e2f05cfcf45f271d7a10",
+   "sha256": "91915dadce7331ce7bca68da9fb04dd0ab223c9bdcba5ffb37fa3b87b1775818",
    "origem": {
     "caminho_privado": "docs/rascunhos/pdf/ARTIGO-M1-corpo-en.pdf",
-    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
-    "sha256_privado": "684dcc18cdd610ecef00620e8c0488adf7fc547d8ed3e2f05cfcf45f271d7a10"
+    "commit_privado": "f7bc9b10975d1f62fc69c06ec8e11474896e750e",
+    "sha256_privado": "91915dadce7331ce7bca68da9fb04dd0ab223c9bdcba5ffb37fa3b87b1775818"
    }
   },
   {
@@ -150,11 +155,11 @@
   },
   {
    "arquivo": "artigo/pt/ARTIGO-M1-pt.md",
-   "sha256": "20ebdf3dce9b13ce4cda429bfe0170ee33a636a35524b300b2414824e596b95c",
+   "sha256": "f3a5f84fd2ad0125b0d0f5c2286be3fcca3d65fa106849f256aa6fd5d31d7870",
    "origem": {
     "caminho_privado": "docs/rascunhos/ARTIGO-M1-publicacao-pt.md",
-    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
-    "sha256_privado": "7d4015e7ce7791c849805245b4ae378fe4d66d3863e872e120dc15c4e0d4a7ac"
+    "commit_privado": "f7bc9b10975d1f62fc69c06ec8e11474896e750e",
+    "sha256_privado": "44ab81ced29180ca6f3fc58edb7d1c4e10931521d0f50bbbfa5f4cae08efba42"
    },
    "alterado_para_publicacao": [
     "'](figuras/m1/' -> '](../figuras/' (3x)"
@@ -162,11 +167,11 @@
   },
   {
    "arquivo": "artigo/pt/ARTIGO-M1-pt.pdf",
-   "sha256": "e4e90d61cd0a625aee4ea808ad78a891dc656f011b63059d1f4fa239ee1c97c8",
+   "sha256": "48df4a7c079748ba7d0f0e691f32a36a55b09a88a8c3fa99b68a532a0cdb07c2",
    "origem": {
     "caminho_privado": "docs/rascunhos/pdf/ARTIGO-M1-corpo-pt.pdf",
-    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
-    "sha256_privado": "e4e90d61cd0a625aee4ea808ad78a891dc656f011b63059d1f4fa239ee1c97c8"
+    "commit_privado": "f7bc9b10975d1f62fc69c06ec8e11474896e750e",
+    "sha256_privado": "48df4a7c079748ba7d0f0e691f32a36a55b09a88a8c3fa99b68a532a0cdb07c2"
    }
   },
   {
@@ -189,16 +194,25 @@
   },
   {
    "arquivo": "artigo/suplemento/MATERIAL-SUPLEMENTAR.md",
-   "sha256": "45fdceb0397642f15c32d6e5c20ddef55338eb9ea4b0c09d1e0be964b26e7ca3",
+   "sha256": "422322e32ae01936985759cfb50ea0fe21c9094934b119c6fef79e07e29157ca",
    "origem": {
     "caminho_privado": "docs/rascunhos/ARTIGO-M1-material-suplementar.md",
-    "commit_privado": "1c85cd7c2636a446b5944b6e85370cdd27301d60",
-    "sha256_privado": "a1fa46586a8ddc31a48710aeb7fe9a4039fb6b344ee2b03a6550a26ccbd654f8"
+    "commit_privado": "f7bc9b10975d1f62fc69c06ec8e11474896e750e",
+    "sha256_privado": "fd33af2d3742c0f8afbf6c3ca4398468bfc2591fcf4a7e924d306585dd455e94"
    },
    "alterado_para_publicacao": [
     "'](figuras/m1/' -> '](../figuras/' (2x)",
     "'figuras/m1/' -> 'artigo/figuras/' (4x, mencoes de caminho no texto)"
    ]
+  },
+  {
+   "arquivo": "artigo/suplemento/MATERIAL-SUPLEMENTAR.pdf",
+   "sha256": "2f507d44fb62b1122d41c71a87e332882b7df0bd6497c60b30a86de5741e4740",
+   "origem": {
+    "caminho_privado": "docs/rascunhos/pdf/ARTIGO-M1-material-suplementar.pdf",
+    "commit_privado": "f7bc9b10975d1f62fc69c06ec8e11474896e750e",
+    "sha256_privado": "2f507d44fb62b1122d41c71a87e332882b7df0bd6497c60b30a86de5741e4740"
+   }
   },
   {
    "arquivo": "codigo/conferencia_b05.py",
@@ -560,5 +574,6 @@
    "motivo": "CX-PUB-M1-02: log bruto da qualificacao 1 (saidas e stdout/stderr codificados) excluido da copia publica; fica no repositorio privado; o hash continua em registros/corridas/qualificacao1/resultado.json"
   }
  ],
- "revisao": "v2: correcoes da varredura independente CX-PUB-M1-01, -02 e -03 (identificador do executor, caminhos da instalacao privada, log bruto e mencao a outra frente privada)."
+ "revisao": "v2: correcoes da varredura independente CX-PUB-M1-01, -02 e -03 (identificador do executor, caminhos da instalacao privada, log bruto e mencao a outra frente privada). v3: preprint versao 1 (autor, declaracoes, aprovacao do autor, suplemento em PDF e CITATION.cff), a partir do commit privado f7bc9b1.",
+ "atualizado_em_utc": "2026-11-02T17:50:00Z"
 }

@@ -10,7 +10,7 @@
 
 Este repositório é a cópia pública e organizada de um estudo de caso de pesquisa automatizada. Agentes de IA construíram, executaram e revisaram uma reprodução de uma etapa computacional publicada: o ganho científico de energia (Q_sci) de um disparo do National Ignition Facility. Um juiz automático e atos assinados pelo dono controlaram cada passo. A resposta publicada ficou sob custódia humana, fora do alcance dos agentes. O modelo avaliado foi o Qwen3.5-9B, quantizado em 4 bits e executado em CPU, sem rede.
 
-**Situação:** versão de conferência de 2 de novembro de 2026. Os campos de autoria e as declarações ainda estão pendentes. O texto não foi submetido a nenhuma revista e não tem DOI.
+**Situação:** preprint, versão 1, de 2 de novembro de 2026, lido e aprovado pelo autor. A versão de registro é a inglesa. O texto não foi revisado por pares nem submetido a revista. O depósito no Zenodo, com DOI, é feito pelo autor; o DOI será acrescentado aqui.
 
 ### Resultado em uma frase
 
@@ -22,7 +22,8 @@ A corrida primária terminou inconclusiva (duas saídas recusadas por formato e 
 artigo/
   pt/           artigo em português (Markdown e PDF)
   en/           artigo em inglês (Markdown e PDF)
-  suplemento/   material suplementar (parâmetros, cronologia, REFORMS, trilha de auditoria)
+  suplemento/   material suplementar em Markdown e PDF (parâmetros, cronologia, REFORMS,
+                trilha de auditoria)
   figuras/      figuras SVG em PT e EN, dados usados e o gerador
   render/       estilo e script usados para gerar os PDFs
 etapa-m1/       pacote permitido da etapa: escopo, contrato, exemplos de formato,
@@ -38,6 +39,7 @@ registros/
   revisoes/     parecer de fechamento do bloco 5 escrito pelo Claude
 PROVENIENCIA.json   origem de cada arquivo no repositório de trabalho privado
 SHA256SUMS          impressões digitais SHA-256 de todos os arquivos
+CITATION.cff        dados de citação em formato legível por máquina
 ```
 
 ### Como conferir
@@ -66,7 +68,11 @@ Nenhum gabarito, diferença, veredito ou dica volta aos agentes que executaram, 
 
 ### Como citar e contato
 
-Os dados de autoria, a forma de citar e o contato serão acrescentados quando o autor completar os campos pendentes do artigo.
+**Autor:** Jorge Yuri dos Santos Correa, pesquisador independente, Brasília, DF, Brasil. ORCID [0009-0006-7378-4098](https://orcid.org/0009-0006-7378-4098). Contato: crvenergia@gmail.com.
+
+**Como citar (enquanto o DOI não existir):** Correa, J. Y. S. (2026). *Blinded, contract-verified reproduction of a published computational step by a local 9B language model: architecture and case study* (Preprint, versão 1). https://github.com/JorgeYuriDj/pesquisa-automatizada-m1
+
+O trabalho original reproduzido é de Wurzel e Hsu (2025), DOI [10.1063/5.0297357](https://doi.org/10.1063/5.0297357); o mérito científico dele é dos autores originais, que não participaram deste estudo nem o endossam.
 
 ---
 
@@ -74,7 +80,7 @@ Os dados de autoria, a forma de citar e o contato serão acrescentados quando o 
 
 This repository is the public, curated copy of an automated research case study. AI agents built, ran, and reviewed the reproduction of one published computational step: the scientific energy gain (Q_sci) of a National Ignition Facility shot. An automatic judge and acts signed by the owner controlled each step. The published answer stayed in human custody, out of the agents' reach. The evaluated model was Qwen3.5-9B, quantized to 4 bits and run on CPU without network access.
 
-**Status:** review version of 2 November 2026. Authorship fields and declarations are still pending. The text has not been submitted to any journal and has no DOI.
+**Status:** preprint, version 1, of 2 November 2026, read and approved by the author. English is the version of record. The text has not been peer reviewed or submitted to a journal. The Zenodo deposit, with a DOI, is made by the author; the DOI will be added here.
 
 ### Result in one sentence
 
@@ -82,7 +88,7 @@ The primary run ended inconclusively (two outputs rejected for format and the ti
 
 ### Layout
 
-See the tree above: `artigo/` (article in PT and EN, supplement, figures, render), `etapa-m1/` (permitted step package), `codigo/` (reference code for the M1 run and the judge core), `registros/` (plan, acceptance cards, decisions, owner acts, run receipts, closing review), `PROVENIENCIA.json`, and `SHA256SUMS`.
+See the tree above: `artigo/` (article in PT and EN, supplement, figures, render), `etapa-m1/` (permitted step package), `codigo/` (reference code for the M1 run and the judge core), `registros/` (plan, acceptance cards, decisions, owner acts, run receipts, closing review), `PROVENIENCIA.json`, `SHA256SUMS`, and `CITATION.cff`.
 
 ### How to verify
 
@@ -110,4 +116,8 @@ No reference answer, difference, verdict, or hint returns to the agents that exe
 
 ### Citation and contact
 
-Authorship data, citation format, and contact will be added when the author completes the pending fields of the article.
+**Author:** Jorge Yuri dos Santos Correa, independent researcher, Brasília, DF, Brazil. ORCID [0009-0006-7378-4098](https://orcid.org/0009-0006-7378-4098). Contact: crvenergia@gmail.com.
+
+**How to cite (until a DOI exists):** Correa, J. Y. S. (2026). *Blinded, contract-verified reproduction of a published computational step by a local 9B language model: architecture and case study* (Preprint, version 1). https://github.com/JorgeYuriDj/pesquisa-automatizada-m1
+
+The reproduced original work is by Wurzel and Hsu (2025), DOI [10.1063/5.0297357](https://doi.org/10.1063/5.0297357); its scientific merit belongs to the original authors, who did not participate in or endorse this study.

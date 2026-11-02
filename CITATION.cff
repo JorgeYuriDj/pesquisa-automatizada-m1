@@ -1,0 +1,50 @@
+cff-version: 1.2.0
+message: "If you use this work, please cite the preprint below."
+title: "Pesquisa automatizada — etapa M1: public copy of the study"
+type: software
+authors:
+  - family-names: "Correa"
+    given-names: "Jorge Yuri dos Santos"
+    orcid: "https://orcid.org/0009-0006-7378-4098"
+    affiliation: "Independent researcher, Brasília, DF, Brazil"
+version: "1"
+date-released: "2026-11-02"
+repository-code: "https://github.com/JorgeYuriDj/pesquisa-automatizada-m1"
+license:
+  - CC-BY-4.0
+  - Apache-2.0
+keywords:
+  - automated research
+  - language models
+  - computational reproducibility
+  - blinding
+  - deterministic verification
+  - case study
+preferred-citation:
+  type: article
+  status: preprint
+  title: "Blinded, contract-verified reproduction of a published computational step by a local 9B language model: architecture and case study"
+  authors:
+    - family-names: "Correa"
+      given-names: "Jorge Yuri dos Santos"
+      orcid: "https://orcid.org/0009-0006-7378-4098"
+      affiliation: "Independent researcher, Brasília, DF, Brazil"
+  year: 2026
+  month: 11
+  languages:
+    - en
+    - pt
+  url: "https://github.com/JorgeYuriDj/pesquisa-automatizada-m1"
+references:
+  - type: article
+    title: "Continuing progress toward fusion energy breakeven and gain as measured against the Lawson criteria"
+    authors:
+      - family-names: "Wurzel"
+        given-names: "Samuel E."
+      - family-names: "Hsu"
+        given-names: "Scott C."
+    journal: "Physics of Plasmas"
+    volume: 32
+    start: "112106"
+    year: 2025
+    doi: "10.1063/5.0297357"

@@ -1,6 +1,6 @@
 # Material suplementar — registro editorial e trilha de auditoria
 
-**S1. Edição bilíngue de 2 de novembro de 2026.** Este suplemento acompanha os textos português e inglês, que têm o mesmo conteúdo científico. É material de revisão no repositório privado. A publicação de cada código/registro depende da seleção do dono; presença nesta trilha não constitui liberação pública. Não contém referência reservada, resultado científico, anexo ou resultado da comparação do guardião.
+**S1. Edição bilíngue de 2 de novembro de 2026.** Este suplemento acompanha os textos português e inglês, que têm o mesmo conteúdo científico, no preprint versão 1. O material permitido escolhido pelo autor está no repositório público citado nas Declarações; a menção a um caminho ou commit privado nesta trilha não significa que ele seja público. Não contém referência reservada, resultado científico, anexo ou resultado da comparação do guardião.
 
 ## 1. Origem e separação entre congelamento e edição
 
@@ -124,7 +124,7 @@ Fonte: Kapoor et al., 2024, tabela 1, DOI [10.1126/sciadv.adk3452](https://doi.o
 | 1b | Escolha do recorte | A | CPU barata e determinística, superfície reservada reduzida; seleção humana. | Métodos; contrato S1 |
 | 1c | Papel do modelo | A | Avaliar produção de código/objeto sob contrato; não alegar superioridade. | Introdução; métodos |
 | 2a | Identificação dos dados | P | Pacote/contrato fixados por hash; conteúdo e acesso sujeitos à liberação. | S1 seções 2–3 |
-| 2b | Código e versão | P | Fontes/commits e runtime identificados; disponibilização pública pendente. | S1 seções 3–5 |
+| 2b | Código e versão | P | Fontes/commits e runtime identificados; código de referência publicado no repositório público (Declarações); pesos e binários não redistribuídos. | S1 seções 3–5 |
 | 2c | Infraestrutura | P | CPU, isolamento, parâmetros e limites registrados; não houve reprodução por terceiro. | S1 seção 3 |
 | 2d | Instruções de execução | P | Comandos fixados nos atos; liberação e documentação pública dependem do dono. | S1 seção 4 |
 | 2e | Reprodução automatizada | P | Harness versionado e registros preservados; nenhuma nova corrida reprodutora nesta edição. | S1 seções 4–5 |
@@ -155,17 +155,17 @@ Fonte: Kapoor et al., 2024, tabela 1, DOI [10.1126/sciadv.adk3452](https://doi.o
 
 ## 7. Normas editoriais e limites da consulta
 
-- ICMJE e COPE: ferramentas de IA não são autoras; declarar seus papéis e manter responsabilidade humana. A confirmação humana final ainda é pendente. CRediT descreve contribuições e não decide sozinho autoria. Não há declaração de análise formal ou validação humana que não tenha ocorrido.
+- ICMJE e COPE: ferramentas de IA não são autoras; declarar seus papéis e manter responsabilidade humana. O autor leu e aprovou a versão final (seção 15). CRediT descreve contribuições e não decide sozinho autoria. Não há declaração de análise formal ou validação humana que não tenha ocorrido.
 - A posição COPE foi identificada pelo DOI e pelo texto oficial indexado; a abertura direta devolveu 403. Não se afirma leitura integral dessa página nem autorização universal de tradução. A página ICMJE consultada foi a versão de janeiro 2026.
 - ISO 80000-1:2022: catálogo/escopo públicos consultados; texto integral pago não foi consultado. Usa-se a Brochura SI do BIPM como referência aberta adicional; não se certifica conformidade integral com ISO.
 - REFORMS foi conferido na tabela 1 do artigo publicado, em [cópia institucional](https://pure.hw.ac.uk/ws/portalfiles/portal/126539339/sciadv.adk3452.pdf). A aplicação a modelo fundacional sem treinamento local exige julgamento de relevância, explicitado nos N/A parciais.
 - NASEM e COS fundamentam separar reprodução, réplica, planejamento prévio e análise exploratória. Congelamento editorial posterior não transforma decisão pós-hoc em hipótese prospectiva.
 - A identificação bibliográfica Wurzel/Hsu foi preservada do corpo congelado. Não se abriu seu conteúdo ou resultado para esta edição. A URL do runtime fixado não foi recuperada pela ferramenta web nesta rodada; versão/commit/hashes são transcritos dos registros existentes. O repositório GGUF na revisão fixada foi aberto para identificação bibliográfica, sem download.
-- A licença CC BY 4.0 é sugestão para texto original liberado pelo titular, não para o acervo privado nem para materiais de terceiros. Pesos, software e tabela REFORMS conservam suas licenças.
+- A licença CC BY 4.0, confirmada pelo autor, vale para o texto e as figuras originais; o código publicado usa Apache License 2.0. Nenhuma das duas abrange o acervo privado nem materiais de terceiros. Pesos, software de terceiros e tabela REFORMS conservam suas licenças.
 
 ## 8. Preenchimento humano e entrega bilíngue
 
-Campos pendentes nos dois textos: nome, ORCID, afiliação, contato; contribuições efetivas; revisão e responsabilidade final; financiamento; conflitos; exigências éticas/institucionais; perímetro público de código/registros; licença; idioma de registro e destino. São campos de minuta, não pedido para enviar o anexo aos agentes.
+Campos preenchidos nos dois textos com as respostas do autor em 2/11/2026 (seção 14): nome, ORCID, afiliação, contato, contribuições, responsabilidade, financiamento, conflitos, ética, perímetro público de código/registros, licença, idioma de registro e destino. A leitura e aprovação finais do autor foram registradas depois (seção 15). Nenhum desses campos é pedido para enviar o anexo aos agentes.
 
 **English reading note.** This shared supplement records administrative provenance, artifact identifiers, exact configuration, timeline, and an applicability assessment of all 32 REFORMS items. It contains no restricted reference, scientific output value, or guardian comparison outcome. A means applicable and reported; P means partially addressed with an explicit limitation; N/A is limited to the named component. Reporting is not certification. The two main manuscripts carry the same scientific content and both structured abstracts. The owner completes authorship, funding, conflicts, access, licensing, and publication decisions, and writes/translates the guardian appendix outside this workstream. No agent submits or publishes the article.
 
@@ -213,3 +213,11 @@ O artigo deriva da v2 congelada e registra separadamente atualizações administ
 ## 13. Correção v3.1: autorização da corrida e fechamento do bloco
 
 A conferência independente do Codex (achado CX-ART-M1-V3-01, 2eca2a7) apontou que a Figura 1 e sua legenda punham as duas revisões externas como condição da corrida. No fluxo real, a corrida exige ato do dono, parecer assinado do Claude sobre o código e a preparação, bytes fixados por hash e qualificação aprovada; as revisões do Claude e do Antigravity são para fechar o bloco, depois das corridas, e a M1-R foi aceita com a revisão de fechamento do Antigravity ainda pendente. Na v3.1 foram corrigidos a Figura 1, sua legenda, a seção 3.2, o glossário (juiz e tentativa) e a expressão "fechar cada etapa" nos resumos, que passou a "fechar cada bloco de trabalho". Desfechos, números e limites não mudaram.
+
+## 14. Preenchimento dos campos do autor (v3.2)
+
+Em 2/11/2026 o autor respondeu, na conversa da coordenação, às perguntas sobre os campos pendentes. As respostas foram transcritas nos dois idiomas sem outra mudança de texto científico: nome (Jorge Yuri dos Santos Correa, grafia confirmada pelo autor e igual à do registro ORCID), ORCID (0009-0006-7378-4098, dígito verificador conferido), afiliação (pesquisador independente, Brasília, DF, Brasil), contato público, confirmação das contribuições CRediT propostas, responsabilidade integral pelo conteúdo, ausência de financiamento externo (custos pagos pelo autor), ausência de conflitos de interesse, ética não aplicável, publicação do material permitido no repositório público com acesso aos registros privados mediante pedido justificado, licenças CC BY 4.0 (texto e figuras) e Apache License 2.0 (código), versão de registro em inglês e destino no Zenodo. A pedido do autor, as Declarações ganharam um parágrafo de crédito ao trabalho original de Wurzel e Hsu [3]. Continua pendente a leitura e aprovação finais do autor; só depois dela passa a valer o papel CRediT de escrita (revisão e edição). Desfechos, números, figuras e limites não mudaram.
+
+## 15. Aprovação do autor e preprint versão 1
+
+Em 2/11/2026, depois de ler a versão em inglês (versão de registro), o autor declarou na conversa da coordenação que leu e aprova o texto como está. Em seguida, sem outra mudança de conteúdo, os dois textos passaram a dizer que o autor leu e aprovou a versão final; o papel CRediT de escrita (revisão e edição) deixou de ser condicional; e o cabeçalho "versão de conferência" virou "Preprint, versão 1", com a nota de que o texto não foi revisado por pares e não constitui validação científica. Este suplemento passou a acompanhar o preprint e a remeter ao repositório público. Desfechos, números, figuras, referências e limites não mudaram. Nenhum agente deposita, publica ou cria DOI; o depósito no Zenodo é feito pelo autor.
